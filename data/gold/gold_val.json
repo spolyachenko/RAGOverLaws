@@ -1,0 +1,351 @@
+[
+ {
+  "id": 33,
+  "question": "Что обозначают шаблоны вида {{dlc|...}} и {{dlcalt|...}} в тексте статей?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 7,
+  "question": "Что делает Humbleing Bundle в оригинальной Rebirth (не в Repentance)?",
+  "type": "factual",
+  "answer_contexts": [
+   "{{infobox passive collectible | id = 203 | quote = 1+1 free 4Evar | description = Transforms {{e|Bomb}}s, {{e|Key}}s, {{e|Penny|text=Pennies}}, and {{e|Red Heart}}s into their respective Double versions. {{dlc|r}} This will occur 50% of the time. | q"
+  ],
+  "doc_ids": [
+   "wiki://Humbleing Bundle"
+  ]
+ },
+ {
+  "id": 13,
+  "question": "Сколько у Исаака красных контейнеров здоровья по умолчанию?",
+  "type": "factual",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | id = 14 | health = {{hearts|red=3}} | pickups = 1 [[bomb]] | collectibles = {{unlockable}} {{i|The D6}} }} {{disambig msg|the character|the boss of [[The Cathedral]]|Isaac (Boss)}} '''Isaac''' is the main ["
+  ],
+  "doc_ids": [
+   "wiki://Isaac"
+  ]
+ },
+ {
+  "id": 36,
+  "question": "Какие служебные страницы (redirects, disambiguation) есть в вики и почему это проблема для ретрива?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 49,
+  "question": "Есть ли кросс-сейв между PC и PS4 версиями Rebirth?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 1,
+  "question": "Сколько красных контейнеров здоровья у Кейна в начале игры?",
+  "type": "factual",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | id = 2 | health = {{hearts|red=2}} | damage = 3.5 (*1.20) | range = {{dlcalt|17.75|r=4.5}} | speed = 1.3 | pickups = 1 {{e|Key}}<br>{{dlc|a}} {{unlockable}} {{t|Paper Clip}} | collectibles = {{i|Lucky Foot}"
+  ],
+  "doc_ids": [
+   "wiki://Cain"
+  ]
+ },
+ {
+  "id": 24,
+  "question": "По страницам wiki, что дают боссы Satan и The Lamb в отношении доступа к The Void?",
+  "type": "composite",
+  "answer_contexts": [
+   "{{infobox boss | name = Satan | id = 84 | appearance = (scale:1) | environment = <u>Boss</u><br>{{floor|Sheol}}<br>{{floor|The Void}} | base hp = 1200 | pool = Final Boss Chest ([[Endings|Ending 12]], or {{s|Dark Room}} if Isaac has {{i|The Negative}",
+   "{{infobox boss | name = The Lamb | id = 273 | environment = <u>Boss</u><br>{{floor|Dark Room}}<br>{{floor|The Void}} | base hp = 2600 | pool = Final Boss Chest ([[Endings|Ending 15]])<br>Gateway to {{s|The Void}} ({{dlc|nr+}} 20% Chance) / ({{dlc|r+}"
+  ],
+  "doc_ids": [
+   "wiki://Satan",
+   "wiki://The Lamb"
+  ]
+ },
+ {
+  "id": 50,
+  "question": "Кто озвучил персонажа Кейна в Rebirth?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 28,
+  "question": "Что wiki говорит про IV Bag и Donation Machine: откуда берётся IV Bag и как они связаны?",
+  "type": "composite",
+  "answer_contexts": [
+   "{{infobox activated collectible | image name = * {{dlc|nr|Rebirth}} | id = 135 | quote = Portable blood bank | description = Damages Isaac and spawns a random amount of [[coins]], similar to a {{M|Blood Donation Machine}}. | quality = {{dlcalt|1|r+=2",
+   "{{infobox entity | name = Donation Machine | id = 6 | variant = 8 }} The '''Donation Machine''' is a type of machine that appears in almost every {{R|Shop}} as well as rarely spawning through {{R|Black Market}}s, {{e|Reward Plate|a|Reward Plates}}, {"
+  ],
+  "doc_ids": [
+   "wiki://IV Bag",
+   "wiki://Donation Machine"
+  ]
+ },
+ {
+  "id": 14,
+  "question": "Какой базовый HP у минибосса Greed в Rebirth?",
+  "type": "factual",
+  "answer_contexts": [
+   "{{disambig msg|the boss|the game mode|Greed Mode}} {{infobox monster | id = 50 | image name = * {{dlc|nr|Rebirth}} | is mini-boss = yes | base hp = 60 | stage hp = {{dlcalt|15|r=20}} | environment = <u>Mini-Boss</u><br>{{room|shop}}{{room|secret}}<br"
+  ],
+  "doc_ids": [
+   "wiki://Greed"
+  ]
+ },
+ {
+  "id": 21,
+  "question": "Чем мини-босс Greed отличается от режима Greed Mode по страницам wiki?",
+  "type": "composite",
+  "answer_contexts": [
+   "{{disambig msg|the boss|the game mode|Greed Mode}} {{infobox monster | id = 50 | image name = * {{dlc|nr|Rebirth}} | is mini-boss = yes | base hp = 60 | stage hp = {{dlcalt|15|r=20}} | environment = <u>Mini-Boss</u><br>{{room|shop}}{{room|secret}}<br",
+   "{{page dlc | a }} '''Greed mode''' is a game mode introduced in ''[[The Binding of Isaac: Afterbirth]]''. == Gameplay == [[file:Greed Mode Layout.png|125px|right]] In Greed mode, each floor has a {{R|Curse Room}}, a {{R|Devil Room}}/{{R|Angel Room}},"
+  ],
+  "doc_ids": [
+   "wiki://Greed",
+   "wiki://Greed Mode"
+  ]
+ },
+ {
+  "id": 48,
+  "question": "Сколько копий Rebirth было продано к 2017 году?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 16,
+  "question": "Сравни Кейна и Юдифу по wiki: чем отличаются их старт, характеристики и предметы?",
+  "type": "composite",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | id = 2 | health = {{hearts|red=2}} | damage = 3.5 (*1.20) | range = {{dlcalt|17.75|r=4.5}} | speed = 1.3 | pickups = 1 {{e|Key}}<br>{{dlc|a}} {{unlockable}} {{t|Paper Clip}} | collectibles = {{i|Lucky Foot}",
+   "{{header characters}} {{infobox character | id = 3 | health = {{heart|red}} | damage = 3.5 (*1.35) | pickups = 3 [[coin]]s | collectibles = {{i|The Book of Belial}} | unlocked by = Judas }} '''Judas''' is a [[character]] unlocked after beating {{E|Sa"
+  ],
+  "doc_ids": [
+   "wiki://Cain",
+   "wiki://Judas"
+  ]
+ },
+ {
+  "id": 4,
+  "question": "Сколько у Азазеля красных сердец в начале и что он получает взамен?",
+  "type": "factual",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | image name = * {{dlc|nr|Rebirth}} | id = 7 | health = {{hearts|black=3}} | damage = 3.5 (*1.50) | tears = +0.5; x0.267 | range = {{dlcalt|17.75|r=4.5}} | speed = 1.25 | pickups = {{p|0 - The Fool}} | collec"
+  ],
+  "doc_ids": [
+   "wiki://Azazel"
+  ]
+ },
+ {
+  "id": 32,
+  "question": "Какая стандартная структура у статьи о предмете (какие секции по порядку)?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 8,
+  "question": "Сколько волн в Boss Rush и сколько боссов в каждой?",
+  "type": "factual",
+  "answer_contexts": [
+   "The '''Boss Rush''' is an optional [[room]] that becomes available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}} "
+  ],
+  "doc_ids": [
+   "wiki://Boss Rush"
+  ]
+ },
+ {
+  "id": 44,
+  "question": "Кто написал музыку для The Binding of Isaac: Rebirth?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 11,
+  "question": "Какой базовый HP у босса Mom?",
+  "type": "factual",
+  "answer_contexts": [
+   "{{infobox boss | id = 45 | appearance = (scale:1) | image name = * {{dlc|nr|Rebirth}} | environment = <u>Boss</u><br><u>Main path</u><br>{{floor|Depths}}{{floor|Necropolis}}{{floor|Dank Depths}}<br><u>Alternate path</u><br>{{floor|Mausoleum}}{{floor|"
+  ],
+  "doc_ids": [
+   "wiki://Mom"
+  ]
+ },
+ {
+  "id": 42,
+  "question": "Кто главный герой в игре Hades?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 2,
+  "question": "С каким предметом стартует Лазарус?",
+  "type": "factual",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | image name = * {{dlc|nr|Rebirth}} | id = 8 | health = {{hearts|red=3}} | range = {{dlcalt|17.75|r=4.5}} | luck = -1 | pickups = 1 [[pill]] | collectibles = {{dlc|a+}} {{unlockable}} {{i|Anemic}} | unlocked "
+  ],
+  "doc_ids": [
+   "wiki://Lazarus"
+  ]
+ },
+ {
+  "id": 37,
+  "question": "Какие основные этажи/локации игры упомянуты в wiki?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 18,
+  "question": "Собери всё, что wiki говорит про Lazarus Risen: когда Лазарус воскрешается и как работает предмет Anemic?",
+  "type": "composite",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | image name = * {{dlc|nr|Rebirth}} | id = 8 | health = {{hearts|red=3}} | range = {{dlcalt|17.75|r=4.5}} | luck = -1 | pickups = 1 [[pill]] | collectibles = {{dlc|a+}} {{unlockable}} {{i|Anemic}} | unlocked ",
+   "{{infobox passive collectible | image name = * {{dlc|na+|Rebirth}} | id = 214 | quote = Toxic blood | description = After Isaac is damaged, a trail of [[red creep]] will be left behind him until he leaves the current room. {{dlc+|nr}} +5 [[range]].{{"
+  ],
+  "doc_ids": [
+   "wiki://Lazarus",
+   "wiki://Anemic"
+  ]
+ },
+ {
+  "id": 17,
+  "question": "Что wiki говорит о Black Judas: в какой ситуации он появляется и каковы его характеристики?",
+  "type": "composite",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | id = 3 | health = {{heart|red}} | damage = 3.5 (*1.35) | pickups = 3 [[coin]]s | collectibles = {{i|The Book of Belial}} | unlocked by = Judas }} '''Judas''' is a [[character]] unlocked after beating {{E|Sa",
+   "{{infobox passive collectible | id = 311 | quote = Sweet revenge | description = Upon [[death]], respawns Isaac as {{c|Black Judas}} with two {{e|Black Heart}}s in the previous room. | quality = 3 | tags = nolostbr nocantrip nochallenge | devil price"
+  ],
+  "doc_ids": [
+   "wiki://Judas",
+   "wiki://Judas' Shadow"
+  ]
+ },
+ {
+  "id": 40,
+  "question": "Каких данных wiki НЕ содержит — например, цены, даты выхода, продажи?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 43,
+  "question": "Сколько концовок в игре Dead Cells?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 26,
+  "question": "Что wiki говорит про Бетани: почему она не использует Soul Hearts и как работают её soul charges?",
+  "type": "composite",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | dlc = r | id = 18 | health = {{hearts|red=3}} | pickups = 4 [[Soul Heart|soul charges]] | collectibles = {{i|Book of Virtues}} | unlocked by = Bethany }} '''Bethany''' is a [[character]] added in ''[[The Bi",
+   "{{infobox activated collectible | dlc = r | id = 584 | quote = Spiritual companionship | description = Passively causes active items to spawn themed orbital wisp [[familiar]]s on use, which fire tears and block shots. Can be activated to spawn a basi"
+  ],
+  "doc_ids": [
+   "wiki://Bethany",
+   "wiki://Book of Virtues"
+  ]
+ },
+ {
+  "id": 22,
+  "question": "Что wiki говорит о минибоссах Envy и Lust: их поведение и что они дропают?",
+  "type": "composite",
+  "answer_contexts": [
+   "{{infobox monster | id = 51 | image name = * {{dlc|nr|Rebirth}} | is mini-boss = yes | base hp = {{dlcalt|60|a=40}} | stage hp = 7.5 | environment = <u>Mini-Boss</u><br>{{room|mini-boss}}<br><u>Degraded Mini-Boss</u><br>{{floor|Womb}}{{floor|Utero}}{",
+   "{{infobox monster | id = 47 | image name = * {{dlc|nr|Rebirth}} | is mini-boss = yes | base hp = 60 | stage hp = {{dlcalt|15|r=20}} | environment = <u>Mini-Boss</u><br>{{room|Mini-Boss}}<br><u>Degraded Mini-Boss</u><br>{{floor|Womb}}{{floor|Utero}}{{"
+  ],
+  "doc_ids": [
+   "wiki://Envy",
+   "wiki://Lust"
+  ]
+ },
+ {
+  "id": 39,
+  "question": "Что обычно содержится в секциях Notes и Trivia статей wiki?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 46,
+  "question": "Сколько выручки Repentance принесла в первый день релиза?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 29,
+  "question": "По страницам wiki, что общего в геймплее Самсона и Ив — почему для обоих рекомендуют «жертвенные» механики?",
+  "type": "composite",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | image name = * {{dlc|nr|Rebirth}} | id = 6 | health = {{hearts|red=3}} | tears = -0.1 | shot speed = 1.31 | range = {{dlcalt|18.75|r=5.0}} | speed = 1.1 | pickups = {{dlc|a+}} {{unlockable}} {{t|Child's Hea",
+   "{{header characters}} {{infobox character | id = 5 | health = {{hearts|red=2}} | damage = 3.5 (*0.75)<br>(*1.00 at a Red Heart) | speed = 1.23 | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}} | "
+  ],
+  "doc_ids": [
+   "wiki://Samson",
+   "wiki://Eve"
+  ]
+ },
+ {
+  "id": 9,
+  "question": "С какими предметами стартует Ив в Rebirth?",
+  "type": "factual",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | id = 5 | health = {{hearts|red=2}} | damage = 3.5 (*0.75)<br>(*1.00 at a Red Heart) | speed = 1.23 | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}} | "
+  ],
+  "doc_ids": [
+   "wiki://Eve"
+  ]
+ },
+ {
+  "id": 5,
+  "question": "Как открыть персонажа Keeper?",
+  "type": "factual",
+  "answer_contexts": [
+   "{{header characters}} {{infobox character | image name = * {{dlc|nr|Afterbirth}} | dlc = a | id = 14 | health = {{hearts|coin=2}}<br/>{{unlockable}} {{dlc|r}}{{hearts|coin=3}} | damage = 3.5 (*1.20) | tears = {{dlcalt|-2|r=-1.9}} | speed = {{dlcalt|0"
+  ],
+  "doc_ids": [
+   "wiki://Keeper"
+  ]
+ },
+ {
+  "id": 31,
+  "question": "Какие основные категории страниц есть в этой вики (персонажи, предметы, боссы и т.д.)?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 3,
+  "question": "Какой базовый HP у босса Hush?",
+  "type": "factual",
+  "answer_contexts": [
+   "{{infobox boss | dlc = a | id = 407 | environment = <u>Boss</u><br>{{floor|???}} | base hp = 6666 | pool = Final Boss Chest ([[Endings|Ending 17]], first kill only)<br>Gateway to {{s|Sheol}} / {{s|Cathedral}} <br>{{dlc+|a+}} Entrance to {{s|The Void}"
+  ],
+  "doc_ids": [
+   "wiki://Hush"
+  ]
+ },
+ {
+  "id": 25,
+  "question": "Как по wiki эволюционировала система «100% прогона» от Rebirth до Repentance и что про это говорят достижения?",
+  "type": "composite",
+  "answer_contexts": [
+   ": ''For save file completion images, see [[Savefile Images]]'' In terms of \"percentage\" of the game that is completed, the save file will show confusing values. This is because more items and unlocks were added incrementally over the lifetime of the ",
+   "{{Hatnote|For tips and strategies on completing achievements, see [[achievement tip]]s.}} '''Achievements''' are unlocked after completing [[Challenge]]s, reaching certain [[completion mark|milestones]], achieving hidden goals, or unlocking certain ["
+  ],
+  "doc_ids": [
+   "wiki://Save File Completion",
+   "wiki://Achievements"
+  ]
+ }
+]

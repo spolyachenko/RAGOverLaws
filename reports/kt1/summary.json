@@ -1,0 +1,58 @@
+{
+ "docs": 1776,
+ "tokens": 2186317,
+ "mean_tokens": 1231,
+ "median_tokens": 687.5,
+ "short_lt50": 4,
+ "long_gt2000": 246,
+ "junk_share": {
+  "emoji": 0.0,
+  "url": 0.0065,
+  "num": 0.0139,
+  "punct": 0.1146
+ },
+ "docs_gt20pct_junk": 301,
+ "exact_duplicates": 0,
+ "near_duplicate_docs": 84,
+ "near_dup_threshold": 0.7,
+ "smallest": [
+  {
+   "title": "AB",
+   "n_tokens": 13
+  },
+  {
+   "title": "AB+",
+   "n_tokens": 15
+  },
+  {
+   "title": "Key Piece (Disambiguation)",
+   "n_tokens": 35
+  },
+  {
+   "title": "V1.06 Hotfix",
+   "n_tokens": 47
+  }
+ ],
+ "largest": [
+  {
+   "title": "The Binding of Isaac: Repentance (Pre-Release)",
+   "n_tokens": 31331
+  },
+  {
+   "title": "Co-op",
+   "n_tokens": 27527
+  },
+  {
+   "title": "Isaac's Last Will",
+   "n_tokens": 22599
+  },
+  {
+   "title": "V1.06.J787",
+   "n_tokens": 21159
+  },
+  {
+   "title": "Bestiary (Repentance)",
+   "n_tokens": 14212
+  }
+ ]
+}

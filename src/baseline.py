@@ -1,0 +1,60 @@
+"""Baseline без RAG: ответы LLM на test-вопросы БЕЗ контекста («а нужен ли RAG?»).
+
+Модель берётся из .env (локальная Ollama по умолчанию, OpenAI-совместимый API):
+    LLM_BASE_URL / LLM_API_KEY / LLM_MODEL
+Если API недоступен — грузит предвычисленный data/gold/baseline_no_rag.json.
+
+Запуск: python src/baseline.py
+"""
+import json
+import os
+import time
+
+from common import BASELINE_OUT, GOLD_TEST, load_env
+
+PROMPT = "Отвечай кратко на русском. Если не знаешь ответа — явно скажи «не знаю».\nВопрос: {q}"
+
+
+def _client():
+    from openai import OpenAI
+
+    env = load_env()
+    base_url = os.environ.get("LLM_BASE_URL", env.get("LLM_BASE_URL", "http://localhost:11434/v1"))
+    api_key = os.environ.get("LLM_API_KEY", env.get("LLM_API_KEY", "ollama"))
+    model = os.environ.get("LLM_MODEL", env.get("LLM_MODEL", "qwen2.5:7b"))
+    return OpenAI(base_url=base_url, api_key=api_key), model
+
+
+def run():
+    results = None
+    try:
+        client, model = _client()
+        test = json.load(open(GOLD_TEST, encoding="utf-8"))
+        results = []
+        for g in test:
+            t0 = time.time()
+            r = client.chat.completions.create(model=model, temperature=0,
+                                               messages=[{"role": "user", "content": PROMPT.format(q=g["question"])}])
+            results.append({"id": g["id"], "type": g["type"], "answer": r.choices[0].message.content,
+                            "latency_s": round(time.time() - t0, 2)})
+            print(f"[{g['id']}] ({g['type']}) {g['question'][:60]} -> {results[-1]['answer'][:80]}")
+        BASELINE_OUT.write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"baseline (модель {model}) сохранён в {BASELINE_OUT}")
+    except Exception as e:
+        print(f"LLM недоступен ({type(e).__name__}), грузим предвычисленный baseline")
+
+    if not results:
+        results = json.load(open(BASELINE_OUT, encoding="utf-8"))
+        print(f"Загружен предвычисленный baseline: {len(results)} ответов из {BASELINE_OUT}")
+
+    print(f"Средний latency: {sum(r['latency_s'] for r in results) / len(results):.2f}s")
+    admit = sum(1 for r in results if "не знаю" in r["answer"].lower())
+    print(f"Модель без RAG признала нерешимыми {admit}/{len(results)} вопросов")
+    for t in ["factual", "composite", "abstract", "negative"]:
+        sub = [r for r in results if r["type"] == t]
+        if sub:
+            print(f"  {t:10s}: {sum(1 for r in sub if 'не знаю' in r['answer'].lower())}/{len(sub)} «не знаю»")
+
+
+if __name__ == "__main__":
+    run()
