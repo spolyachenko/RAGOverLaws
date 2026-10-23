@@ -12,7 +12,8 @@ src/gold.py          — валидация gold + validation/test split (python
 src/baseline.py      — baseline LLM без RAG (локальная модель из .env)
 src/run_kt1.py       — весь КТ1 по порядку
 data/                — корпус и золотой набор
-reports/kt1/         — отчёт: otchet_kt1.md + диаграммы (lengths_hist.png, summary.json)
+reports/kt1/         — отчёт: otchet_kt1.md + lengths_hist.png (вся EDA-статистика — в таблицах отчёта)
+prompts/gold_prompt.md   — промпт генерации gold-набора (EN)
 .env.example         — шаблон конфигурации LLM
 requirements.txt
 ```
@@ -22,9 +23,8 @@ requirements.txt
 | Данные | Что |
 |---|---|
 | `data/corpus.jsonl` | Корпус: **вся вики The Binding of Isaac: Rebirth** (1776 страниц, 2.19M токенов, сырой wikitext). 1661 служебная redirect-страница отбрасывается. |
-| `data/gold/gold_full.json` | Золотой набор: 50 вопросов (15 факт / 15 составной / 10 абстрактных / 10 негативных), с `doc_ids` и контекстами. |
-| `data/gold/gold_val.json` / `gold_test.json` | Split 70/30 со стратификацией по типу. |
-| `data/gold/baseline_no_rag.json` | Ответы LLM на test-вопросы **без** контекста (baseline). |
+| `data/gold/gold_full.json` | Золотой набор: **48** вопросов (v2: 15 факт / 15 составной / 10 абстрактных / 8 негативных), с `doc_ids` и вербальными цитатами. Сгенерирован по `prompts/gold_prompt.md`, верифицирован `build_gold_v2.py` против корпуса. |
+| `data/gold/gold_val.json` / `gold_test.json` / `baseline_no_rag.json` | Регенерируются по требованию: `python src/gold.py split`, `python src/baseline.py` |
 
 ## Запуск
 
@@ -57,9 +57,12 @@ Redirect-страницы `#REDIRECT` и страницы <40 символов �
 
 ## Золотой набор
 
-Сгенерирован LLM по выборке страниц, затем ручное ревью: 50 оставлено, 4 отклонено
-(с объяснением в отчёте). Баланс типов по ТЗ. Негативные вопросы проверены grep-ом — темы встречаются в
-корпусе 0 раз.
+В2: 48 вопросов, сгенерированы нормальной моделью по `prompts/gold_prompt.md` (дёрфт в
+`gold_draft_v2.json`), верифицированы `build_gold_v2.py` против корпуса: цитаты — вербальные
+подстрочники wikitext (assert), doc_ids — точные заголовки страниц, негативы — grep по
+корпусу (2 негатива отклонены как "есть в корпусе": Slay the Spire, Celeste — см.
+`gold_out_v2.json`). Баланс: 15/15/10/8. Три abstract-вопроса (id 33, 38, 40) поправлены вручную
+(id=40 был невалиден: Talk-страницы в корпусе отсутствуют), split и baseline регенерируются скриптами.
 
 ## Выводы (кратко, подробно в `reports/kt1/otchet_kt1.md`)
 

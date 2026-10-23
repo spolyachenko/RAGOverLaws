@@ -1,10 +1,10 @@
 [
  {
   "id": 1,
-  "question": "Сколько красных контейнеров здоровья у Кейна в начале игры?",
+  "question": "How many coins do I need to have at once to unlock Cain?",
   "type": "factual",
   "answer_contexts": [
-   "{{header characters}} {{infobox character | id = 2 | health = {{hearts|red=2}} | damage = 3.5 (*1.20) | range = {{dlcalt|17.75|r=4.5}} | speed = 1.3 | pickups = 1 {{e|Key}}<br>{{dlc|a}} {{unlockable}} {{t|Paper Clip}} | collectibles = {{i|Lucky Foot}"
+   "'''Cain''' is a [[character]] unlocked by obtaining 55 or more [[coin]]s at once in a run. He starts with two [[Red Heart container]]s, one {{e|Key}}, and {{i|Lucky Foot}}.\n\n{{dlc|a}} Cain also starts with {{t|Paper Clip}} after 68 coins have been do"
   ],
   "doc_ids": [
    "wiki://Cain"
@@ -12,489 +12,483 @@
  },
  {
   "id": 2,
-  "question": "С каким предметом стартует Лазарус?",
+  "question": "What do I need to do to unlock The Lost?",
   "type": "factual",
   "answer_contexts": [
-   "{{header characters}} {{infobox character | image name = * {{dlc|nr|Rebirth}} | id = 8 | health = {{hearts|red=3}} | range = {{dlcalt|17.75|r=4.5}} | luck = -1 | pickups = 1 [[pill]] | collectibles = {{dlc|a+}} {{unlockable}} {{i|Anemic}} | unlocked "
+   "The Lost is unlocked by dying in a {{R|Sacrifice Room}} while holding {{t|Missing Poster}}.\n\n* In order to unlock The Lost, you need to unlock [[Missing Poster]].\n* {{t|Missing Poster}} is unlocked by defeating {{e|The Lamb}} as {{C|Isaac}}.\n\n* Looki"
   ],
   "doc_ids": [
-   "wiki://Lazarus"
+   "wiki://The Lost"
   ]
  },
  {
   "id": 3,
-  "question": "Какой базовый HP у босса Hush?",
+  "question": "How much damage per second does Hushy deal?",
   "type": "factual",
   "answer_contexts": [
-   "{{infobox boss | dlc = a | id = 407 | environment = <u>Boss</u><br>{{floor|???}} | base hp = 6666 | pool = Final Boss Chest ([[Endings|Ending 17]], first kill only)<br>Gateway to {{s|Sheol}} / {{s|Cathedral}} <br>{{dlc+|a+}} Entrance to {{s|The Void}"
+   "* Hushy deals 2 contact damage per tick or 30 damage per second.\n\n== Notes ==\n* Hushy can be pushed by explosions, both while stationary and during movement (in this case, the explosion may cause the familiar to change the direction it is moving in)."
+  ],
+  "doc_ids": [
+   "wiki://Hushy"
+  ]
+ },
+ {
+  "id": 4,
+  "question": "Hush is the final boss of which ending?",
+  "type": "factual",
+  "answer_contexts": [
+   " | pool        = Final Boss Chest ([[Endings|Ending 17]], first kill only)<br>Gateway to {{s|Sheol}} / {{s|Cathedral}} <br>{{dlc+|a+}} Entrance to {{s|The Void}} {{dlc-}}\n | unlocked by = Blue Womb\n}}\n\n'''Hush''' is the [[boss]] of {{s|???}}, and the"
   ],
   "doc_ids": [
    "wiki://Hush"
   ]
  },
  {
-  "id": 4,
-  "question": "Сколько у Азазеля красных сердец в начале и что он получает взамен?",
+  "id": 5,
+  "question": "What is Mega Satan's base HP?",
   "type": "factual",
   "answer_contexts": [
-   "{{header characters}} {{infobox character | image name = * {{dlc|nr|Rebirth}} | id = 7 | health = {{hearts|black=3}} | damage = 3.5 (*1.50) | tears = +0.5; x0.267 | range = {{dlcalt|17.75|r=4.5}} | speed = 1.25 | pickups = {{p|0 - The Fool}} | collec"
+   " | base hp     = 5000\n | pool        = Final Boss Chest + Gateway to {{s|The Void}} ({{dlcalt|50% Chance, otherwise cuts directly to [[Endings|Ending 16]]|r+=100% chance, no longer cuts away}})\n | unlocked by = Angels\n}}\n\n'''Mega Satan''' is a [[boss"
+  ],
+  "doc_ids": [
+   "wiki://Mega Satan"
+  ]
+ },
+ {
+  "id": 6,
+  "question": "how do you unlock tainted eve",
+  "type": "factual",
+  "answer_contexts": [
+   "ted Eve is unlocked by reaching {{s|Home}} and using the {{I|Red Key}}, {{P|Cracked Key}}, or {{P|1=Soul of Cain}} to access a special room in one of the walls while playing as Eve.\n\nTainted Eve starts with 2 red hearts, and possesses the lowest base"
+  ],
+  "doc_ids": [
+   "wiki://Tainted Eve"
+  ]
+ },
+ {
+  "id": 7,
+  "question": "What is Tainted Eve's starting item?",
+  "type": "factual",
+  "answer_contexts": [
+   " | collectibles = {{i|Sumptorium}}\n | unlocked by = The Curdled\n}}\n'''Tainted Eve''' is a [[Characters|character]] added in [[The Binding of Isaac: Repentance]]. She is the alternate version of {{C|Eve}} with ragged hair, no bird, ruined mascara as i"
+  ],
+  "doc_ids": [
+   "wiki://Tainted Eve"
+  ]
+ },
+ {
+  "id": 8,
+  "question": "What does Judas start the game with?",
+  "type": "factual",
+  "answer_contexts": [
+   " | collectibles = {{i|The Book of Belial}}\n | unlocked by  = Judas\n}}\n'''Judas''' is a [[character]] unlocked after beating {{E|Satan}} for the first time. He starts with 1 [[Red Heart container]], 3 {{e|Penny|text=coins}}, and {{i|The Book of Belial"
+  ],
+  "doc_ids": [
+   "wiki://Judas"
+  ]
+ },
+ {
+  "id": 9,
+  "question": "Which item does Cain start with?",
+  "type": "factual",
+  "answer_contexts": [
+   " | collectibles = {{i|Lucky Foot}}\n | unlocked by  = Cain\n}}\n'''Cain''' is a [[character]] unlocked by obtaining 55 or more [[coin]]s at once in a run. He starts with two [[Red Heart container]]s, one {{e|Key}}, and {{i|Lucky Foot}}.\n\n{{dlc|a}} Cain "
+  ],
+  "doc_ids": [
+   "wiki://Cain"
+  ]
+ },
+ {
+  "id": 10,
+  "question": "Which character starts with the Incubus familiar?",
+  "type": "factual",
+  "answer_contexts": [
+   " | collectibles = {{blindfolded}}<br>{{i|Box of Friends}} (unlisted)<br>{{i|Incubus}}<br>{{i|Cambion Conception}}\n | unlocked by  = Lilith\n}}\n'''Lilith''' is a [[character]] added in ''[[The Binding of Isaac: Afterbirth]]''. Lilith starts with one re"
+  ],
+  "doc_ids": [
+   "wiki://Lilith"
+  ]
+ },
+ {
+  "id": 11,
+  "question": "How do I unlock Eve?",
+  "type": "factual",
+  "answer_contexts": [
+   "'''Eve''' is a [[character]] unlocked by beating two floors in a row without collecting any heart pickups. She starts with two [[Red Heart container]]s, {{i|Whore of Babylon}}, and {{i|Dead Bird}}.\n* {{dlc+|a}} Eve will also start with {{i|Razor Blad"
+  ],
+  "doc_ids": [
+   "wiki://Eve"
+  ]
+ },
+ {
+  "id": 12,
+  "question": "What does The Fool card do when used?",
+  "type": "factual",
+  "answer_contexts": [
+   "| description =          Teleports Isaac to the starting room of the current floor.\n}}\n\n{{cit|c}}\n\n== Effects ==\n* Teleports Isaac to the starting room of the current floor.\n\n== Notes ==\n* If the room teleported out of was hostile, it will be reset.\n"
+  ],
+  "doc_ids": [
+   "wiki://0 - The Fool"
+  ]
+ },
+ {
+  "id": 13,
+  "question": "What is Ultra Greed's base HP?",
+  "type": "factual",
+  "answer_contexts": [
+   " | base hp     = 3500\n | pool        = Final Boss Chest ([[Endings|Ending 18]])<br/>{{M|Greed Donation Machine}}\n}}\n\n'''Ultra Greed''' is the final [[boss]] of [[Greed Mode]] and [[Endings|Ending 18]].\n\n== Behavior ==\nUltra Greed is fought in a uniqu"
+  ],
+  "doc_ids": [
+   "wiki://Ultra Greed"
+  ]
+ },
+ {
+  "id": 14,
+  "question": "What is the item ID of The D6?",
+  "type": "factual",
+  "answer_contexts": [
+   " | id = 105\n | quote = Reroll your destiny\n | description = Re-rolls all items in the current [[room]] into other items, depending on the current room's [[item pool]].\n | quality     = 4\n | tags        = offensive nocantrip\n | recharge = 6\n | unlocke"
+  ],
+  "doc_ids": [
+   "wiki://The D6"
+  ]
+ },
+ {
+  "id": 15,
+  "question": "How do I unlock Azazel?",
+  "type": "factual",
+  "answer_contexts": [
+   "'''Azazel''' is a [[character]] unlocked by making three {{R|Devil Room}} deals in one run. He starts with 3 {{E|Black Heart}}s, {{p|0 - The Fool}}, [[flight]], and a short-ranged version of {{i|Brimstone}} that deals damage {{dlcalt|13|r=9}} times i"
   ],
   "doc_ids": [
    "wiki://Azazel"
   ]
  },
  {
-  "id": 5,
-  "question": "Как открыть персонажа Keeper?",
-  "type": "factual",
-  "answer_contexts": [
-   "{{header characters}} {{infobox character | image name = * {{dlc|nr|Afterbirth}} | dlc = a | id = 14 | health = {{hearts|coin=2}}<br/>{{unlockable}} {{dlc|r}}{{hearts|coin=3}} | damage = 3.5 (*1.20) | tears = {{dlcalt|-2|r=-1.9}} | speed = {{dlcalt|0"
-  ],
-  "doc_ids": [
-   "wiki://Keeper"
-  ]
- },
- {
-  "id": 6,
-  "question": "Какой у карточки «0 - The Fool» id в wiki?",
-  "type": "factual",
-  "answer_contexts": [
-   "{{header tarot cards}} {{Infobox card | name = 0 - The Fool | id = 1 | recharge = {{dlcalt|4|r=2}} | quote = Where journey begins | description = Teleports Isaac to the starting room of the current floor. }} {{cit|c}} == Effects == * Teleports Isaac "
-  ],
-  "doc_ids": [
-   "wiki://0 - The Fool"
-  ]
- },
- {
-  "id": 7,
-  "question": "Что делает Humbleing Bundle в оригинальной Rebirth (не в Repentance)?",
-  "type": "factual",
-  "answer_contexts": [
-   "{{infobox passive collectible | id = 203 | quote = 1+1 free 4Evar | description = Transforms {{e|Bomb}}s, {{e|Key}}s, {{e|Penny|text=Pennies}}, and {{e|Red Heart}}s into their respective Double versions. {{dlc|r}} This will occur 50% of the time. | q"
-  ],
-  "doc_ids": [
-   "wiki://Humbleing Bundle"
-  ]
- },
- {
-  "id": 8,
-  "question": "Сколько волн в Boss Rush и сколько боссов в каждой?",
-  "type": "factual",
-  "answer_contexts": [
-   "The '''Boss Rush''' is an optional [[room]] that becomes available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}} "
-  ],
-  "doc_ids": [
-   "wiki://Boss Rush"
-  ]
- },
- {
-  "id": 9,
-  "question": "С какими предметами стартует Ив в Rebirth?",
-  "type": "factual",
-  "answer_contexts": [
-   "{{header characters}} {{infobox character | id = 5 | health = {{hearts|red=2}} | damage = 3.5 (*0.75)<br>(*1.00 at a Red Heart) | speed = 1.23 | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}} | "
-  ],
-  "doc_ids": [
-   "wiki://Eve"
-  ]
- },
- {
-  "id": 10,
-  "question": "Какой у Юдифи (Judas) множитель урона?",
-  "type": "factual",
-  "answer_contexts": [
-   "{{header characters}} {{infobox character | id = 3 | health = {{heart|red}} | damage = 3.5 (*1.35) | pickups = 3 [[coin]]s | collectibles = {{i|The Book of Belial}} | unlocked by = Judas }} '''Judas''' is a [[character]] unlocked after beating {{E|Sa"
-  ],
-  "doc_ids": [
-   "wiki://Judas"
-  ]
- },
- {
-  "id": 11,
-  "question": "Какой базовый HP у босса Mom?",
-  "type": "factual",
-  "answer_contexts": [
-   "{{infobox boss | id = 45 | appearance = (scale:1) | image name = * {{dlc|nr|Rebirth}} | environment = <u>Boss</u><br><u>Main path</u><br>{{floor|Depths}}{{floor|Necropolis}}{{floor|Dank Depths}}<br><u>Alternate path</u><br>{{floor|Mausoleum}}{{floor|"
-  ],
-  "doc_ids": [
-   "wiki://Mom"
-  ]
- },
- {
-  "id": 12,
-  "question": "Какой шанс, что Lust дропнет The Virus?",
-  "type": "factual",
-  "answer_contexts": [
-   "{{infobox monster | id = 47 | image name = * {{dlc|nr|Rebirth}} | is mini-boss = yes | base hp = 60 | stage hp = {{dlcalt|15|r=20}} | environment = <u>Mini-Boss</u><br>{{room|Mini-Boss}}<br><u>Degraded Mini-Boss</u><br>{{floor|Womb}}{{floor|Utero}}{{"
-  ],
-  "doc_ids": [
-   "wiki://Lust"
-  ]
- },
- {
-  "id": 13,
-  "question": "Сколько у Исаака красных контейнеров здоровья по умолчанию?",
-  "type": "factual",
-  "answer_contexts": [
-   "{{header characters}} {{infobox character | id = 14 | health = {{hearts|red=3}} | pickups = 1 [[bomb]] | collectibles = {{unlockable}} {{i|The D6}} }} {{disambig msg|the character|the boss of [[The Cathedral]]|Isaac (Boss)}} '''Isaac''' is the main ["
-  ],
-  "doc_ids": [
-   "wiki://Isaac"
-  ]
- },
- {
-  "id": 14,
-  "question": "Какой базовый HP у минибосса Greed в Rebirth?",
-  "type": "factual",
-  "answer_contexts": [
-   "{{disambig msg|the boss|the game mode|Greed Mode}} {{infobox monster | id = 50 | image name = * {{dlc|nr|Rebirth}} | is mini-boss = yes | base hp = 60 | stage hp = {{dlcalt|15|r=20}} | environment = <u>Mini-Boss</u><br>{{room|shop}}{{room|secret}}<br"
-  ],
-  "doc_ids": [
-   "wiki://Greed"
-  ]
- },
- {
-  "id": 15,
-  "question": "Какой предмет Pride дропает с шансом 25%?",
-  "type": "factual",
-  "answer_contexts": [
-   "{{infobox monster | id = 52 | image name = * {{dlc|nr|Rebirth}} | is mini-boss = yes | base hp = 60 | stage hp = {{dlcalt|15|r=20}} | environment = <u>Mini-Boss</u><br>{{room|mini-boss}}<br><u>Degraded Mini-Boss</u><br>{{floor|Cathedral}} | pool = {{"
-  ],
-  "doc_ids": [
-   "wiki://Pride"
-  ]
- },
- {
   "id": 16,
-  "question": "Сравни Кейна и Юдифу по wiki: чем отличаются их старт, характеристики и предметы?",
+  "question": "Compare Hush and Mega Satan: which ending is Hush the final boss of, and where is Mega Satan fought?",
   "type": "composite",
   "answer_contexts": [
-   "{{header characters}} {{infobox character | id = 2 | health = {{hearts|red=2}} | damage = 3.5 (*1.20) | range = {{dlcalt|17.75|r=4.5}} | speed = 1.3 | pickups = 1 {{e|Key}}<br>{{dlc|a}} {{unlockable}} {{t|Paper Clip}} | collectibles = {{i|Lucky Foot}",
-   "{{header characters}} {{infobox character | id = 3 | health = {{heart|red}} | damage = 3.5 (*1.35) | pickups = 3 [[coin]]s | collectibles = {{i|The Book of Belial}} | unlocked by = Judas }} '''Judas''' is a [[character]] unlocked after beating {{E|Sa"
+   " | pool        = Final Boss Chest ([[Endings|Ending 17]], first kill only)<br>Gateway to {{s|Sheol}} / {{s|Cathedral}} <br>{{dlc+|a+}} Entrance to {{s|The Void}} {{dlc-}}\n | unlocked by = Blue Womb\n}}\n\n'''Hush''' is the [[boss]] of {{s|???}}, and the",
+   " | environment = <u>Boss</u><br>{{floor|Chest}}{{floor|Dark Room}}\n | base hp     = 5000\n | pool        = Final Boss Chest + Gateway to {{s|The Void}} ({{dlcalt|50% Chance, otherwise cuts directly to [[Endings|Ending 16]]|r+=100% chance, no longer cu"
   ],
   "doc_ids": [
-   "wiki://Cain",
-   "wiki://Judas"
+   "wiki://Hush",
+   "wiki://Mega Satan"
   ]
  },
  {
   "id": 17,
-  "question": "Что wiki говорит о Black Judas: в какой ситуации он появляется и каковы его характеристики?",
+  "question": "What is the difference between Hush the boss and Hushy the item?",
   "type": "composite",
   "answer_contexts": [
-   "{{header characters}} {{infobox character | id = 3 | health = {{heart|red}} | damage = 3.5 (*1.35) | pickups = 3 [[coin]]s | collectibles = {{i|The Book of Belial}} | unlocked by = Judas }} '''Judas''' is a [[character]] unlocked after beating {{E|Sa",
-   "{{infobox passive collectible | id = 311 | quote = Sweet revenge | description = Upon [[death]], respawns Isaac as {{c|Black Judas}} with two {{e|Black Heart}}s in the previous room. | quality = 3 | tags = nolostbr nocantrip nochallenge | devil price"
+   "'''Hush''' is the [[boss]] of {{s|???}}, and the final boss of [[Endings|Ending 17]].\n\n== Behavior ==\n=== Phase 1 ===\nHush begins with a fight identical to the first phase of the {{E|???}} fight, having the same attacks and behavior but with a differ",
+   " | description = Spawns a {{E|Hush|n}} [[familiar]] that bounces diagonally around the [[Rooms|room]] and deals contact damage. While firing tears, it stops moving. {{dlc|r+}} When stationary, Hushy will periodically fire out rings of projectiles.\n |"
   ],
   "doc_ids": [
-   "wiki://Judas",
-   "wiki://Judas' Shadow"
+   "wiki://Hush",
+   "wiki://Hushy"
   ]
  },
  {
   "id": 18,
-  "question": "Собери всё, что wiki говорит про Lazarus Risen: когда Лазарус воскрешается и как работает предмет Anemic?",
+  "question": "Which items do Judas and Cain start with and what does each of them do?",
   "type": "composite",
   "answer_contexts": [
-   "{{header characters}} {{infobox character | image name = * {{dlc|nr|Rebirth}} | id = 8 | health = {{hearts|red=3}} | range = {{dlcalt|17.75|r=4.5}} | luck = -1 | pickups = 1 [[pill]] | collectibles = {{dlc|a+}} {{unlockable}} {{i|Anemic}} | unlocked ",
-   "{{infobox passive collectible | image name = * {{dlc|na+|Rebirth}} | id = 214 | quote = Toxic blood | description = After Isaac is damaged, a trail of [[red creep]] will be left behind him until he leaves the current room. {{dlc+|nr}} +5 [[range]].{{"
+   " | collectibles = {{i|The Book of Belial}}\n | unlocked by  = Judas\n}}\n'''Judas''' is a [[character]] unlocked after beating {{E|Satan}} for the first time. He starts with 1 [[Red Heart container]], 3 {{e|Penny|text=coins}}, and {{i|The Book of Belial",
+   " | collectibles = {{i|Lucky Foot}}\n | unlocked by  = Cain\n}}\n'''Cain''' is a [[character]] unlocked by obtaining 55 or more [[coin]]s at once in a run. He starts with two [[Red Heart container]]s, one {{e|Key}}, and {{i|Lucky Foot}}.\n\n{{dlc|a}} Cain ",
+   " | description = {{dlc+|na}} +2 [[damage]] for the current [[Rooms|room]]. Passively guarantees a {{r|Devil Room}} or {{r|Angel Room}} will appear while held.{{dlc-}}<br>{{dlc+|a}} +2 [[damage]] for the current [[Rooms|room]]. Passively increases the",
+   " | description = +1 [[luck]]. Improves Isaac's chances at various random events (independent from the luck stat). {{dlc|r}} Converts all bad [[pill]]s into good pills, without identifying them.\n | quality     = 2\n | tags        = summonable offensive"
   ],
   "doc_ids": [
-   "wiki://Lazarus",
-   "wiki://Anemic"
+   "wiki://Judas",
+   "wiki://Cain",
+   "wiki://The Book of Belial",
+   "wiki://Lucky Foot"
   ]
  },
  {
   "id": 19,
-  "question": "Опиши по wiki, что такое Boss Rush и двумя какими способами он открывается?",
+  "question": "Which items does Eve start with, and what do they do?",
   "type": "composite",
   "answer_contexts": [
-   "The '''Boss Rush''' is an optional [[room]] that becomes available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}} ",
-   "{{infobox boss | id = 45 | appearance = (scale:1) | image name = * {{dlc|nr|Rebirth}} | environment = <u>Boss</u><br><u>Main path</u><br>{{floor|Depths}}{{floor|Necropolis}}{{floor|Dank Depths}}<br><u>Alternate path</u><br>{{floor|Mausoleum}}{{floor|"
-  ],
-  "doc_ids": [
-   "wiki://Boss Rush",
-   "wiki://Mom"
-  ]
- },
- {
-  "id": 20,
-  "question": "Какие предметы стартуют с Ив и как они работают согласно их страницам в wiki?",
-  "type": "composite",
-  "answer_contexts": [
-   "{{header characters}} {{infobox character | id = 5 | health = {{hearts|red=2}} | damage = 3.5 (*0.75)<br>(*1.00 at a Red Heart) | speed = 1.23 | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}} | ",
-   "{{infobox passive collectible | image name = * {{dlc|na+|Rebirth}} | id = 122 | costume name = * {{dlc|nr|Rebirth}} | quote = Curse up | description = Grants +1.5 [[Damage]] and +0.3 [[Speed]] whenever Isaac has a {{E|Half Red Heart}} or less. | qual",
-   "{{infobox passive collectible | id = 117 | quote = Protective buddy | description = After Isaac takes damage, spawns a flying [[familiar]] that chases enemies for the current [[Rooms|room]], dealing ~4 damage per second. {{dlc|r+}} As long as Isaac's"
+   " | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}}\n | unlocked by  = Eve\n | image name   = * {{dlc|nr|Rebirth}}\n}}\n'''Eve''' is a [[character]] unlocked by beating two floors in a row without col",
+   " | description  = Grants +1.5 [[Damage]] and +0.3 [[Speed]] whenever Isaac has a {{E|Half Red Heart}} or less.\n | quality      = 2\n | tags         = summonable offensive\n}}\n\n{{cit|p}}\n\n== Effects ==\n* Grants +1.5 [[Damage]] and +0.3 [[Speed]] wheneve",
+   " | description = Damages Isaac for one heart and grants +1.2 [[damage]] for the current [[room]]. {{dlc|r}} Subsequent uses in the same room only take half a heart.\n | quality     = 0\n | tags        = nolostbr {{dlc|r+|devilsacrifice}}\n | recharge   "
   ],
   "doc_ids": [
    "wiki://Eve",
    "wiki://Whore of Babylon",
-   "wiki://Dead Bird"
+   "wiki://Razor Blade"
+  ]
+ },
+ {
+  "id": 20,
+  "question": "How do Eve and Tainted Eve differ in starting items?",
+  "type": "composite",
+  "answer_contexts": [
+   " | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}}\n | unlocked by  = Eve\n | image name   = * {{dlc|nr|Rebirth}}\n}}\n'''Eve''' is a [[character]] unlocked by beating two floors in a row without col",
+   " | collectibles = {{i|Sumptorium}}\n | unlocked by = The Curdled\n}}\n'''Tainted Eve''' is a [[Characters|character]] added in [[The Binding of Isaac: Repentance]]. She is the alternate version of {{C|Eve}} with ragged hair, no bird, ruined mascara as i"
+  ],
+  "doc_ids": [
+   "wiki://Eve",
+   "wiki://Tainted Eve"
   ]
  },
  {
   "id": 21,
-  "question": "Чем мини-босс Greed отличается от режима Greed Mode по страницам wiki?",
+  "question": "How are Judas and Lilith unlocked?",
   "type": "composite",
   "answer_contexts": [
-   "{{disambig msg|the boss|the game mode|Greed Mode}} {{infobox monster | id = 50 | image name = * {{dlc|nr|Rebirth}} | is mini-boss = yes | base hp = 60 | stage hp = {{dlcalt|15|r=20}} | environment = <u>Mini-Boss</u><br>{{room|shop}}{{room|secret}}<br",
-   "{{page dlc | a }} '''Greed mode''' is a game mode introduced in ''[[The Binding of Isaac: Afterbirth]]''. == Gameplay == [[file:Greed Mode Layout.png|125px|right]] In Greed mode, each floor has a {{R|Curse Room}}, a {{R|Devil Room}}/{{R|Angel Room}},"
+   "'''Judas''' is a [[character]] unlocked after beating {{E|Satan}} for the first time. He starts with 1 [[Red Heart container]], 3 {{e|Penny|text=coins}}, and {{i|The Book of Belial}}. Judas also has a 1.35x damage multiplier.\n\n__TOC__\n{{clear}}\n\n== B",
+   "Lilith is unlocked by completing [[Greed mode]] with {{C|Azazel}}.\n\n== Notes ==\n* Lilith's Incubus cannot be rerolled.\n** The Incubus can be found as a separate item, and picking it up will grant Lilith another Incubus familiar.\n* {{dlc|r}} The Incub"
   ],
   "doc_ids": [
-   "wiki://Greed",
-   "wiki://Greed Mode"
+   "wiki://Judas",
+   "wiki://Lilith"
   ]
  },
  {
   "id": 22,
-  "question": "Что wiki говорит о минибоссах Envy и Lust: их поведение и что они дропают?",
+  "question": "Compare Mom and Mom's Heart: base HP and what they drop.",
   "type": "composite",
   "answer_contexts": [
-   "{{infobox monster | id = 51 | image name = * {{dlc|nr|Rebirth}} | is mini-boss = yes | base hp = {{dlcalt|60|a=40}} | stage hp = 7.5 | environment = <u>Mini-Boss</u><br>{{room|mini-boss}}<br><u>Degraded Mini-Boss</u><br>{{floor|Womb}}{{floor|Utero}}{",
-   "{{infobox monster | id = 47 | image name = * {{dlc|nr|Rebirth}} | is mini-boss = yes | base hp = 60 | stage hp = {{dlcalt|15|r=20}} | environment = <u>Mini-Boss</u><br>{{room|Mini-Boss}}<br><u>Degraded Mini-Boss</u><br>{{floor|Womb}}{{floor|Utero}}{{"
+   " | base hp     = 645\n | pool        = {{i|The Polaroid}} and {{i|The Negative}}<br>Random {{ip|Boss}} item if neither are unlocked<br>{{s|The Void}} Gateway if unlocked (5% Chance, requires +10 [[Damage]] or +20 Items)<br>Gateway to {{r|Boss Rush}} (",
+   " | base hp     = 950\n | pool        = End Chest ([[Endings|Endings 1-11]])<br>Gateway to {{s|The Void}} if unlocked (10% Chance)<br>Gateway to {{s|???}} (Time under 30:00 & Mom's Heart killed 10 times)\n | unlocked by = The Womb\n }}\n\n'''Mom's Heart'''"
   ],
   "doc_ids": [
-   "wiki://Envy",
-   "wiki://Lust"
+   "wiki://Mom",
+   "wiki://Mom's Heart"
   ]
  },
  {
   "id": 23,
-  "question": "Как карточка 0 - The Fool ведёт себя в обычной игре, в зеркальном измерении и при проклятии Maze?",
+  "question": "What time limits apply to opening the Boss Rush and the path to Hush?",
   "type": "composite",
   "answer_contexts": [
-   "{{header tarot cards}} {{Infobox card | name = 0 - The Fool | id = 1 | recharge = {{dlcalt|4|r=2}} | quote = Where journey begins | description = Teleports Isaac to the starting room of the current floor. }} {{cit|c}} == Effects == * Teleports Isaac "
+   "becomes available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}}\n\nIn the center of a large room, there will be 4 (",
+   "s 1-11]])<br>Gateway to {{s|The Void}} if unlocked (10% Chance)<br>Gateway to {{s|???}} (Time under 30:00 & Mom's Heart killed 10 times)\n | unlocked by = The Womb\n }}\n\n'''Mom's Heart''' is a [[boss]] that can appear on the second floor of [[Chapter 4"
   ],
   "doc_ids": [
-   "wiki://0 - The Fool"
+   "wiki://Boss Rush",
+   "wiki://Mom's Heart"
   ]
  },
  {
   "id": 24,
-  "question": "По страницам wiki, что дают боссы Satan и The Lamb в отношении доступа к The Void?",
+  "question": "Which is tougher on paper, Mega Satan or Ultra Greed? Compare base HP.",
   "type": "composite",
   "answer_contexts": [
-   "{{infobox boss | name = Satan | id = 84 | appearance = (scale:1) | environment = <u>Boss</u><br>{{floor|Sheol}}<br>{{floor|The Void}} | base hp = 1200 | pool = Final Boss Chest ([[Endings|Ending 12]], or {{s|Dark Room}} if Isaac has {{i|The Negative}",
-   "{{infobox boss | name = The Lamb | id = 273 | environment = <u>Boss</u><br>{{floor|Dark Room}}<br>{{floor|The Void}} | base hp = 2600 | pool = Final Boss Chest ([[Endings|Ending 15]])<br>Gateway to {{s|The Void}} ({{dlc|nr+}} 20% Chance) / ({{dlc|r+}"
+   " | base hp     = 5000\n | pool        = Final Boss Chest + Gateway to {{s|The Void}} ({{dlcalt|50% Chance, otherwise cuts directly to [[Endings|Ending 16]]|r+=100% chance, no longer cuts away}})\n | unlocked by = Angels\n}}\n\n'''Mega Satan''' is a [[boss",
+   " | base hp     = 3500\n | pool        = Final Boss Chest ([[Endings|Ending 18]])<br/>{{M|Greed Donation Machine}}\n}}\n\n'''Ultra Greed''' is the final [[boss]] of [[Greed Mode]] and [[Endings|Ending 18]].\n\n== Behavior ==\nUltra Greed is fought in a uniqu"
   ],
   "doc_ids": [
-   "wiki://Satan",
-   "wiki://The Lamb"
+   "wiki://Mega Satan",
+   "wiki://Ultra Greed"
   ]
  },
  {
   "id": 25,
-  "question": "Как по wiki эволюционировала система «100% прогона» от Rebirth до Repentance и что про это говорят достижения?",
+  "question": "What do the Missing Poster and Mysterious Paper trinkets do for unlocking The Lost?",
   "type": "composite",
   "answer_contexts": [
-   ": ''For save file completion images, see [[Savefile Images]]'' In terms of \"percentage\" of the game that is completed, the save file will show confusing values. This is because more items and unlocks were added incrementally over the lifetime of the ",
-   "{{Hatnote|For tips and strategies on completing achievements, see [[achievement tip]]s.}} '''Achievements''' are unlocked after completing [[Challenge]]s, reaching certain [[completion mark|milestones]], achieving hidden goals, or unlocking certain ["
+   " | description = {{dlc|na}} If Isaac dies to a {{r|Sacrifice Room}}'s spikes, a puzzle piece will appear on his [[Isaac's last will|last will]].<br>{{dlc|a}} Dying in a {{r|Sacrifice Room}} while holding it unlocks {{c|The Lost}}. If The Lost is alre",
+   " | description = Has a chance to replicate the effects of {{t|A Missing Page}}, {{i|The Polaroid}}, {{i|The Negative}}, or {{t|Missing Poster}}.\n | tags        = {{dlc|r+|nochallenge}}\n | unlocked by = Mysterious Paper\n}}\n\n{{cit|ut}}\n\n== Effects ==\n*",
+   "The Lost is unlocked by dying in a {{R|Sacrifice Room}} while holding {{t|Missing Poster}}.\n\n* In order to unlock The Lost, you need to unlock [[Missing Poster]].\n* {{t|Missing Poster}} is unlocked by defeating {{e|The Lamb}} as {{C|Isaac}}.\n\n* Looki"
   ],
   "doc_ids": [
-   "wiki://Save File Completion",
-   "wiki://Achievements"
+   "wiki://Missing Poster",
+   "wiki://Mysterious Paper",
+   "wiki://The Lost"
   ]
  },
  {
   "id": 26,
-  "question": "Что wiki говорит про Бетани: почему она не использует Soul Hearts и как работают её soul charges?",
+  "question": "How are Azazel and Lilith each unlocked?",
   "type": "composite",
   "answer_contexts": [
-   "{{header characters}} {{infobox character | dlc = r | id = 18 | health = {{hearts|red=3}} | pickups = 4 [[Soul Heart|soul charges]] | collectibles = {{i|Book of Virtues}} | unlocked by = Bethany }} '''Bethany''' is a [[character]] added in ''[[The Bi",
-   "{{infobox activated collectible | dlc = r | id = 584 | quote = Spiritual companionship | description = Passively causes active items to spawn themed orbital wisp [[familiar]]s on use, which fire tears and block shots. Can be activated to spawn a basi"
+   "'''Azazel''' is a [[character]] unlocked by making three {{R|Devil Room}} deals in one run. He starts with 3 {{E|Black Heart}}s, {{p|0 - The Fool}}, [[flight]], and a short-ranged version of {{i|Brimstone}} that deals damage {{dlcalt|13|r=9}} times i",
+   "Lilith is unlocked by completing [[Greed mode]] with {{C|Azazel}}.\n\n== Notes ==\n* Lilith's Incubus cannot be rerolled.\n** The Incubus can be found as a separate item, and picking it up will grant Lilith another Incubus familiar.\n* {{dlc|r}} The Incub"
   ],
   "doc_ids": [
-   "wiki://Bethany",
-   "wiki://Book of Virtues"
+   "wiki://Azazel",
+   "wiki://Lilith"
   ]
  },
  {
   "id": 27,
-  "question": "Сравни боссов Monstro и Delirium по wiki: HP, где они встречаются и что дают при убийстве?",
+  "question": "Which card does Azazel start with and what does it do?",
   "type": "composite",
   "answer_contexts": [
-   "{{infobox boss | name = Monstro | id = 20 | environment = <u>Boss</u><br>{{floor|Basement}}{{floor|Burning Basement}}<br>{{room|challenge}}{{room|boss challenge}}{{room|boss rush}}<br><u>Double Trouble</u><br>{{floor|Caves}}{{floor|Catacombs}}{{floor",
-   "{{infobox boss | dlc = a+ | id = 412 | environment = <u>Boss</u><br>{{floor|The Void}} | base hp = 10000 | pool = Final Boss Chest ([[Endings|Ending 20]]) }} '''Delirium''' is a [[boss]] added in ''[[The Binding of Isaac: Afterbirth †]]''. It is the "
+   " | pickups      = {{p|0 - The Fool}}\n | collectibles = Short range {{i|Brimstone}}<br>[[Flight]]\n | unlocked by  = Azazel\n}}\n'''Azazel''' is a [[character]] unlocked by making three {{R|Devil Room}} deals in one run. He starts with 3 {{E|Black Heart}",
+   "| description =          Teleports Isaac to the starting room of the current floor.\n}}\n\n{{cit|c}}\n\n== Effects ==\n* Teleports Isaac to the starting room of the current floor.\n\n== Notes ==\n* If the room teleported out of was hostile, it will be reset.\n"
   ],
   "doc_ids": [
-   "wiki://Monstro",
-   "wiki://Delirium"
+   "wiki://Azazel",
+   "wiki://0 - The Fool"
   ]
  },
  {
   "id": 28,
-  "question": "Что wiki говорит про IV Bag и Donation Machine: откуда берётся IV Bag и как они связаны?",
+  "question": "What is the final boss of Greed Mode and how much HP does it have?",
   "type": "composite",
   "answer_contexts": [
-   "{{infobox activated collectible | image name = * {{dlc|nr|Rebirth}} | id = 135 | quote = Portable blood bank | description = Damages Isaac and spawns a random amount of [[coins]], similar to a {{M|Blood Donation Machine}}. | quality = {{dlcalt|1|r+=2",
-   "{{infobox entity | name = Donation Machine | id = 6 | variant = 8 }} The '''Donation Machine''' is a type of machine that appears in almost every {{R|Shop}} as well as rarely spawning through {{R|Black Market}}s, {{e|Reward Plate|a|Reward Plates}}, {"
+   "'''Greed mode''' is a game mode introduced in ''[[The Binding of Isaac: Afterbirth]]''.\n\n== Gameplay ==\n[[file:Greed Mode Layout.png|125px|right]]\nIn Greed mode, each floor has a {{R|Curse Room}}, a {{R|Devil Room}}/{{R|Angel Room}}, a double-wide [[",
+   " | base hp     = 3500\n | pool        = Final Boss Chest ([[Endings|Ending 18]])<br/>{{M|Greed Donation Machine}}\n}}\n\n'''Ultra Greed''' is the final [[boss]] of [[Greed Mode]] and [[Endings|Ending 18]].\n\n== Behavior ==\nUltra Greed is fought in a uniqu"
   ],
   "doc_ids": [
-   "wiki://IV Bag",
-   "wiki://Donation Machine"
+   "wiki://Greed Mode",
+   "wiki://Ultra Greed"
   ]
  },
  {
   "id": 29,
-  "question": "По страницам wiki, что общего в геймплее Самсона и Ив — почему для обоих рекомендуют «жертвенные» механики?",
+  "question": "Which timed challenges give secrets for completion marks, and what is the Boss Rush time limit?",
   "type": "composite",
   "answer_contexts": [
-   "{{header characters}} {{infobox character | image name = * {{dlc|nr|Rebirth}} | id = 6 | health = {{hearts|red=3}} | tears = -0.1 | shot speed = 1.31 | range = {{dlcalt|18.75|r=5.0}} | speed = 1.1 | pickups = {{dlc|a+}} {{unlockable}} {{t|Child's Hea",
-   "{{header characters}} {{infobox character | id = 5 | health = {{hearts|red=2}} | damage = 3.5 (*0.75)<br>(*1.00 at a Red Heart) | speed = 1.23 | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}} | "
+   "acter]]s have different requirements for unlocking secrets. One secret each is unlocked for beating timed challenges ([[Boss Rush]] and [[Hush]]) and main path bosses ([[Isaac]], [[??? (Boss)|???]], [[Satan]], and [[The Lamb]]). There are no secrets ",
+   "becomes available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}}\n\nIn the center of a large room, there will be 4 ("
   ],
   "doc_ids": [
-   "wiki://Samson",
-   "wiki://Eve"
+   "wiki://Completion Marks",
+   "wiki://Boss Rush"
   ]
  },
  {
   "id": 30,
-  "question": "Собери по wiki все условия, когда достижения НЕ начисляются, и как это связано с Challenges?",
+  "question": "Compare The Lost and Keeper: how does each handle health?",
   "type": "composite",
   "answer_contexts": [
-   "{{Hatnote|For tips and strategies on completing achievements, see [[achievement tip]]s.}} '''Achievements''' are unlocked after completing [[Challenge]]s, reaching certain [[completion mark|milestones]], achieving hidden goals, or unlocking certain [",
-   "'''Challenges''' are unique runs in the game. Isaac typically starts each challenge with one or more specific items which makes normal play more difficult. With few exceptions, {{R|Treasure Room}}s are not available during challenges. Challenges are "
+   "The Lost starts with no health and cannot gain health by any means. It will die from any damage taken.\n\n* The Lost starts with [[flight]].\n** {{plat|3DS}} The Lost also starts with {{i|D4}} (if unlocked).\n** {{plat|iOS}} The Lost also starts with [[s",
+   "* {{dlc|r}} Keeper will start with 3 [[Coin Heart]]s instead of 2 after defeating {{E|Hush}} with Keeper. If Hush has not yet been beaten with him, Keeper can still gain one extra Coin Heart container with a Health Up.\n\n* {{dlc|r}} Instead of using ["
   ],
   "doc_ids": [
-   "wiki://Achievements",
-   "wiki://Challenges"
+   "wiki://The Lost",
+   "wiki://Keeper"
   ]
  },
  {
   "id": 31,
-  "question": "Какие основные категории страниц есть в этой вики (персонажи, предметы, боссы и т.д.)?",
+  "question": "What page categories exist for bosses on this wiki?",
   "type": "abstract",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 32,
-  "question": "Какая стандартная структура у статьи о предмете (какие секции по порядку)?",
+  "question": "How are the character pages structured, and which sections does each have?",
   "type": "abstract",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 33,
-  "question": "Что обозначают шаблоны вида {{dlc|...}} и {{dlcalt|...}} в тексте статей?",
+  "question": "What sections are typically present on a boss page (HP, phases, rewards), and how does that differ from an item page?",
   "type": "abstract",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 34,
-  "question": "Какие самые частые типы перекрёстных ссылок в wiki ({{i|}}, {{e|}}, {{s|}} и пр.)?",
+  "question": "How do pages link to each other for items and their pools?",
   "type": "abstract",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 35,
-  "question": "Какие параметры есть в infobox персонажа по сравнению с infobox предмета?",
+  "question": "Which pages in the corpus are disambiguation pages?",
   "type": "abstract",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 36,
-  "question": "Какие служебные страницы (redirects, disambiguation) есть в вики и почему это проблема для ретрива?",
+  "question": "How are tarot card pages organized?",
   "type": "abstract",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 37,
-  "question": "Какие основные этажи/локации игры упомянуты в wiki?",
+  "question": "What kinds of infobox templates occur most often across pages?",
   "type": "abstract",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 38,
-  "question": "Как организована многоязычная навигация в страницах (шаблоны nav и переводы)?",
+  "question": "How does the wiki organize different versions of a boss (for example Mom vs Tainted Mom): separate pages, sections of one page, or disambiguation?",
   "type": "abstract",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 39,
-  "question": "Что обычно содержится в секциях Notes и Trivia статей wiki?",
+  "question": "How is version history documented across the pages?",
   "type": "abstract",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 40,
-  "question": "Каких данных wiki НЕ содержит — например, цены, даты выхода, продажи?",
+  "question": "How do pages reference other game versions (Afterbirth, Repentance) - which notations and links are used?",
   "type": "abstract",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 41,
-  "question": "Как управляешь персонажем в Cuphead?",
+  "question": "What is the soundtrack composer's total revenue from Repentance?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 42,
-  "question": "Кто главный герой в игре Hades?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 43,
-  "question": "Сколько концовок в игре Dead Cells?",
+  "question": "Which Cuphead boss appears in the Isaac crossover DLC?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 44,
-  "question": "Кто написал музыку для The Binding of Isaac: Rebirth?",
+  "question": "What did the Dead Cells crossover add to Repentance?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 45,
-  "question": "Сколько стоит предмет IV Bag в магазине внутри игры?",
+  "question": "How much does Repentance cost on the Nintendo Switch eShop in Japan?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 46,
-  "question": "Сколько выручки Repentance принесла в первый день релиза?",
+  "question": "What did patch 2.4 of Repentance change about Mother's HP?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 47,
-  "question": "Какого нового персонажа добавило обновление Booster Pack #6?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 48,
-  "question": "Сколько копий Rebirth было продано к 2017 году?",
+  "question": "What is the Tainted Mom character's starting item?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 49,
-  "question": "Есть ли кросс-сейв между PC и PS4 версиями Rebirth?",
+  "question": "Which item was added in the Antibirth 2 expansion?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 50,
-  "question": "Кто озвучил персонажа Кейна в Rebirth?",
+  "question": "Which Stardew Valley villager gives Isaac a trinket?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []

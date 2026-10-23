@@ -5,3 +5,4 @@ datasketch
 scikit-learn
 aiohttp
 openai
+numpy

@@ -1,11 +1,12 @@
 """EDA корпуса: распределение длин (гистограмма), доля мусорных токенов, дубликаты (MinHash).
 
-Результат: reports/kt1/lengths_hist.png + reports/kt1/summary.json
+Результат: reports/kt1/lengths_hist.png + сводка в stdout.
 Запуск: python src/eda.py
 """
 import json
 import re
 
+import numpy as np
 import pandas as pd
 from datasketch import MinHash, MinHashLSH
 
@@ -48,11 +49,14 @@ def run():
     corpus = with_tokens(load_corpus())
     assert_minima(corpus)
 
-    corpus["n_tokens"].clip(upper=5000).hist(bins=60, log=True, figsize=(10, 4))
+    vals = corpus["n_tokens"]
+    bins = np.logspace(np.log10(vals.min()), np.log10(vals.max()), 45)  # лог-бины: равная ширина в log-шкале
+    vals.hist(bins=bins, figsize=(10, 4))
     plt.axvline(50, color="r", ls="--", label="<50 токенов")
     plt.axvline(2000, color="orange", ls="--", label=">2000 токенов")
     plt.xscale("log")
     plt.xlabel("длина, токены (log)")
+    plt.ylabel("число документов")
     plt.title("Распределение длин документов")
     plt.legend()
     plt.tight_layout()
@@ -81,7 +85,6 @@ def run():
         "smallest": corpus.nsmallest(4, "n_tokens")[["title", "n_tokens"]].to_dict("records"),
         "largest": corpus.nlargest(5, "n_tokens")[["title", "n_tokens"]].to_dict("records"),
     }
-    (OUT / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1), encoding="utf-8")
     print(json.dumps(summary, ensure_ascii=False, indent=1))
     return summary
 
