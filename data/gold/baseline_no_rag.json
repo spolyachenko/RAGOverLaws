@@ -1,0 +1,128 @@
+[
+ {
+  "id": 51,
+  "type": "abstract",
+  "question": "What does d6 spindown to?",
+  "answer": "\n\nНе знаю.",
+  "latency_s": 19.04
+ },
+ {
+  "id": 17,
+  "type": "composite",
+  "question": "What is the difference between Hush the boss and Hushy the item?",
+  "answer": "\n\n**Hush (босс):** Босс в Шеоле (Sheol). Крупное тёмное существо с несколькими фазами атак.\n\n**Hushy (предмет):** Пассивный предмет. Делает слёзы меньше и быстрее, но с уменьшенным уроном.\n\nКороче: один — босс, которого надо убить; другой — предмет, который меняет характеристики твоих слёз.",
+  "latency_s": 26.83
+ },
+ {
+  "id": 20,
+  "type": "composite",
+  "question": "How do Eve and Tainted Eve differ?",
+  "answer": "\n\n**Eve:** 1 сердце + 1 сердце души. Пассивка: не получает урон от Lamb.\n\n**Tainted Eve:** 1 сердце + 1 сердце души. Пассивка: при убийстве Lamb получает случайный предмет.\n\nЕсли что-то из пассивок я перепутал — не знаю точно, но основные различия именно в пассивных эффектах, а не в статах.",
+  "latency_s": 92.86
+ },
+ {
+  "id": 37,
+  "type": "abstract",
+  "question": "What kinds of infobox templates occur most often across pages?",
+  "answer": "\n\nНе знаю.",
+  "latency_s": 12.66
+ },
+ {
+  "id": 54,
+  "type": "factual",
+  "question": "According to the wiki, how many waves does the Boss Rush consist of, how many bosses are in each wave, and what are the exact time limits and floors for unlocking it?",
+  "answer": "\n\nBoss Rush в Repentance:\n\n- **Волны:** 3\n- **Боссов в каждой волне:** 3\n- **Время на волну:** 30 секунд\n- **Этаж:** Подвал (Basement)\n\nЕсли в Repentance были какие-то точные изменения тайм-лимитов или условий появления, которые я не помню — не знаю.",
+  "latency_s": 26.1
+ },
+ {
+  "id": 62,
+  "type": "negative",
+  "question": "According to the wiki, which new items and trinkets did the Booster Pack #6 update add, and in which shop locations do they appear?",
+  "answer": "\n\nНе знаю.",
+  "latency_s": 17.52
+ },
+ {
+  "id": 34,
+  "type": "abstract",
+  "question": "How do pages link to each other for items and their pools?",
+  "answer": "\n\nНа вики (Isaac Wiki) страницы предметов и пулов связаны перекрёстными ссылками: на странице предмета в разделе «Pools» (или «Found in») указаны пулы, в которых он встречается, со ссылками на страницы пулов. На странице пула, в свою очередь, перечислены все предметы этого пула со ссылками на их страницы. Связь двусторонняя через обычные вики-ссылки.",
+  "latency_s": 19.39
+ },
+ {
+  "id": 52,
+  "type": "factual",
+  "question": "According to the wiki, what is Delirium's boss id and base HP, in which room does he appear, and from what chest does he drop?",
+  "answer": "\n\nНе знаю точных значений (ID босса, базовый HP, конкретный тип сундука) с уверенностью. По моим воспоминаниям:\n\n- **Boss ID:** 1000\n- **Base HP:** 100\n- **Комната:** Caves (замещает обычного босса пещер)\n- **Сундук:** Cursed Chest\n\nНо я не гарантирую точность каждого числа — если нужна стопроцентная точность, лучше свериться с wiki напрямую.",
+  "latency_s": 39.75
+ },
+ {
+  "id": 53,
+  "type": "factual",
+  "question": "List every floor and room where Monstro can appear according to the wiki, including the special variants (Double Trouble, Degraded Boss).",
+  "answer": "",
+  "latency_s": 20.2
+ },
+ {
+  "id": 14,
+  "type": "factual",
+  "question": "What is the item ID of The D6?",
+  "answer": "\n\nНе знаю.",
+  "latency_s": 9.75
+ },
+ {
+  "id": 63,
+  "type": "negative",
+  "question": "Which Sonic the Hedgehog character appears in the Womb according to the wiki, and what item does he drop?",
+  "answer": "\n\nНе знаю.",
+  "latency_s": 8.0
+ },
+ {
+  "id": 18,
+  "type": "composite",
+  "question": "Which items do Judas and Cain start with and what does each of them do?",
+  "answer": "\n\n**Иуда** начинает с **The Mark** (Печать): слёзы наносят +50% урона первому поражённому врагу, но −50% урона последующим врагам, задетым тем же выстрелом.\n\n**Кайн** начинает с **The Latchkey** (Ключ): открывает случайную комнату на текущем этаже.",
+  "latency_s": 29.06
+ },
+ {
+  "id": 45,
+  "type": "negative",
+  "question": "How much does Repentance cost on the Nintendo Switch eShop in Japan?",
+  "answer": "\n\nНе знаю точную актуальную цену. Рекомендую проверить напрямую в eShop Nintendo Switch (регион Japan) — цена может меняться.",
+  "latency_s": 9.18
+ },
+ {
+  "id": 21,
+  "type": "composite",
+  "question": "How are Judas and Lilith unlocked?",
+  "answer": "\n\n**Judas** — убить Hush в подвале (basement).\n**Lilith** — убить Satan в подвале.",
+  "latency_s": 9.91
+ },
+ {
+  "id": 23,
+  "type": "composite",
+  "question": "What time limits apply to opening the Boss Run and the path ????",
+  "answer": "\n\nНе знаю. В Repentance у Boss Run нет какого-либо таймера или временного ограничения на открытие — это просто особый тип комнаты, случайно появляющийся в подвальных уровнях. Что касается пути «????» — не знаю, что именно имеется в виду; такого названия комнаты/пути в игре не припоминаю.",
+  "latency_s": 20.66
+ },
+ {
+  "id": 38,
+  "type": "abstract",
+  "question": "How does the wiki organize different versions of a boss (for example Mom vs Tainted Mom): separate pages, sections of one page, or disambiguation?",
+  "answer": "\n\nОтдельные страницы. У каждого варианта босса (Mom, Tainted Mom, Mom's Lil' Head и т. д.) своя страница.",
+  "latency_s": 8.06
+ },
+ {
+  "id": 15,
+  "type": "factual",
+  "question": "How do I unlock Azazel?",
+  "answer": "\n\nПобедите финального босса (HIM).",
+  "latency_s": 8.12
+ },
+ {
+  "id": 10,
+  "type": "factual",
+  "question": "Which character starts with the Incubus familiar?",
+  "answer": "\n\nНе знаю.",
+  "latency_s": 16.87
+ }
+]

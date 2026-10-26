@@ -23,8 +23,8 @@ requirements.txt
 | Данные | Что |
 |---|---|
 | `data/corpus.jsonl` | Корпус: **вся вики The Binding of Isaac: Rebirth** (1776 страниц, 2.19M токенов, сырой wikitext). 1661 служебная redirect-страница отбрасывается. |
-| `data/gold/gold_full.json` | Золотой набор: **48** вопросов (v2: 15 факт / 15 составной / 10 абстрактных / 8 негативных), с `doc_ids` и вербальными цитатами. Сгенерирован по `prompts/gold_prompt.md`, верифицирован `build_gold_v2.py` против корпуса. |
-| `data/gold/gold_val.json` / `gold_test.json` / `baseline_no_rag.json` | Регенерируются по требованию: `python src/gold.py split`, `python src/baseline.py` |
+| `data/gold/gold_full.json` | Золотой набор: **60** вопросов (v2: 19 факт / 18 составной / 13 абстрактных / 10 негативных), вербальные цитаты из wikitext. Сгенерирован по `prompts/gold_prompt.md`, верифицирован `build_gold_v2.py` против корпуса. |
+| `data/gold/gold_val.json` / `gold_test.json` / `baseline_no_rag.json` | Split 42/18 и baseline (18 ответов LLM без контекста) — регенерируются: `python src/gold.py split`, `python src/baseline.py` |
 
 ## Запуск
 
@@ -57,17 +57,17 @@ Redirect-страницы `#REDIRECT` и страницы <40 символов �
 
 ## Золотой набор
 
-В2: 48 вопросов, сгенерированы нормальной моделью по `prompts/gold_prompt.md` (дёрфт в
-`gold_draft_v2.json`), верифицированы `build_gold_v2.py` против корпуса: цитаты — вербальные
-подстрочники wikitext (assert), doc_ids — точные заголовки страниц, негативы — grep по
-корпусу (2 негатива отклонены как "есть в корпусе": Slay the Spire, Celeste — см.
-`gold_out_v2.json`). Баланс: 15/15/10/8. Три abstract-вопроса (id 33, 38, 40) поправлены вручную
-(id=40 был невалиден: Talk-страницы в корпусе отсутствуют), split и baseline регенерируются скриптами.
+В2: 60 вопросов (лимит ТЗ 40–60). Пайплайн: модель по `prompts/gold_prompt.md` →
+`gold_draft_v2.json` → автостроитель `build_gold_v2.py` (вербальные цитаты assert'ятся как
+подстроки wikitext, doc_ids — точные заголовки, негативы — grep по корпусу; 2 негатива
+отклонены как «есть в корпусе») → ручная правка 3 abstract (id 33/38/40) → 11 long-form
+вопросов (id 52–63). Баланс: 19/18/13/10. Валидация: `python src/gold.py check`.
 
 ## Выводы (кратко, подробно в `reports/kt1/otchet_kt1.md`)
 
 - Средний документ 1231 токен, медиана 688; 246 страниц >2000 (метасводки), 4 страницы <50 (hotfix/аббрев).
 - Основной шум — разметка `{{}}`/`[[ ]]` (спецсимволы 11.5%), а не эмодзи (0%).
 - Точных дублей 0, near-dup (Jaccard ≥ 0.7) — 84 страницы (версии страниц, bestiary-сводки, hotfix).
-- Baseline (локальная Qwen3.8-27B без контекста): «не знаю» на 14/15 test-вопросов (factual 4/4,
-  composite 5/5, abstract 3/3, negative 2/3). RAG по вики обязателен.
+- Baseline (локальная Qwen3.8-27B без контекста): «не знаю» на 11/18 test-вопросов (factual 4/6,
+  composite 2/5, abstract 2/4, negative 3/3); остальное — параметрические знания об игре, не
+  привязанные к корпусу. RAG по вики обязателен.

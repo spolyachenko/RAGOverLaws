@@ -32,10 +32,21 @@ def run():
         test = json.load(open(GOLD_TEST, encoding="utf-8"))
         results = []
         for g in test:
-            t0 = time.time()
-            r = client.chat.completions.create(model=model, temperature=0,
-                                               messages=[{"role": "user", "content": PROMPT.format(q=g["question"])}])
-            results.append({"id": g["id"], "type": g["type"], "answer": r.choices[0].message.content,
+            r = None
+            for a in range(3):  # ретрай на вопрос: один 500 не рвёт весь прогон
+                t0 = time.time()
+                try:
+                    r = client.chat.completions.create(model=model, temperature=0,
+                                                       messages=[
+                                                            {"role": "system", "content": "Context: game is The binding of isaac: repentance"},
+                                                            {"role": "user", "content": PROMPT.format(q=g["question"])}])
+                    break
+                except Exception:
+                    if a == 2:
+                        raise
+                    time.sleep(3)
+            results.append({"id": g["id"], "type": g["type"], "question": g["question"],
+                            "answer": r.choices[0].message.content,
                             "latency_s": round(time.time() - t0, 2)})
             print(f"[{g['id']}] ({g['type']}) {g['question'][:60]} -> {results[-1]['answer'][:80]}")
         BASELINE_OUT.write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")

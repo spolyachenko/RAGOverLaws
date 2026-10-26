@@ -1,0 +1,432 @@
+[
+ {
+  "id": 50,
+  "question": "Which Stardew Valley villager gives Isaac a trinket?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 31,
+  "question": "What page categories exist for bosses on this wiki?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 42,
+  "question": "Which Cuphead boss appears in the Isaac crossover DLC?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 55,
+  "question": "Describe the floor layout of Greed Mode per the wiki: which rooms connect to the main arena, and how are the sixth floor and the final seventh floor different?",
+  "type": "factual",
+  "answer_contexts": [
+   "In Greed mode, each floor has a {{R|Curse Room}}, a {{R|Devil Room}}/{{R|Angel Room}}, a double-wide [[#Shop|Shop]], and an exit room all connected to a main double-height arena room with a [[button]] in the center.",
+   "The sixth floor (The Shop) does not have any Treasure Rooms but does have the Shop and Curse Rooms. The final seventh floor has no waves and contains only three rooms, the largest of which contains the game mode's [[Ultra Greed|final boss]].\n\nWhen pl"
+  ],
+  "doc_ids": [
+   "wiki://Greed Mode"
+  ]
+ },
+ {
+  "id": 9,
+  "question": "Which item does Cain start with?",
+  "type": "factual",
+  "answer_contexts": [
+   " | collectibles = {{i|Lucky Foot}}\n | unlocked by  = Cain\n}}\n'''Cain''' is a [[character]] unlocked by obtaining 55 or more [[coin]]s at once in a run. He starts with two [[Red Heart container]]s, one {{e|Key}}, and {{i|Lucky Foot}}.\n\n{{dlc|a}} Cain "
+  ],
+  "doc_ids": [
+   "wiki://Cain"
+  ]
+ },
+ {
+  "id": 11,
+  "question": "How do I unlock Eve?",
+  "type": "factual",
+  "answer_contexts": [
+   "'''Eve''' is a [[character]] unlocked by beating two floors in a row without collecting any heart pickups. She starts with two [[Red Heart container]]s, {{i|Whore of Babylon}}, and {{i|Dead Bird}}.\n* {{dlc+|a}} Eve will also start with {{i|Razor Blad"
+  ],
+  "doc_ids": [
+   "wiki://Eve"
+  ]
+ },
+ {
+  "id": 60,
+  "question": "Describe the overall structure of this wiki: what are the main categories of pages (characters, items, bosses, modes, meta), how are they organized, and how do pages cross-reference each other?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 58,
+  "question": "What is the connection between Delirium and Ending 20: per both pages, what does defeating him unlock and what does he drop as a reward?",
+  "type": "composite",
+  "answer_contexts": [
+   "'''Delirium''' is a [[boss]] added in ''[[The Binding of Isaac: Afterbirth †]]''. It is the main boss of {{s|The Void}} and the final boss of [[Endings#Ending 20/Final Ending|Ending 20]].",
+   "Ending 20 is unlocked by completing {{s|The Void}}, defeating {{e|Delirium}}.{{dlc-}}"
+  ],
+  "doc_ids": [
+   "wiki://Delirium",
+   "wiki://Endings"
+  ]
+ },
+ {
+  "id": 22,
+  "question": "Compare it livse and Mom's Heart.",
+  "type": "composite",
+  "answer_contexts": [
+   " | base hp     = 645\n | pool        = {{i|The Polaroid}} and {{i|The Negative}}<br>Random {{ip|Boss}} item if neither are unlocked<br>{{s|The Void}} Gateway if unlocked (5% Chance, requires +10 [[Damage]] or +20 Items)<br>Gateway to {{r|Boss Rush}} (",
+   " | base hp     = 950\n | pool        = End Chest ([[Endings|Endings 1-11]])<br>Gateway to {{s|The Void}} if unlocked (10% Chance)<br>Gateway to {{s|???}} (Time under 30:00 & Mom's Heart killed 10 times)\n | unlocked by = The Womb\n }}\n\n'''Mom's Heart'''"
+  ],
+  "doc_ids": [
+   "wiki://Mom",
+   "wiki://Mom's Heart"
+  ]
+ },
+ {
+  "id": 29,
+  "question": "Which timed challenges give secrets for completion marks, and what is the Boss Rush time limit?",
+  "type": "composite",
+  "answer_contexts": [
+   "acter]]s have different requirements for unlocking secrets. One secret each is unlocked for beating timed challenges ([[Boss Rush]] and [[Hush]]) and main path bosses ([[Isaac]], [[??? (Boss)|???]], [[Satan]], and [[The Lamb]]). There are no secrets ",
+   "becomes available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}}\n\nIn the center of a large room, there will be 4 ("
+  ],
+  "doc_ids": [
+   "wiki://Completion Marks",
+   "wiki://Boss Rush"
+  ]
+ },
+ {
+  "id": 2,
+  "question": "What need to do to unlock The Lost?",
+  "type": "factual",
+  "answer_contexts": [
+   "The Lost is unlocked by dying in a {{R|Sacrifice Room}} while holding {{t|Missing Poster}}.\n\n* In order to unlock The Lost, you need to unlock [[Missing Poster]].\n* {{t|Missing Poster}} is unlocked by defeating {{e|The Lamb}} as {{C|Isaac}}.\n\n* Looki"
+  ],
+  "doc_ids": [
+   "wiki://The Lost"
+  ]
+ },
+ {
+  "id": 36,
+  "question": "How are tarot card pages organized?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 1,
+  "question": "How do unlock Cain?",
+  "type": "factual",
+  "answer_contexts": [
+   "'''Cain''' is a [[character]] unlocked by obtaining 55 or more [[coin]]s at once in a run. He starts with two [[Red Heart container]]s, one {{e|Key}}, and {{i|Lucky Foot}}.\n\n{{dlc|a}} Cain also starts with {{t|Paper Clip}} after 68 coins have been do"
+  ],
+  "doc_ids": [
+   "wiki://Cain"
+  ]
+ },
+ {
+  "id": 35,
+  "question": "Which pages in the corpus are disambiguation pages?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 6,
+  "question": "how do you unlock tainted eve",
+  "type": "factual",
+  "answer_contexts": [
+   "ted Eve is unlocked by reaching {{s|Home}} and using the {{I|Red Key}}, {{P|Cracked Key}}, or {{P|1=Soul of Cain}} to access a special room in one of the walls while playing as Eve.\n\nTainted Eve starts with 2 red hearts, and possesses the lowest base"
+  ],
+  "doc_ids": [
+   "wiki://Tainted Eve"
+  ]
+ },
+ {
+  "id": 41,
+  "question": "What is the soundtrack composer's total revenue from Repentance?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 27,
+  "question": "Which card does Azazel start with and what does it do?",
+  "type": "composite",
+  "answer_contexts": [
+   " | pickups      = {{p|0 - The Fool}}\n | collectibles = Short range {{i|Brimstone}}<br>[[Flight]]\n | unlocked by  = Azazel\n}}\n'''Azazel''' is a [[character]] unlocked by making three {{R|Devil Room}} deals in one run. He starts with 3 {{E|Black Heart}",
+   "| description =          Teleports Isaac to the starting room of the current floor.\n}}\n\n{{cit|c}}\n\n== Effects ==\n* Teleports Isaac to the starting room of the current floor.\n\n== Notes ==\n* If the room teleported out of was hostile, it will be reset.\n"
+  ],
+  "doc_ids": [
+   "wiki://Azazel",
+   "wiki://0 - The Fool"
+  ]
+ },
+ {
+  "id": 46,
+  "question": "What did patch 2.4 of Repentance change about Mother's HP?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 25,
+  "question": "What do the Missing Poster and Mysterious Paper trinkets do?",
+  "type": "composite",
+  "answer_contexts": [
+   " | description = {{dlc|na}} If Isaac dies to a {{r|Sacrifice Room}}'s spikes, a puzzle piece will appear on his [[Isaac's last will|last will]].<br>{{dlc|a}} Dying in a {{r|Sacrifice Room}} while holding it unlocks {{c|The Lost}}. If The Lost is alre",
+   " | description = Has a chance to replicate the effects of {{t|A Missing Page}}, {{i|The Polaroid}}, {{i|The Negative}}, or {{t|Missing Poster}}.\n | tags        = {{dlc|r+|nochallenge}}\n | unlocked by = Mysterious Paper\n}}\n\n{{cit|ut}}\n\n== Effects ==\n*",
+   "The Lost is unlocked by dying in a {{R|Sacrifice Room}} while holding {{t|Missing Poster}}.\n\n* In order to unlock The Lost, you need to unlock [[Missing Poster]].\n* {{t|Missing Poster}} is unlocked by defeating {{e|The Lamb}} as {{C|Isaac}}.\n\n* Looki"
+  ],
+  "doc_ids": [
+   "wiki://Missing Poster",
+   "wiki://Mysterious Paper",
+   "wiki://The Lost"
+  ]
+ },
+ {
+  "id": 19,
+  "question": "Which items does Eve start with, and what do they do?",
+  "type": "composite",
+  "answer_contexts": [
+   " | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}}\n | unlocked by  = Eve\n | image name   = * {{dlc|nr|Rebirth}}\n}}\n'''Eve''' is a [[character]] unlocked by beating two floors in a row without col",
+   " | description  = Grants +1.5 [[Damage]] and +0.3 [[Speed]] whenever Isaac has a {{E|Half Red Heart}} or less.\n | quality      = 2\n | tags         = summonable offensive\n}}\n\n{{cit|p}}\n\n== Effects ==\n* Grants +1.5 [[Damage]] and +0.3 [[Speed]] wheneve",
+   " | description = Damages Isaac for one heart and grants +1.2 [[damage]] for the current [[room]]. {{dlc|r}} Subsequent uses in the same room only take half a heart.\n | quality     = 0\n | tags        = nolostbr {{dlc|r+|devilsacrifice}}\n | recharge   "
+  ],
+  "doc_ids": [
+   "wiki://Eve",
+   "wiki://Whore of Babylon",
+   "wiki://Razor Blade"
+  ]
+ },
+ {
+  "id": 44,
+  "question": "What did the Dead Cells crossover add to Repentance?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 49,
+  "question": "Which item was added in the Antibirth 2 expansion?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 5,
+  "question": "Who is Mega Satan's base HP?",
+  "type": "factual",
+  "answer_contexts": [
+   " | base hp     = 5000\n | pool        = Final Boss Chest + Gateway to {{s|The Void}} ({{dlcalt|50% Chance, otherwise cuts directly to [[Endings|Ending 16]]|r+=100% chance, no longer cuts away}})\n | unlocked by = Angels\n}}\n\n'''Mega Satan''' is a [[boss"
+  ],
+  "doc_ids": [
+   "wiki://Mega Satan"
+  ]
+ },
+ {
+  "id": 7,
+  "question": "What is Tainted Eve's starting item?",
+  "type": "factual",
+  "answer_contexts": [
+   " | collectibles = {{i|Sumptorium}}\n | unlocked by = The Curdled\n}}\n'''Tainted Eve''' is a [[Characters|character]] added in [[The Binding of Isaac: Repentance]]. She is the alternate version of {{C|Eve}} with ragged hair, no bird, ruined mascara as i"
+  ],
+  "doc_ids": [
+   "wiki://Tainted Eve"
+  ]
+ },
+ {
+  "id": 28,
+  "question": "What is the final boss of Gread Mode and how much HPit have?",
+  "type": "composite",
+  "answer_contexts": [
+   "'''Greed mode''' is a game mode introduced in ''[[The Binding of Isaac: Afterbirth]]''.\n\n== Gameplay ==\n[[file:Greed Mode Layout.png|125px|right]]\nIn Greed mode, each floor has a {{R|Curse Room}}, a {{R|Devil Room}}/{{R|Angel Room}}, a double-wide [[",
+   " | base hp     = 3500\n | pool        = Final Boss Chest ([[Endings|Ending 18]])<br/>{{M|Greed Donation Machine}}\n}}\n\n'''Ultra Greed''' is the final [[boss]] of [[Greed Mode]] and [[Endings|Ending 18]].\n\n== Behavior ==\nUltra Greed is fought in a uniqu"
+  ],
+  "doc_ids": [
+   "wiki://Greed Mode",
+   "wiki://Ultra Greed"
+  ]
+ },
+ {
+  "id": 30,
+  "question": "Compare The Lost and Keeper: how does each handle health?",
+  "type": "composite",
+  "answer_contexts": [
+   "The Lost starts with no health and cannot gain health by any means. It will die from any damage taken.\n\n* The Lost starts with [[flight]].\n** {{plat|3DS}} The Lost also starts with {{i|D4}} (if unlocked).\n** {{plat|iOS}} The Lost also starts with [[s",
+   "* {{dlc|r}} Keeper will start with 3 [[Coin Heart]]s instead of 2 after defeating {{E|Hush}} with Keeper. If Hush has not yet been beaten with him, Keeper can still gain one extra Coin Heart container with a Health Up.\n\n* {{dlc|r}} Instead of using ["
+  ],
+  "doc_ids": [
+   "wiki://The Lost",
+   "wiki://Keeper"
+  ]
+ },
+ {
+  "id": 4,
+  "question": "Who is Hush?",
+  "type": "factual",
+  "answer_contexts": [
+   " | pool        = Final Boss Chest ([[Endings|Ending 17]], first kill only)<br>Gateway to {{s|Sheol}} / {{s|Cathedral}} <br>{{dlc+|a+}} Entrance to {{s|The Void}} {{dlc-}}\n | unlocked by = Blue Womb\n}}\n\n'''Hush''' is the [[boss]] of {{s|???}}, and the"
+  ],
+  "doc_ids": [
+   "wiki://Hush"
+  ]
+ },
+ {
+  "id": 12,
+  "question": "What does The Fool card do when used?",
+  "type": "factual",
+  "answer_contexts": [
+   "| description =          Teleports Isaac to the starting room of the current floor.\n}}\n\n{{cit|c}}\n\n== Effects ==\n* Teleports Isaac to the starting room of the current floor.\n\n== Notes ==\n* If the room teleported out of was hostile, it will be reset.\n"
+  ],
+  "doc_ids": [
+   "wiki://0 - The Fool"
+  ]
+ },
+ {
+  "id": 26,
+  "question": "How are Azazel and Lilith each unlocked?",
+  "type": "composite",
+  "answer_contexts": [
+   "'''Azazel''' is a [[character]] unlocked by making three {{R|Devil Room}} deals in one run. He starts with 3 {{E|Black Heart}}s, {{p|0 - The Fool}}, [[flight]], and a short-ranged version of {{i|Brimstone}} that deals damage {{dlcalt|13|r=9}} times i",
+   "Lilith is unlocked by completing [[Greed mode]] with {{C|Azazel}}.\n\n== Notes ==\n* Lilith's Incubus cannot be rerolled.\n** The Incubus can be found as a separate item, and picking it up will grant Lilith another Incubus familiar.\n* {{dlc|r}} The Incub"
+  ],
+  "doc_ids": [
+   "wiki://Azazel",
+   "wiki://Lilith"
+  ]
+ },
+ {
+  "id": 59,
+  "question": "Which item pool do the Boss Rush items come from according to the two pages, what happens to the remaining items once one is picked up, and what extra reward does completing it give?",
+  "type": "composite",
+  "answer_contexts": [
+   "In the center of a large room, there will be 4 ({{dlc|a}} 2 or 4 / {{dlc|a+}} 2, 4 or 8) random [[items]] to choose from, which are picked from the {{ip|Treasure Room|text=Treasure Room item pool}}.",
+   "or Item Room, is a room that contains items from the {{ip|Treasure Room|text=Treasure Room item pool}}. They appear in [[chapters]] 1, 2, and 3 (and 4 if Isaac holds {{t|Bloody Crown}}, 5 with {{t|Holy Crown}} or {{t|Wicked Crown}}). Two also appear "
+  ],
+  "doc_ids": [
+   "wiki://Boss Rush",
+   "wiki://Treasure Room"
+  ]
+ },
+ {
+  "id": 33,
+  "question": "What sections are typically present on a boss page (HP, phases, rewards), and how does that differ from an item page?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 13,
+  "question": "What is Ultra Greed's base HP?",
+  "type": "factual",
+  "answer_contexts": [
+   " | base hp     = 3500\n | pool        = Final Boss Chest ([[Endings|Ending 18]])<br/>{{M|Greed Donation Machine}}\n}}\n\n'''Ultra Greed''' is the final [[boss]] of [[Greed Mode]] and [[Endings|Ending 18]].\n\n== Behavior ==\nUltra Greed is fought in a uniqu"
+  ],
+  "doc_ids": [
+   "wiki://Ultra Greed"
+  ]
+ },
+ {
+  "id": 47,
+  "question": "What is the Tainted Mom character's starting item?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 39,
+  "question": "How is version history documented across the pages?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 16,
+  "question": "Compare Hush and Mega Satan: which ending is Hush the final boss of, and where is Mega Satan fought?",
+  "type": "composite",
+  "answer_contexts": [
+   " | pool        = Final Boss Chest ([[Endings|Ending 17]], first kill only)<br>Gateway to {{s|Sheol}} / {{s|Cathedral}} <br>{{dlc+|a+}} Entrance to {{s|The Void}} {{dlc-}}\n | unlocked by = Blue Womb\n}}\n\n'''Hush''' is the [[boss]] of {{s|???}}, and the",
+   " | environment = <u>Boss</u><br>{{floor|Chest}}{{floor|Dark Room}}\n | base hp     = 5000\n | pool        = Final Boss Chest + Gateway to {{s|The Void}} ({{dlcalt|50% Chance, otherwise cuts directly to [[Endings|Ending 16]]|r+=100% chance, no longer cu"
+  ],
+  "doc_ids": [
+   "wiki://Hush",
+   "wiki://Mega Satan"
+  ]
+ },
+ {
+  "id": 24,
+  "question": "Which is tougher on paper, Mega Satan or Ultra Greed? Compare base HP.",
+  "type": "composite",
+  "answer_contexts": [
+   " | base hp     = 5000\n | pool        = Final Boss Chest + Gateway to {{s|The Void}} ({{dlcalt|50% Chance, otherwise cuts directly to [[Endings|Ending 16]]|r+=100% chance, no longer cuts away}})\n | unlocked by = Angels\n}}\n\n'''Mega Satan''' is a [[boss",
+   " | base hp     = 3500\n | pool        = Final Boss Chest ([[Endings|Ending 18]])<br/>{{M|Greed Donation Machine}}\n}}\n\n'''Ultra Greed''' is the final [[boss]] of [[Greed Mode]] and [[Endings|Ending 18]].\n\n== Behavior ==\nUltra Greed is fought in a uniqu"
+  ],
+  "doc_ids": [
+   "wiki://Mega Satan",
+   "wiki://Ultra Greed"
+  ]
+ },
+ {
+  "id": 3,
+  "question": "How much dps does Hashy deal?",
+  "type": "factual",
+  "answer_contexts": [
+   "* Hushy deals 2 contact damage per tick or 30 damage per second.\n\n== Notes ==\n* Hushy can be pushed by explosions, both while stationary and during movement (in this case, the explosion may cause the familiar to change the direction it is moving in)."
+  ],
+  "doc_ids": [
+   "wiki://Hushy"
+  ]
+ },
+ {
+  "id": 61,
+  "question": "How do enemy pages on this wiki differ from boss pages in terms of infobox fields, section structure, and how spawn data is presented?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 32,
+  "question": "How are the character pages structured, and which sections does each have?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 8,
+  "question": "What does Judas start the game with?",
+  "type": "factual",
+  "answer_contexts": [
+   " | collectibles = {{i|The Book of Belial}}\n | unlocked by  = Judas\n}}\n'''Judas''' is a [[character]] unlocked after beating {{E|Satan}} for the first time. He starts with 1 [[Red Heart container]], 3 {{e|Penny|text=coins}}, and {{i|The Book of Belial"
+  ],
+  "doc_ids": [
+   "wiki://Judas"
+  ]
+ },
+ {
+  "id": 56,
+  "question": "Compare Monstro and Delirium based on their wiki pages: base HP, boss id, where they spawn, and what drops from each of them.",
+  "type": "composite",
+  "answer_contexts": [
+   "| name = Monstro\n | id = 20\n | environment",
+   " | base hp = 250\n | pool = {{ip|Boss}}",
+   " | id          = 412\n | environment = <u>Boss</u><br>{{floor|The Void}}"
+  ],
+  "doc_ids": [
+   "wiki://Monstro",
+   "wiki://Delirium"
+  ]
+ },
+ {
+  "id": 40,
+  "question": "How do pages reference other game versions (Afterbirth, Repentance) - which notations and links are used?",
+  "type": "abstract",
+  "answer_contexts": [],
+  "doc_ids": []
+ }
+]

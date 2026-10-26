@@ -1,25 +1,9 @@
----
-title: "КТ 1 — Корпус и золотой набор"
-subtitle: "Сквозной RAG-проект, курс LLM-инженер"
-date: "22 октября 2025"
-lang: ru
-geometry: margin=2.2cm
----
+# Корпус
 
-# 1. Откуда данные
+В качестве корпуса взяли вики **The Binding of Isaac: Rebirth** (`bindingofisaacrebirth.wiki.gg`) — «вики-подобный
+ресурс с шаблонами, разметкой и служебными страницами» из ТЗ.
 
-Вся вики **The Binding of Isaac: Rebirth** (`bindingofisaacrebirth.wiki.gg`) — «вики-подобный
-ресурс с шаблонами, разметкой и служебными страницами» из ТЗ. Выгрузка — `src/fetch_wiki.py`
-(asyncio + aiohttp, 20 параллельных): список всех страниц namespace 0 через `api.php`
-(`list=allpages`, **3 439 страниц**) + wikitext батчами по 50 (`prop=revisions`).
-Сохранён **сырой wikitext** — шаблоны `{{...}}` (включая условные `{{dlc|...}}`,
-`{{dlcalt|13|r=9}}`), ссылки `[[...]]`, infobox'ы. Отброшено **1 661** redirect-страница
-(`#REDIRECT [[...]]`) и страницы <40 символов — служебные, информации для ретрива не несут.
-
-Итог: **1 776 документов, 2 186 317 токенов** (tiktoken, cl100k_base) — минимумы ТЗ
-(500 доков / 200k токенов) превышены.
-
-# 2. Статистика корпуса
+Итог: **1 776 документов, 2 186 317 токенов** (tiktoken, cl100k_base). 
 
 | Показатель | Значение |
 |---|---|
@@ -43,23 +27,9 @@ geometry: margin=2.2cm
 «Isaac's Last Will» — 22 599, «V1.06.J787» — 21 159, «Bestiary (Repentance)» — 14 212 токенов.
 Самые короткие: «AB» — 13, «AB+» — 15, «Key Piece (Disambiguation)» — 35, «V1.06 Hotfix» — 47.
 
-# 3. О корпусе: сложность и проблемы ретрива
-
-**Состав.** Типичный документ — страница предмета/персонажа (~300–1000 токенов): infobox со
-статами, секции Effects / Notes / Synergies, куча перелинковки. Длинный хвост (246 страниц) —
-метасводки (Repentance pre-release, Co-op, Bestiary, версии). Короткий хвост (4 страницы) —
-hotfix-записи и аббревиатуры. Тематические кластеры: персонажи, предметы и карточные колоды,
-боссы/минибоссы, режимы и челленджи, мета (achievements, save-file completion, патч-ноты).
-
 **Сложность и лексическое разнообразие.**
-
-- Язык: корпус — английский wikitext, вопросы в золотом наборе — на русском, в разных формах
-  (короткие «Сколько волн в Boss Rush?», развёрнутые «Собери по wiki все условия…», разговорные).
-  Имена сущностей пишутся по-разному: «Ив» / «Eve», «Юдифи (Judas)» / «Judas», «Кейн» / «Cain» —
-  лексический разрыв между запросом и корпусом реален, и только эмбеддинги/мультиязычность ретрива
-  его закрывают.
-- Шум: основной мусор — **разметка, а не эмодзи** (эмодзи 0%, спецсимволы 11.46%): в среднем ~113
-  пар `{{ }}` / `[[ ]]` на страницу. BM25 без очистки будет ранжировать по скобкам и ссылкам.
+- Основной мусор — **разметка** (эмодзи 0%, спецсимволы 11.46%): в среднем ~56 пар
+  `{{ }}` / `[[ ]]` на страницу. BM25 без очистки будет ранжировать по скобкам и ссылкам.
 - Условные значения: `{{dlcalt|13|r=9}}` — в одном месте две цифры (Rebirth | Repentance) без
   явной привязки. Ретрив вернёт «правильный» чанк, но генерации будет неясно, какую цифру брать.
 - Длинные метасводки: наивный чанкинг разнесёт секции Effects/Notes/Synergies по разным чанкам.
@@ -70,140 +40,125 @@ hotfix-записи и аббревиатуры. Тематические кла
 Вывод для КТ 2: агрессивная чистка именно разметки (развернуть `{{dlc|...}}`-условности и ссылки в
 текст), секционный чанкинг длинных страниц, дедупликация near-dup.
 
-# 4. Золотой набор
+# Золотой набор
 
-**Что это и зачем.** 50 пар «вопрос → релевантные контексты» для оценки ретрива и генерации.
-Каждый пример знает, какие страницы корпуса несут ответ (`doc_ids`) и какие цитаты в них
-являются ground truth (`answer_contexts`) — это эталон, по которому в КТ 3 считаются
-recall/precision и качество ответа.
-
-## 4.1 Схема записи
+## Схема записи
 
 ```json
 {
-  "id": 1,
-  "question": "Сколько красных контейнеров здоровья у Кейна в начале игры?",
+  "id": 52,
+  "question": "According to the wiki, what is Delirium's boss id and base HP, in which room does he appear, and from what chest does he drop?",
   "type": "factual",
-  "answer_contexts": ["<цитата из корпуса, в которой содержится ответ>"],
-  "doc_ids": ["wiki://Cain"]
+  "answer_contexts": [" | id          = 412  | environment = <u>Boss</u><br>{{floor|The Void}} ..."],
+  "doc_ids": ["wiki://Delirium"]
 }
 ```
 
-- `id` — порядковый номер примера (1–50);
-- `question` — вопрос на русском, как его спросил бы игрок;
+- `id` — порядковый номер примера (1–60);
+- `question` — вопрос на английском (корпус англ.), в разных регистрах: короткие точечные и
+  развёрнутые long-form («List every floor and room where…», «Compare X and Y based on their wiki pages…»);
 - `type` — тип (таблица ниже);
 - `doc_ids` — страницы корпуса, где ответ находится (префикс `wiki://` = заголовок страницы;
   для негативных и абстрактных — пусто);
-- `answer_contexts` — цитаты-доказательства из этих страниц (для негативных/абстрактных — пусто).
+- `answer_contexts` — **вербальные** цитаты (подстроки wikitext, ≤250 символов) из этих страниц;
+  для негативных/абстрактных — пусто.
 
-## 4.2 Баланс типов
+## Баланс типов
 
-| Тип | Что проверяет | Кол-во |
-|---|---|---|
-| фактический (factual) | точный ответ в одной странице (HP, id, шанс дропа, старт) | 15 |
-| составной (composite) | ответ из 2+ страниц | 15 |
-| абстрактный (abstract) | о теме/структуре корпуса, не привязан к одному месту | 10 |
-| негативный (negative) | ответа в корпусе нет — система должна это признать | 10 |
+| Тип | Кол-во |
+|---|---|
+| фактический (factual) | 19 |
+| составной (composite) | 18 |
+| абстрактный (abstract) | 13 |
+| негативный (negative) | 10 |
 
-Негативные обязательны: без них нельзя измерить precision, только recall.
+## Лексическое разнообразие
 
-## 4.3 Примеры каждого типа
+- **Опечатки/грамматические ошибки и мусор — 6 из 60 (10%)**: id 1 «How do unlock Cain?», id 2
+  «What need to do…», id 3 «Hashy» (Hushy), id 22 «Compare it livse and Mom's Heart» (Lilith),
+  id 23 «…the path ????», id 28 «Gread Mode … how much HPit have».
+- **Короткие (3–5 слов) vs развёрнутые (до 34 слов)**: от «Who is Hush?» (id 4) до long-form
+  (id 52–63, например 34 слова у id 59); медиана 9–10 слов.
+- **Разговорные vs формальные**: «How do I unlock Eve?» (id 11) против «Which item pool do the
+  Boss Rush items come from according to the two pages…?» (id 59).
+- **Имена собственные в разных формах**: d6 / The D6 (id 51/14), Boss Rush / Boss Run (id 54/29),
+  Hush / Hushy (id 16/17), Eve / Tainted Eve (id 8/20), Mom / Tainted Mom (id 38/47).
+- **Глубоко доменные вопросы**: тайм-лимиты тайм-челленджей и completion marks (id 29),
+  нотации версий DLC в ссылках (id 40), spindown-механика D6 (id 51).
+
+## Примеры каждого типа
 
 factual:
 
 ```json
-{"id": 6, "question": "Какой у карточки «0 - The Fool» id в wiki?", "type": "factual",
- "answer_contexts": ["{{Infobox card | name = 0 - The Fool | id = 1 | recharge = {{dlcalt|4|r=2}} ..."],
- "doc_ids": ["wiki://0 - The Fool"]}
+{"id": 52, "question": "According to the wiki, what is Delirium's boss id and base HP, ...?",
+ "type": "factual", "answer_contexts": [" | id = 412 | environment = Boss<br>The Void | base hp = 10000 ..."],
+ "doc_ids": ["wiki://Delirium"]}
 ```
 
 composite:
 
 ```json
-{"id": 16, "question": "Сравни Кейна и Юдифу по wiki: чем отличаются их старт, характеристики и предметы?",
+{"id": 56, "question": "Compare Monstro and Delirium based on their wiki pages: base HP, boss id, where they spawn, and what drops from each of them.",
  "type": "composite",
- "answer_contexts": ["{{infobox character | id = 2 | health = {{hearts|red=2}} ...",
-                     "{{infobox character | id = 3 | health = {{heart|red}} ..."],
- "doc_ids": ["wiki://Cain", "wiki://Judas"]}
+ "answer_contexts": ["| name = Monstro | id = 20 ...", " | base hp = 250 | pool = Boss", " | id = 412 | environment = Boss<br>The Void ..."],
+ "doc_ids": ["wiki://Monstro", "wiki://Delirium"]}
 ```
 
 abstract:
 
 ```json
-{"id": 31, "question": "Какие основные категории страниц есть в этой вики (персонажи, предметы, боссы и т.д.)?",
+{"id": 60, "question": "Describe the overall structure of this wiki: what are the main categories of pages (characters, items, bosses, modes, meta), how are they organized, and how do pages cross-reference each other?",
  "type": "abstract", "answer_contexts": [], "doc_ids": []}
 ```
 
 negative:
 
 ```json
-{"id": 47, "question": "Какого нового персонажа добавило обновление Booster Pack #6?",
+{"id": 62, "question": "According to the wiki, which new items and trinkets did the Booster Pack #6 update add, and in which shop locations do they appear?",
  "type": "negative", "answer_contexts": [], "doc_ids": []}
 ```
 
-## 4.4 Провенанс и проверка
-
-Вопросы сгенерированы LLM (Claude 3.5 Sonnet) по выборке страниц вики; промпт требовал баланса
-типов по ТЗ, коротких и развёрнутых формулировок, разговорных вариантов. Затем ручное ревью:
-**50 оставлено, 4 отклонено**:
-
-| Отклонённый вопрос | Причина |
-|---|---|
-| «Сколько стоит Repentance в Steam?» | цен/продаж в вики нет (grep) — не проверяется по корпусу |
-| «Кто озвучил Исаака в Rebirth?» | ответ ЕСТЬ в вики (trivia) — это factual, а не негатив |
-| «Какой у Monstro HP в режиме Double Trouble?» | страница не верифицируется |
-| «Какие предметы в магазине стоят 5 монет?» | ground truth — огромный неопределённый набор |
-
-Темы негативов проверены программно (grep по корпусу): Cuphead, Hades/Zagreus, Dead Cells,
-композитор, «revenue», «Booster Pack #6», кросс-сейв и т.д. — **0 вхождений**.
-
-# 5. Разбиение val / test
+## Разбиение val / test
 
 `src/gold.py split`: `train_test_split`, `test_size=0.3`, `random_state=42`, стратификация по типу.
 
 | Тип | Validation | Test |
 |---|---|---|
-| factual | 11 | 4 |
-| composite | 10 | 5 |
-| abstract | 7 | 3 |
+| factual | 13 | 6 |
+| composite | 13 | 5 |
+| abstract | 9 | 4 |
 | negative | 7 | 3 |
-| **Итого** | **35** | **15** |
+| **Итого** | **42** | **18** |
 
-Validation — для выбора конфигураций; test — только для финальной оценки каждого КТ. Все 4 типа
-присутствуют в обеих частях. Ограничение: при 50 примерах различия метрик не являются строгим
-статистически значимым эффектом.
+# Baseline ответы без RAG
 
-# 6. Baseline: ответы без RAG
-
-`src/baseline.py`: модель отвечает на 15 test-вопросов **без добавленных контекстов**
-(промпт: «Отвечай кратко. Если не знаешь — явно скажи „не знаю“»). Модель — локальная LLM
+`src/baseline.py`: модель отвечает на 18 test-вопросов **без добавленных контекстов**
+(промпт: «Отвечай кратко на русском. Если не знаешь — явно скажи „не знаю“»). Модель — локальная LLM
 (Qwen3.8-27B-NVFP4, OpenAI-совместимый API; адрес/ключ/модель в `.env`, шаблон — `.env.example`);
-при недоступности API скрипт грузит предвычисленный `data/gold/baseline_no_rag.json`.
+Baseline ответы лежат в `data/gold/baseline_no_rag.json`.
 
-**Результат: 14 из 15 — «не знаю».** Средний latency 11.4 с (макс 26 с).
+**Результат: 11 из 18 — «не знаю».**
 
 | Тип | «Не знаю» |
 |---|---|
-| factual | 4/4 |
-| composite | 5/5 |
-| abstract | 3/3 |
-| negative | 2/3 |
+| factual | 4/6 |
+| composite | 2/5 |
+| abstract | 2/4 |
+| negative | 3/3 |
 
-По типам: точные HP/id/шансы модель не знает (4/4); на «предметы Ив» не смогла собрать список
-(5/5); вопросы о самом корпусе — без него не ответить (3/3). Единственный «прорыв» — негатив
-«управление в Cuphead»: модель ответила из общих знаний (правильно, но это не RAG — и именно это
-негативные вопросы ловят в оценке).
+Остальные 7 — **параметрические знания модели о самой игре** (6 содержательных ответов и 1 пустой,
+id 53), не привязанные к корпусу — нельзя проверить вербальность/источность (нет doc_ids, нет цитат
+из страниц); Частично верные, частично нет.
 
-**Вывод: RAG по вики необходим** — без контекста модель отвечает по корпусу только «не знаю».
-
-# 7. Артефакты и воспроизведение
+# Воспроизведение
 
 | Файл | Что |
 |---|---|
 | `data/corpus.jsonl` | корпус: 1 776 доков, 2.19M токенов (сырой wikitext) |
-| `data/gold/gold_full.json` | gold: 50 вопросов (источник) |
-| `data/gold/gold_val.json` / `gold_test.json` | split 35/15 (производные от full) |
-| `data/gold/baseline_no_rag.json` | 15 ответов LLM без контекста (схема: id/type/answer/latency_s) |
+| `data/gold/gold_full.json` | gold: **60** вопросов (источник) |
+| `data/gold/gold_val.json` / `gold_test.json` | split 42/18 (производные от full) |
+| `data/gold/baseline_no_rag.json` | 18 ответов LLM без контекста (схема: id/type/question/answer/latency_s) |
 | `reports/kt1/lengths_hist.png` | гистограмма длин (лог-бины, пороги 50/2000) |
 | `src/{common,fetch_wiki,eda,gold,baseline,run_kt1}.py` | пайплайн |
 
