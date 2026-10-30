@@ -4,13 +4,13 @@
     LLM_BASE_URL / LLM_API_KEY / LLM_MODEL
 Если API недоступен — грузит предвычисленный data/gold/baseline_no_rag.json.
 
-Запуск: python src/baseline.py
+Запуск: python src/evals/baseline.py
 """
 import json
 import os
 import time
 
-from common import BASELINE_OUT, GOLD_TEST, load_env
+from utils import BASELINE_OUT, GOLD_TEST, load_env
 
 PROMPT = "Отвечай кратко на русском. Если не знаешь ответа — явно скажи «не знаю».\nВопрос: {q}"
 

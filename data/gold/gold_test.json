@@ -48,7 +48,8 @@
    "The Boss Rush consists of 15 waves with 2 [[bosses]] per wave."
   ],
   "doc_ids": [
-   "wiki://Boss Rush"
+   "wiki://Boss Rush",
+   "wiki://Mom"
   ]
  },
  {
@@ -73,7 +74,8 @@
    " | id          = 412\n | environment = <u>Boss</u><br>{{floor|The Void}}"
   ],
   "doc_ids": [
-   "wiki://Delirium"
+   "wiki://Delirium",
+   "wiki://The Void"
   ]
  },
  {
@@ -84,7 +86,8 @@
    "| environment = <u>Boss</u><br>{{floor|Basement}}{{floor|Burning Basement}}<br>{{room|challenge}}{{room|boss challenge}}{{room|boss rush}}<br><u>Double Trouble</u><br>{{floor|Caves}}{{floor|Catacombs}}{{floor|Flooded Caves}}<br>(With Another Monstro,"
   ],
   "doc_ids": [
-   "wiki://Monstro"
+   "wiki://Monstro",
+   "wiki://Chapter 2 (Bosses)"
   ]
  },
  {
@@ -181,7 +184,8 @@
    " | collectibles = {{blindfolded}}<br>{{i|Box of Friends}} (unlisted)<br>{{i|Incubus}}<br>{{i|Cambion Conception}}\n | unlocked by  = Lilith\n}}\n'''Lilith''' is a [[character]] added in ''[[The Binding of Isaac: Afterbirth]]''. Lilith starts with one re"
   ],
   "doc_ids": [
-   "wiki://Lilith"
+   "wiki://Lilith",
+   "wiki://Incubus"
   ]
  }
 ]

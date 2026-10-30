@@ -121,7 +121,7 @@ negative:
 
 ## Разбиение val / test
 
-`src/gold.py split`: `train_test_split`, `test_size=0.3`, `random_state=42`, стратификация по типу.
+`src/gold/split.py`: `train_test_split`, `test_size=0.3`, `random_state=42`, стратификация по типу.
 
 | Тип | Validation | Test |
 |---|---|---|
@@ -133,7 +133,7 @@ negative:
 
 # Baseline ответы без RAG
 
-`src/baseline.py`: модель отвечает на 18 test-вопросов **без добавленных контекстов**
+`src/evals/baseline.py`: модель отвечает на 18 test-вопросов **без добавленных контекстов**
 (промпт: «Отвечай кратко на русском. Если не знаешь — явно скажи „не знаю“»). Модель — локальная LLM
 (Qwen3.8-27B-NVFP4, OpenAI-совместимый API; адрес/ключ/модель в `.env`, шаблон — `.env.example`);
 Baseline ответы лежат в `data/gold/baseline_no_rag.json`.
@@ -160,15 +160,16 @@ id 53), не привязанные к корпусу — нельзя пров�
 | `data/gold/gold_val.json` / `gold_test.json` | split 42/18 (производные от full) |
 | `data/gold/baseline_no_rag.json` | 18 ответов LLM без контекста (схема: id/type/question/answer/latency_s) |
 | `reports/kt1/lengths_hist.png` | гистограмма длин (лог-бины, пороги 50/2000) |
-| `src/{common,fetch_wiki,eda,gold,baseline,run_kt1}.py` | пайплайн |
+| `src/` (main.py, corpus/, gold/, evals/, utils.py) | пайплайн |
 
 ```bash
 pip install -r requirements.txt
-python src/run_kt1.py            # eda → check-gold → split → baseline
-python src/run_kt1.py --fetch    # + перескачать корпус (~3 мин)
+python src/main.py            # eda → check-gold → split → baseline
+python src/main.py --fetch    # + перескачать корпус (~3 мин)
 # по шагам:
-python src/fetch_wiki.py
-python src/eda.py
-python src/gold.py check|split
-python src/baseline.py
+python src/corpus/fetch.py
+python src/corpus/eda.py
+python src/gold/check.py
+python src/gold/split.py
+python src/evals/baseline.py
 ```

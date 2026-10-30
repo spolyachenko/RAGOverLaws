@@ -1,4 +1,4 @@
-"""Общее для всех КТ: пути, загрузка корпуса, токены."""
+"""Общее для всего репо: пути, загрузка корпуса, токены, .env."""
 import json
 from pathlib import Path
 
@@ -11,12 +11,13 @@ REPORTS = ROOT / "reports"
 GOLD_DIR = DATA / "gold"
 
 CORPUS_PATH = DATA / "corpus.jsonl"
+POSTPROCESSED_PATH = DATA / "postprocess_corpus.jsonl"
+CHUNKS_PATH = DATA / "chunks.jsonl"
 GOLD_FULL = GOLD_DIR / "gold_full.json"
 GOLD_VAL = GOLD_DIR / "gold_val.json"
 GOLD_TEST = GOLD_DIR / "gold_test.json"
 BASELINE_OUT = GOLD_DIR / "baseline_no_rag.json"
 
-WIKI_API = "https://bindingofisaacrebirth.wiki.gg/api.php"
 ENCODEING = "cl100k_base"
 RANDOM_STATE = 42
 MIN_DOCS, MIN_TOKENS = 500, 200_000

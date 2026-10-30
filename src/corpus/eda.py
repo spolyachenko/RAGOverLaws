@@ -1,16 +1,19 @@
 """EDA корпуса: распределение длин (гистограмма), доля мусорных токенов, дубликаты (MinHash).
 
 Результат: reports/kt1/lengths_hist.png + сводка в stdout.
-Запуск: python src/eda.py
+Запуск: python src/corpus/eda.py
 """
 import json
 import re
+import sys
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 from datasketch import MinHash, MinHashLSH
 
-from common import REPORTS, assert_minima, load_corpus, with_tokens
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from utils import REPORTS, assert_minima, load_corpus, with_tokens  # noqa: E402
 
 OUT = REPORTS / "kt1"
 

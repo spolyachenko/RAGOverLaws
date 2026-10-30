@@ -29,7 +29,8 @@
    "The sixth floor (The Shop) does not have any Treasure Rooms but does have the Shop and Curse Rooms. The final seventh floor has no waves and contains only three rooms, the largest of which contains the game mode's [[Ultra Greed|final boss]].\n\nWhen pl"
   ],
   "doc_ids": [
-   "wiki://Greed Mode"
+   "wiki://Greed Mode",
+   "wiki://Rooms"
   ]
  },
  {
@@ -108,7 +109,8 @@
    "The Lost is unlocked by dying in a {{R|Sacrifice Room}} while holding {{t|Missing Poster}}.\n\n* In order to unlock The Lost, you need to unlock [[Missing Poster]].\n* {{t|Missing Poster}} is unlocked by defeating {{e|The Lamb}} as {{C|Isaac}}.\n\n* Looki"
   ],
   "doc_ids": [
-   "wiki://The Lost"
+   "wiki://The Lost",
+   "wiki://Missing Poster"
   ]
  },
  {
@@ -126,7 +128,8 @@
    "'''Cain''' is a [[character]] unlocked by obtaining 55 or more [[coin]]s at once in a run. He starts with two [[Red Heart container]]s, one {{e|Key}}, and {{i|Lucky Foot}}.\n\n{{dlc|a}} Cain also starts with {{t|Paper Clip}} after 68 coins have been do"
   ],
   "doc_ids": [
-   "wiki://Cain"
+   "wiki://Cain",
+   "wiki://Achievement Tips"
   ]
  },
  {
@@ -237,7 +240,8 @@
    " | collectibles = {{i|Sumptorium}}\n | unlocked by = The Curdled\n}}\n'''Tainted Eve''' is a [[Characters|character]] added in [[The Binding of Isaac: Repentance]]. She is the alternate version of {{C|Eve}} with ragged hair, no bird, ruined mascara as i"
   ],
   "doc_ids": [
-   "wiki://Tainted Eve"
+   "wiki://Tainted Eve",
+   "wiki://Sumptorium"
   ]
  },
  {
@@ -274,7 +278,9 @@
    " | pool        = Final Boss Chest ([[Endings|Ending 17]], first kill only)<br>Gateway to {{s|Sheol}} / {{s|Cathedral}} <br>{{dlc+|a+}} Entrance to {{s|The Void}} {{dlc-}}\n | unlocked by = Blue Womb\n}}\n\n'''Hush''' is the [[boss]] of {{s|???}}, and the"
   ],
   "doc_ids": [
-   "wiki://Hush"
+   "wiki://Hush",
+   "wiki://??? (Floor)",
+   "wiki://The Void"
   ]
  },
  {
@@ -405,7 +411,8 @@
    " | collectibles = {{i|The Book of Belial}}\n | unlocked by  = Judas\n}}\n'''Judas''' is a [[character]] unlocked after beating {{E|Satan}} for the first time. He starts with 1 [[Red Heart container]], 3 {{e|Penny|text=coins}}, and {{i|The Book of Belial"
   ],
   "doc_ids": [
-   "wiki://Judas"
+   "wiki://Judas",
+   "wiki://The Book of Belial"
   ]
  },
  {
