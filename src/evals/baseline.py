@@ -8,9 +8,10 @@
 """
 import json
 import os
+import sys
 import time
 
-from utils import BASELINE_OUT, GOLD_TEST, load_env
+from utils import BASELINE_OUT, GOLD_TEST, GOLD_VAL, load_env
 
 PROMPT = "Отвечай кратко на русском. Если не знаешь ответа — явно скажи «не знаю».\nВопрос: {q}"
 
@@ -29,7 +30,11 @@ def run():
     results = None
     try:
         client, model = _client()
-        test = json.load(open(GOLD_TEST, encoding="utf-8"))
+        # ТЗ: baseline — на отложенной выборке ВАЛИДАЦИИ; по умолчанию val, test — аргументом
+        split = sys.argv[1] if len(sys.argv) > 1 else "val"
+        gold_file = GOLD_TEST if split == "test" else GOLD_VAL
+        out_file = BASELINE_OUT if split == "test" else BASELINE_OUT.parent / f"baseline_no_rag_{split}.json"
+        test = json.load(open(gold_file, encoding="utf-8"))
         results = []
         for g in test:
             r = None
@@ -48,16 +53,15 @@ def run():
             results.append({"id": g["id"], "type": g["type"], "question": g["question"],
                             "answer": r.choices[0].message.content,
                             "latency_s": round(time.time() - t0, 2)})
-            print(f"[{g['id']}] ({g['type']}) {g['question'][:60]} -> {results[-1]['answer'][:80]}")
-        BASELINE_OUT.write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
-        print(f"baseline (модель {model}) сохранён в {BASELINE_OUT}")
+            print(f"[{g['id']}] ({g['type']}) {g['question'][:60]} -> {results[-1]['answer'][:80]}", flush=True)
+        out_file.write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"baseline {split} (модель {model}) сохранён в {out_file}")
     except Exception as e:
         print(f"LLM недоступен ({type(e).__name__}), грузим предвычисленный baseline")
 
     if not results:
         results = json.load(open(BASELINE_OUT, encoding="utf-8"))
         print(f"Загружен предвычисленный baseline: {len(results)} ответов из {BASELINE_OUT}")
-
     print(f"Средний latency: {sum(r['latency_s'] for r in results) / len(results):.2f}s")
     admit = sum(1 for r in results if "не знаю" in r["answer"].lower())
     print(f"Модель без RAG признала нерешимыми {admit}/{len(results)} вопросов")
