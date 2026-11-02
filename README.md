@@ -1,17 +1,18 @@
 # RAG-проект (курс LLM-инженер, КТ1–КТ5)
 
-Сквозной RAG по вики The Binding of Isaac: Rebirth (сырой wikitext, MediaWiki):
-корпус + золотой набор (КТ1) → предобработка/чанкинг/метаданные (КТ2) → векторная БД,
-эмбеддинги и sparse/dense/hybrid (КТ3) → трансформация запросов и реранкинг (КТ4)
+Сквозной RAG по правовым документам РФ (ru.wikisource.org, сырой wikitext MediaWiki,
+русский язык): корпус + золотой набор (КТ1) → предобработка/чанкинг/метаданные (КТ2) →
+векторная БД, эмбеддинги и sparse/dense/hybrid (КТ3) → трансформация запросов и реранкинг (КТ4)
 → генерация и оценка (КТ5). Отчёты по каждому КТ — в `reports/`.
 
 ## Структура
 
 ```
 data/
-├── corpus.jsonl              # сырой корпус (1 776 доков, 2.19M токенов)
-├── postprocess_corpus.jsonl  # после предобработки (1 734 дока)
-├── chunks.jsonl              # чанки TokenChunker 512 (12 067)
+├── corpus.jsonl              # корпус (2 207 доков, 17.5M токенов)
+├── postprocess_corpus.jsonl  # после предобработки (1 404 дока, dedup)
+├── chunks.jsonl              # чанки TokenChunker 512 (60 489)
+├── page_dates.json           # даты ревизий страниц (из дампа wikisource)
 ├── llm_chunks.jsonl          # LLM-чанки summary/HyDE (100)
 ├── llm_cache.json            # кэш LLM (повторный прогон ~0 токенов)
 └── gold/                     # gold_full/val/test.json, baseline_no_rag.json
@@ -20,8 +21,8 @@ src/
 ├── utils.py            # общее: пути, загрузка корпуса, токены, .env
 ├── main.py             # пайплайн корпуса: fetch → eda → gold → baseline
 ├── corpus/
-│   ├── fetch.py        # выгрузка вики (MediaWiki API, asyncio) → data/corpus.jsonl
-│   ├── eda.py          # EDA: длины, мусорные токены, дубли → reports/
+│   ├── fetch.py        # выгрузка вики (MediaWiki API + fetch_law_corpus из дампа) → data/corpus.jsonl
+│   ├── eda.py          # EDA: длины, мусорные токены, дубли
 │   └── clean.py        # предобработка: raw → markup → links → normalize → dedup
 ├── chunking/
 │   ├── chunkers.py     # чанкеры: token/sentence/semantic/neural + semantic-ablation
@@ -36,14 +37,17 @@ src/
 │   ├── process.py      # суммаризация + HyDE (8-way, кэш)
 │   └── eval.py         # метрики original vs summary vs HyDE
 ├── gold/
+│   ├── generate.py     # генерация кандидатов (LLM, 8-way, кэш)
+│   ├── verify.py       # верификация: вербатин/doc_ids/grep-негатики
+│   ├── compose.py      # композитные вопросы (механическая композиция)
+│   ├── assemble.py     # сборка gold_full/val/test (60 вопросов)
 │   ├── check.py        # валидация золотого набора
 │   └── split.py        # стратифицированный validation/test split
 └── evals/
     └── baseline.py     # baseline LLM без RAG
 
-reports/kt1/  # отчёт otchet_kt1.md + lengths_hist.png (закрыт)
+reports/kt1/  # отчёт otchet_kt1.md (закрыт)
 reports/kt2/  # отчёт otchet_kt2.md
-notebooks/    # rag_project.ipynb
 .env          # локальная LLM (OpenAI-совместимый API); шаблон — .env.example
 requirements.txt
 ```
@@ -73,5 +77,5 @@ python src/gold/check.py                                 # валидация
 python src/gold/split.py                                 # validation/test split
 ```
 
-Метрики ретрива — на validation split золотого набора (42 вопроса, multi-doc: 1–3 релевантных
-документа на вопрос); test до финала проекта не используется.
+Метрики ретрива — на validation split золотого набора (42 вопроса, 35 с doc_ids,
+конвенция: top-40 чанков → уникальные документы); test (18) — только для baseline/финала.

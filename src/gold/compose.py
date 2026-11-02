@@ -32,7 +32,7 @@ def main():
     ver = json.loads(VER.read_text(encoding="utf-8"))
     corpus = {}
     import json as j
-    for line in open("data/law_corpus.jsonl", encoding="utf-8"):
+    for line in open("data/corpus.jsonl", encoding="utf-8"):
         r = j.loads(line)
         corpus[r["id"]] = r["title"]
 

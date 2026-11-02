@@ -16,7 +16,7 @@ from utils import ENCODEING, DATA, GOLD_DIR  # noqa: E402
 from llm.client import client, ask, load_cache, save_cache, key_for  # noqa: E402
 
 CAND_PATH = GOLD_DIR / "legal_gold_candidates.json"
-CORPUS = DATA / "law_corpus.jsonl"
+CORPUS = DATA / "corpus.jsonl"
 
 P_FACT = """Ты — составитель тестового набора вопросов к базе правовых документов РФ.
 Ниже — фрагменты страниц «{titles}» (wikisource).

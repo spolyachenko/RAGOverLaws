@@ -36,7 +36,7 @@ def main():
     comp = json.loads(COMP.read_text(encoding="utf-8")) if COMP.exists() else []
 
     corpus = {}
-    for line in open(DATA / "law_corpus.jsonl", encoding="utf-8"):
+    for line in open(DATA / "corpus.jsonl", encoding="utf-8"):
         r = json.loads(line)
         corpus[r["id"]] = r
     hay = "\n".join(r["text"] for r in corpus.values()).lower()

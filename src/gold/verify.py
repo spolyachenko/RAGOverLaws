@@ -15,7 +15,7 @@ from utils import GOLD_DIR, DATA  # noqa: E402
 
 CAND = GOLD_DIR / "legal_gold_candidates.json"
 VER = GOLD_DIR / "legal_gold_verified.json"
-CORPUS = DATA / "law_corpus.jsonl"
+CORPUS = DATA / "corpus.jsonl"
 
 
 def _norm(s: str) -> str:
