@@ -20,19 +20,20 @@ WIKI_API = "https://bindingofisaacrebirth.wiki.gg/api.php"
 HDRS = {"User-Agent": "gt1.0 (research)"}
 
 
-async def _fetch_json(s, url, tries=4):
+async def _fetch_json(s, url, tries=25):
     for a in range(tries):
         try:
             async with s.get(url) as r:
-                if r.status == 429:
-                    await asyncio.sleep(2 + a * 2)
+                if r.status in (429, 500, 502, 503):
+                    await asyncio.sleep(min(10 + a * 5, 60))
                     continue
-                d = await r.json()
-                if "query" in d:
-                    return d
-                await asyncio.sleep(1 + a)
+                if r.status == 200:
+                    d = await r.json()
+                    if "query" in d:
+                        return d
+                await asyncio.sleep(2 + a)
         except Exception:
-            await asyncio.sleep(1 + a)
+            await asyncio.sleep(2 + a)
     raise RuntimeError("gave up: " + url[:100])
 
 
@@ -40,10 +41,10 @@ def _slot_text(slot):
     return slot.get("content", slot.get("*", "")) or ""  # MediaWiki: "content" или "*"
 
 
-async def _list_all_pages(s):
+async def _list_all_pages(s, api=WIKI_API):
     titles, cont = [], None
     while True:
-        url = f"{WIKI_API}?action=query&list=allpages&aplimit=500&apnamespace=0&format=json"
+        url = f"{api}?action=query&list=allpages&aplimit=500&apnamespace=0&format=json"
         if cont:
             url += "&apcontinue=" + urllib.parse.quote(cont)
         d = await _fetch_json(s, url)
@@ -54,8 +55,35 @@ async def _list_all_pages(s):
         await asyncio.sleep(0.2)
 
 
-async def _content_batch(s, chunk):
-    url = (f"{WIKI_API}?action=query&format=json&prop=revisions&rvprop=content&rvslots=main"
+async def _cat_pages(s, api, title, depth=0, _seen=None):
+    """Рекурсивно: страницы (ns=0) категории + подкатегорий."""
+    _seen = _seen or set()
+    if title in _seen:
+        return set()
+    _seen.add(title)
+    pages, subs, cont = set(), set(), None
+    while True:
+        p = (f"{api}?action=query&list=categorymembers&cmtitle=" + urllib.parse.quote(title)
+             + "&cmlimit=500&cmtype=subcat|page&format=json")
+        if cont:
+            p += "&cmcontinue=" + urllib.parse.quote(cont)
+        d = await _fetch_json(s, p)
+        for m in d["query"].get("categorymembers", []):
+            if m["ns"] == 14:
+                subs.add(m["title"])
+            elif m["ns"] == 0:
+                pages.add(m["title"])
+        cont = d.get("continue", {}).get("cmcontinue")
+        if not cont:
+            break
+        await asyncio.sleep(0.3)
+    for x in sorted(subs):
+        pages |= await _cat_pages(s, api, x, depth + 1, _seen)
+    return pages
+
+
+async def _content_batch(s, chunk, api=WIKI_API):
+    url = (f"{api}?action=query&format=json&prop=revisions&rvprop=content&rvslots=main"
            f"&titles=" + "|".join(urllib.parse.quote(t) for t in chunk))
     d = await _fetch_json(s, url)
     out = {}
@@ -93,8 +121,8 @@ def fetch_corpus():
     print("written:", len(rows), "->", CORPUS_PATH)
 
 
-async def _dates_batch(s, chunk):
-    url = (f"{WIKI_API}?action=query&format=json&prop=revisions&rvprop=timestamp"
+async def _dates_batch(s, chunk, api=WIKI_API):
+    url = (f"{api}?action=query&format=json&prop=revisions&rvprop=timestamp"
            f"&titles=" + "|".join(urllib.parse.quote(t) for t in chunk))
     d = await _fetch_json(s, url)
     out = {}
@@ -106,7 +134,7 @@ async def _dates_batch(s, chunk):
     return out
 
 
-def fetch_page_dates(out_path: Path | None = None) -> dict:
+def fetch_page_dates(out_path: Path | None = None, api: str = WIKI_API) -> dict:
     """Дата последней ревизии каждой страницы -> {title: 'YYYY-MM-DD HH:MM:SS'} (кэш на диск)."""
     from utils import DATA
     out_path = out_path or (DATA / "page_dates.json")
@@ -114,11 +142,11 @@ def fetch_page_dates(out_path: Path | None = None) -> dict:
         return json.loads(out_path.read_text(encoding="utf-8"))
     async def _run():
         async with aiohttp.ClientSession(headers=HDRS, timeout=aiohttp.ClientTimeout(total=120)) as s:
-            titles = await _list_all_pages(s)
+            titles = await _list_all_pages(s, api)
             chunks = [titles[i:i + 50] for i in range(0, len(titles), 50)]
             results = []
             for k in range(0, len(chunks), 20):
-                results.extend(await asyncio.gather(*(_dates_batch(s, c) for c in chunks[k:k + 20])))
+                results.extend(await asyncio.gather(*(_dates_batch(s, c, api) for c in chunks[k:k + 20])))
         dates = {}
         for r in results:
             dates.update(r)
@@ -128,6 +156,37 @@ def fetch_page_dates(out_path: Path | None = None) -> dict:
     out_path.write_text(json.dumps(dates, ensure_ascii=False), encoding="utf-8")
     print("page dates:", len(dates), "->", out_path)
     return dates
+
+
+def fetch_law_corpus(api, source_name, categories, out_path, min_chars=200):
+    """Страницы выбранных категорий MediaWiki -> jsonl (та же схема: id, title, text, source)."""
+    async def _run():
+        async with aiohttp.ClientSession(headers=HDRS, timeout=aiohttp.ClientTimeout(total=120)) as s:
+            titles = set()
+            for c in categories:
+                got = await _cat_pages(s, api, c)
+                print(f"cat {c}: {len(got)}", flush=True)
+                titles |= got
+            titles = sorted(titles)
+            print("pages:", len(titles), flush=True)
+            chunks = [titles[i:i + 50] for i in range(0, len(titles), 50)]
+            results = []
+            for k in range(0, len(chunks), 20):  # 20 параллельных
+                results.extend(await asyncio.gather(*(_content_batch(s, c, api) for c in chunks[k:k + 20])))
+                print(f"  {min(k + 20, len(chunks))}/{len(chunks)}", flush=True)
+        content = {}
+        for r in results:
+            content.update(r)
+        rows = [{"id": f"wiki://{t}", "title": t, "text": content.get(t, ""),
+                 "source": source_name} for t in titles]
+        return [r for r in rows if not r["text"].startswith("#REDIRECT") and len(r["text"]) >= min_chars]
+
+    rows = asyncio.run(_run())
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    print("written:", len(rows), "->", out_path)
 
 
 if __name__ == "__main__":

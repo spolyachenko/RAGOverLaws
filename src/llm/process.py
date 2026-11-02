@@ -49,14 +49,15 @@ def process() -> pd.DataFrame:
 
     def do_sum(r):
         return ask(cl, model,
-                   "Summarize this passage in English. Keep all concrete facts, numbers, "
-                   "names and conditions. Max 80 words. No preamble.\n\n" + r["text"],
+                   "Переведи эту выдержку в краткое содержание по-русски. Сохрани все "
+                   "конкретные факты, номера статей, суммы, сроки и условия. Максимум 80 слов. "
+                   "Без вступления.\n\n" + r["text"],
                    key_for("sum:", r["text"]), cache)
 
     def do_hyde(r):
         return ask(cl, model,
-                   "Write exactly 2 questions (English) whose answer can be found in this "
-                   "passage. Output them as a numbered list, nothing else.\n\n" + r["text"],
+                   "Составь ровно 2 вопроса на русском, ответ на которые содержится в этой "
+                   "выдержке. Выведи нумерованным списком, ничего лишнего.\n\n" + r["text"],
                    key_for("hyde:", r["text"]), cache)
 
     t0 = time.time()

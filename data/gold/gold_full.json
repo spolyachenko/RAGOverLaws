@@ -1,626 +1,646 @@
 [
  {
   "id": 1,
-  "question": "How do unlock Cain?",
+  "question": "Каково наказание за деяния, предусмотренные частью 2 статьи 215¹ УК РФ?",
   "type": "factual",
   "answer_contexts": [
-   "'''Cain''' is a [[character]] unlocked by obtaining 55 or more [[coin]]s at once in a run. He starts with two [[Red Heart container]]s, one {{e|Key}}, and {{i|Lucky Foot}}.\n\n{{dlc|a}} Cain also starts with {{t|Paper Clip}} after 68 coins have been do"
+   "наказываются лишением свободы на срок до пяти лет с лишением права занимать определенные должности или заниматься определенной деятельностью на срок до трех лет или без такового"
   ],
   "doc_ids": [
-   "wiki://Cain",
-   "wiki://Achievement Tips"
+   "wiki://Федеральный закон от 27.05.1998 № 77-ФЗ"
   ]
  },
  {
   "id": 2,
-  "question": "What need to do to unlock The Lost?",
+  "question": "Как называется глава 9 Федерального закона от 24.07.2009 № 209-ФЗ?",
   "type": "factual",
   "answer_contexts": [
-   "The Lost is unlocked by dying in a {{R|Sacrifice Room}} while holding {{t|Missing Poster}}.\n\n* In order to unlock The Lost, you need to unlock [[Missing Poster]].\n* {{t|Missing Poster}} is unlocked by defeating {{e|The Lamb}} as {{C|Isaac}}.\n\n* Looki"
+   "Глава 9. ПЛАТНОСТЬ ПОЛЬЗОВАНИЯ ОХОТНИЧЬИМИ РЕСУРСАМИ"
   ],
   "doc_ids": [
-   "wiki://The Lost",
-   "wiki://Missing Poster"
+   "wiki://Федеральный закон от 24.07.2009 № 209-ФЗ"
   ]
  },
  {
   "id": 3,
-  "question": "How much dps does Hashy deal?",
+  "question": "Как называется Глава IV.1 Федерального закона от 24.07.1998 № 125-ФЗ?",
   "type": "factual",
   "answer_contexts": [
-   "* Hushy deals 2 contact damage per tick or 30 damage per second.\n\n== Notes ==\n* Hushy can be pushed by explosions, both while stationary and during movement (in this case, the explosion may cause the familiar to change the direction it is moving in)."
+   "ОБЕСПЕЧЕНИЕ ИСПОЛНЕНИЯ ОБЯЗАННОСТИ ПО УПЛАТЕ СТРАХОВЫХ ВЗНОСОВ"
   ],
   "doc_ids": [
-   "wiki://Hushy"
+   "wiki://Федеральный закон от 24.07.1998 № 125-ФЗ"
   ]
  },
  {
   "id": 4,
-  "question": "Who is Hush?",
+  "question": "Какая сумма ущерба признается крупным ущербом в статье 217.1 УК РФ?",
   "type": "factual",
   "answer_contexts": [
-   " | pool        = Final Boss Chest ([[Endings|Ending 17]], first kill only)<br>Gateway to {{s|Sheol}} / {{s|Cathedral}} <br>{{dlc+|a+}} Entrance to {{s|The Void}} {{dlc-}}\n | unlocked by = Blue Womb\n}}\n\n'''Hush''' is the [[boss]] of {{s|???}}, and the"
+   "Крупным ущербом в настоящей статье признается ущерб, сумма которого превышает один миллион рублей."
   ],
   "doc_ids": [
-   "wiki://Hush",
-   "wiki://??? (Floor)",
-   "wiki://The Void"
+   "wiki://Федеральный закон от 21.07.2011 № 257-ФЗ"
   ]
  },
  {
   "id": 5,
-  "question": "Who is Mega Satan's base HP?",
+  "question": "В течение какого срока лицо обязано передать налоговому органу квитанцию о приеме документов, полученных в электронной форме?",
   "type": "factual",
   "answer_contexts": [
-   " | base hp     = 5000\n | pool        = Final Boss Chest + Gateway to {{s|The Void}} ({{dlcalt|50% Chance, otherwise cuts directly to [[Endings|Ending 16]]|r+=100% chance, no longer cuts away}})\n | unlocked by = Angels\n}}\n\n'''Mega Satan''' is a [[boss"
+   "в течение шести дней со дня их отправки налоговым органом"
   ],
   "doc_ids": [
-   "wiki://Mega Satan"
+   "wiki://Федеральный закон от 01.05.2016 № 130-ФЗ"
   ]
  },
  {
   "id": 6,
-  "question": "how do you unlock tainted eve",
+  "question": "Какой номер имеет Указ Президента РФ от 27 марта 2019 г. о включении нового наименования субъекта РФ в статью 65 Конституции?",
   "type": "factual",
   "answer_contexts": [
-   "ted Eve is unlocked by reaching {{s|Home}} and using the {{I|Red Key}}, {{P|Cracked Key}}, or {{P|1=Soul of Cain}} to access a special room in one of the walls while playing as Eve.\n\nTainted Eve starts with 2 red hearts, and possesses the lowest base"
+   "Указа Президента Российской Федерации от 27 марта 2019 г. № 130"
   ],
   "doc_ids": [
-   "wiki://Tainted Eve"
+   "wiki://Конституция Российской Федерации"
   ]
  },
  {
   "id": 7,
-  "question": "What is Tainted Eve's starting item?",
+  "question": "В каком номере Собрания законодательства РФ (2014 г.) опубликована Конституция РФ?",
   "type": "factual",
   "answer_contexts": [
-   " | collectibles = {{i|Sumptorium}}\n | unlocked by = The Curdled\n}}\n'''Tainted Eve''' is a [[Characters|character]] added in [[The Binding of Isaac: Repentance]]. She is the alternate version of {{C|Eve}} with ragged hair, no bird, ruined mascara as i"
+   "Собрание законодательства Российской Федерации, 2014, № 31, ст. 4398"
   ],
   "doc_ids": [
-   "wiki://Tainted Eve",
-   "wiki://Sumptorium"
+   "wiki://Конституция Российской Федерации"
   ]
  },
  {
   "id": 8,
-  "question": "What does Judas start the game with?",
+  "question": "Какие изделия не относятся к оружию согласно части второй статьи 1 Федерального закона «Об оружии» в редакции, данной статьёй 6 Федерального закона от 06.07.2016 № 374-ФЗ?",
   "type": "factual",
   "answer_contexts": [
-   " | collectibles = {{i|The Book of Belial}}\n | unlocked by  = Judas\n}}\n'''Judas''' is a [[character]] unlocked after beating {{E|Satan}} for the first time. He starts with 1 [[Red Heart container]], 3 {{e|Penny|text=coins}}, and {{i|The Book of Belial"
+   "изделия, сертифицированные в качестве изделий хозяйственно-бытового и производственного назначения, спортивные снаряды, конструктивно сходные с оружием"
   ],
   "doc_ids": [
-   "wiki://Judas",
-   "wiki://The Book of Belial"
+   "wiki://Федеральный закон от 06.07.2016 № 374-ФЗ"
   ]
  },
  {
   "id": 9,
-  "question": "Which item does Cain start with?",
+  "question": "Как называется Глава IV.2 Федерального закона от 24.07.1998 № 125-ФЗ?",
   "type": "factual",
   "answer_contexts": [
-   " | collectibles = {{i|Lucky Foot}}\n | unlocked by  = Cain\n}}\n'''Cain''' is a [[character]] unlocked by obtaining 55 or more [[coin]]s at once in a run. He starts with two [[Red Heart container]]s, one {{e|Key}}, and {{i|Lucky Foot}}.\n\n{{dlc|a}} Cain "
+   "КОНТРОЛЬ ЗА УПЛАТОЙ СТРАХОВЫХ ВЗНОСОВ И ВЫПЛАТОЙ СТРАХОВОГО ОБЕСПЕЧЕНИЯ"
   ],
   "doc_ids": [
-   "wiki://Cain"
+   "wiki://Федеральный закон от 24.07.1998 № 125-ФЗ"
   ]
  },
  {
   "id": 10,
-  "question": "Which character starts with the Incubus familiar?",
+  "question": "Как называется статья 55.1 Федерального закона от 24.07.2009 № 209-ФЗ?",
   "type": "factual",
   "answer_contexts": [
-   " | collectibles = {{blindfolded}}<br>{{i|Box of Friends}} (unlisted)<br>{{i|Incubus}}<br>{{i|Cambion Conception}}\n | unlocked by  = Lilith\n}}\n'''Lilith''' is a [[character]] added in ''[[The Binding of Isaac: Afterbirth]]''. Lilith starts with one re"
+   "Статья 55.1. Подготовка и дрессировка собак охотничьих пород"
   ],
   "doc_ids": [
-   "wiki://Lilith",
-   "wiki://Incubus"
+   "wiki://Федеральный закон от 24.07.2009 № 209-ФЗ"
   ]
  },
  {
   "id": 11,
-  "question": "How do I unlock Eve?",
+  "question": "В каком кратном размере минимального размера оплаты труда хищение признаётся совершённым в крупных размерах в статьях 89–93 УК РСФСР?",
   "type": "factual",
   "answer_contexts": [
-   "'''Eve''' is a [[character]] unlocked by beating two floors in a row without collecting any heart pickups. She starts with two [[Red Heart container]]s, {{i|Whore of Babylon}}, and {{i|Dead Bird}}.\n* {{dlc+|a}} Eve will also start with {{i|Razor Blad"
+   "пятидесятикратно превышающую минимальный размер оплаты труда, установленный законодательством РСФСР"
   ],
   "doc_ids": [
-   "wiki://Eve"
+   "wiki://Закон о внесении изменений и дополнений в УК, УПК и КОАП РСФСР 5.12.1991"
   ]
  },
  {
   "id": 12,
-  "question": "What does The Fool card do when used?",
+  "question": "Какой срок дисквалификации может быть назначен должностным лицам за нарушение требований обеспечения безопасности и антитеррористической защищенности объектов топливно-энергетического комплекса?",
   "type": "factual",
   "answer_contexts": [
-   "| description =          Teleports Isaac to the starting room of the current floor.\n}}\n\n{{cit|c}}\n\n== Effects ==\n* Teleports Isaac to the starting room of the current floor.\n\n== Notes ==\n* If the room teleported out of was hostile, it will be reset.\n"
+   "дисквалификацию на срок от шести месяцев до трех лет"
   ],
   "doc_ids": [
-   "wiki://0 - The Fool"
+   "wiki://Федеральный закон от 21.07.2011 № 257-ФЗ"
   ]
  },
  {
   "id": 13,
-  "question": "What is Ultra Greed's base HP?",
+  "question": "В каком издании и в каких номерах опубликован Градостроительный кодекс Российской Федерации, в статью 55 которого внесены изменения данным законом?",
   "type": "factual",
   "answer_contexts": [
-   " | base hp     = 3500\n | pool        = Final Boss Chest ([[Endings|Ending 18]])<br/>{{M|Greed Donation Machine}}\n}}\n\n'''Ultra Greed''' is the final [[boss]] of [[Greed Mode]] and [[Endings|Ending 18]].\n\n== Behavior ==\nUltra Greed is fought in a uniqu"
+   "Собрание законодательства Российской Федерации, 2005, № 1, ст. 16; 2006, № 1, ст. 21"
   ],
   "doc_ids": [
-   "wiki://Ultra Greed"
+   "wiki://Федеральный закон от 27.07.2006 № 143-ФЗ"
   ]
  },
  {
   "id": 14,
-  "question": "What is the item ID of The D6?",
+  "question": "Какая сумма неуплаченных таможенных платежей, согласно примечанию к статье 194 УК РФ в редакции ФЗ от 25.06.1998 № 92-ФЗ, признаёт уклонение совершённым в крупном размере?",
   "type": "factual",
   "answer_contexts": [
-   " | id = 105\n | quote = Reroll your destiny\n | description = Re-rolls all items in the current [[room]] into other items, depending on the current room's [[item pool]].\n | quality     = 4\n | tags        = offensive nocantrip\n | recharge = 6\n | unlocke"
+   "Уклонение от уплаты таможенных платежей признается совершенным в крупном размере, если сумма неуплаченных таможенных платежей превышает одну тысячу минимальных размеров оплаты труда"
   ],
   "doc_ids": [
-   "wiki://The D6"
+   "wiki://Федеральный закон от 25.06.1998 № 92-ФЗ"
   ]
  },
  {
   "id": 15,
-  "question": "How do I unlock Azazel?",
+  "question": "В какой срок пользователи недр представляют расчеты регулярных платежей за пользование недрами?",
   "type": "factual",
   "answer_contexts": [
-   "'''Azazel''' is a [[character]] unlocked by making three {{R|Devil Room}} deals in one run. He starts with 3 {{E|Black Heart}}s, {{p|0 - The Fool}}, [[flight]], and a short-ranged version of {{i|Brimstone}} that deals damage {{dlcalt|13|r=9}} times i"
+   "ежеквартально не позднее последнего числа месяца, следующего за истекшим кварталом"
   ],
   "doc_ids": [
-   "wiki://Azazel"
+   "wiki://Федеральный закон от 29.06.2004 № 58-ФЗ"
   ]
  },
  {
   "id": 16,
-  "question": "Compare Hush and Mega Satan: which ending is Hush the final boss of, and where is Mega Satan fought?",
-  "type": "composite",
+  "question": "Не позднее какого срока документы, подтверждающие полномочия уполномоченных представителей, должны быть представлены в налоговый орган?",
+  "type": "factual",
   "answer_contexts": [
-   " | pool        = Final Boss Chest ([[Endings|Ending 17]], first kill only)<br>Gateway to {{s|Sheol}} / {{s|Cathedral}} <br>{{dlc+|a+}} Entrance to {{s|The Void}} {{dlc-}}\n | unlocked by = Blue Womb\n}}\n\n'''Hush''' is the [[boss]] of {{s|???}}, and the",
-   " | environment = <u>Boss</u><br>{{floor|Chest}}{{floor|Dark Room}}\n | base hp     = 5000\n | pool        = Final Boss Chest + Gateway to {{s|The Void}} ({{dlcalt|50% Chance, otherwise cuts directly to [[Endings|Ending 16]]|r+=100% chance, no longer cu"
+   "не позднее трех дней со дня предоставления уполномоченному представителю соответствующих полномочий"
   ],
   "doc_ids": [
-   "wiki://Hush",
-   "wiki://Mega Satan"
+   "wiki://Федеральный закон от 01.05.2016 № 130-ФЗ"
   ]
  },
  {
   "id": 17,
-  "question": "What is the difference between Hush the boss and Hushy the item?",
-  "type": "composite",
+  "question": "Как называется глава 7 Семейного кодекса РФ?",
+  "type": "factual",
   "answer_contexts": [
-   "'''Hush''' is the [[boss]] of {{s|???}}, and the final boss of [[Endings|Ending 17]].\n\n== Behavior ==\n=== Phase 1 ===\nHush begins with a fight identical to the first phase of the {{E|???}} fight, having the same attacks and behavior but with a differ",
-   " | description = Spawns a {{E|Hush|n}} [[familiar]] that bounces diagonally around the [[Rooms|room]] and deals contact damage. While firing tears, it stops moving. {{dlc|r+}} When stationary, Hushy will periodically fire out rings of projectiles.\n |"
+   "Глава 7. ЗАКОННЫЙ РЕЖИМ ИМУЩЕСТВА СУПРУГОВ"
   ],
   "doc_ids": [
-   "wiki://Hush",
-   "wiki://Hushy"
+   "wiki://Семейный кодекс РФ"
   ]
  },
  {
   "id": 18,
-  "question": "Which items do Judas and Cain start with and what does each of them do?",
-  "type": "composite",
+  "question": "Какое полное название носит Федеральный закон от 24.07.2009 № 209-ФЗ?",
+  "type": "factual",
   "answer_contexts": [
-   " | collectibles = {{i|The Book of Belial}}\n | unlocked by  = Judas\n}}\n'''Judas''' is a [[character]] unlocked after beating {{E|Satan}} for the first time. He starts with 1 [[Red Heart container]], 3 {{e|Penny|text=coins}}, and {{i|The Book of Belial",
-   " | collectibles = {{i|Lucky Foot}}\n | unlocked by  = Cain\n}}\n'''Cain''' is a [[character]] unlocked by obtaining 55 or more [[coin]]s at once in a run. He starts with two [[Red Heart container]]s, one {{e|Key}}, and {{i|Lucky Foot}}.\n\n{{dlc|a}} Cain ",
-   " | description = {{dlc+|na}} +2 [[damage]] for the current [[Rooms|room]]. Passively guarantees a {{r|Devil Room}} or {{r|Angel Room}} will appear while held.{{dlc-}}<br>{{dlc+|a}} +2 [[damage]] for the current [[Rooms|room]]. Passively increases the",
-   " | description = +1 [[luck]]. Improves Isaac's chances at various random events (independent from the luck stat). {{dlc|r}} Converts all bad [[pill]]s into good pills, without identifying them.\n | quality     = 2\n | tags        = summonable offensive"
+   "Об охоте и о сохранении охотничьих ресурсов и о внесении изменений в отдельные законодательные акты Российской Федерации"
   ],
   "doc_ids": [
-   "wiki://Judas",
-   "wiki://Cain",
-   "wiki://The Book of Belial",
-   "wiki://Lucky Foot"
+   "wiki://Федеральный закон от 24.07.2009 № 209-ФЗ"
   ]
  },
  {
   "id": 19,
-  "question": "Which items does Eve start with, and what do they do?",
-  "type": "composite",
+  "question": "Какой подпункт дополняет пункт 5 статьи 27 Земельного кодекса Российской Федерации согласно статье 2 закона № 102-ФЗ?",
+  "type": "factual",
   "answer_contexts": [
-   " | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}}\n | unlocked by  = Eve\n | image name   = * {{dlc|nr|Rebirth}}\n}}\n'''Eve''' is a [[character]] unlocked by beating two floors in a row without col",
-   " | description  = Grants +1.5 [[Damage]] and +0.3 [[Speed]] whenever Isaac has a {{E|Half Red Heart}} or less.\n | quality      = 2\n | tags         = summonable offensive\n}}\n\n{{cit|p}}\n\n== Effects ==\n* Grants +1.5 [[Damage]] and +0.3 [[Speed]] wheneve",
-   " | description = Damages Isaac for one heart and grants +1.2 [[damage]] for the current [[room]]. {{dlc|r}} Subsequent uses in the same room only take half a heart.\n | quality     = 0\n | tags        = nolostbr {{dlc|r+|devilsacrifice}}\n | recharge   "
+   "14) в первом и втором поясах зон санитарной охраны водных объектов, используемых для целей питьевого и хозяйственно-бытового водоснабжения."
   ],
   "doc_ids": [
-   "wiki://Eve",
-   "wiki://Whore of Babylon",
-   "wiki://Razor Blade"
+   "wiki://Федеральный закон от 19.06.2007 № 102-ФЗ"
   ]
  },
  {
   "id": 20,
-  "question": "How do Eve and Tainted Eve differ?",
-  "type": "composite",
+  "question": "Как называется статья 36.1 Водного кодекса РФ?",
+  "type": "factual",
   "answer_contexts": [
-   " | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}}\n | unlocked by  = Eve\n | image name   = * {{dlc|nr|Rebirth}}\n}}\n'''Eve''' is a [[character]] unlocked by beating two floors in a row without col",
-   " | collectibles = {{i|Sumptorium}}\n | unlocked by = The Curdled\n}}\n'''Tainted Eve''' is a [[Characters|character]] added in [[The Binding of Isaac: Repentance]]. She is the alternate version of {{C|Eve}} with ragged hair, no bird, ruined mascara as i"
+   "Реестр недобросовестных водопользователей и участников аукциона на право заключения договора водопользования"
   ],
   "doc_ids": [
-   "wiki://Eve",
-   "wiki://Tainted Eve"
+   "wiki://Водный кодекс РФ"
   ]
  },
  {
   "id": 21,
-  "question": "How are Judas and Lilith unlocked?",
-  "type": "composite",
+  "question": "Статья 1 Федерального закона № 357-ФЗ изменяет статью 40 какого закона Российской Федерации (укажите номер и название)?",
+  "type": "factual",
   "answer_contexts": [
-   "'''Judas''' is a [[character]] unlocked after beating {{E|Satan}} for the first time. He starts with 1 [[Red Heart container]], 3 {{e|Penny|text=coins}}, and {{i|The Book of Belial}}. Judas also has a 1.35x damage multiplier.\n\n__TOC__\n{{clear}}\n\n== B",
-   "Lilith is unlocked by completing [[Greed mode]] with {{C|Azazel}}.\n\n== Notes ==\n* Lilith's Incubus cannot be rerolled.\n** The Incubus can be found as a separate item, and picking it up will grant Lilith another Incubus familiar.\n* {{dlc|r}} The Incub"
+   "Закона Российской Федерации от 9 октября 1992 года N 3612-1 \"Основы законодательства Российской Федерации о культуре\""
   ],
   "doc_ids": [
-   "wiki://Judas",
-   "wiki://Lilith"
+   "wiki://Федеральный закон от 28.11.2015 № 357-ФЗ"
   ]
  },
  {
   "id": 22,
-  "question": "Compare it livse and Mom's Heart.",
-  "type": "composite",
+  "question": "Какой срок лишения свободы установлен частью первой статьи 111 УК РФ в редакции, внесённой пунктом 4 статьи 1 ФЗ от 25.06.1998 № 92-ФЗ?",
+  "type": "factual",
   "answer_contexts": [
-   " | base hp     = 645\n | pool        = {{i|The Polaroid}} and {{i|The Negative}}<br>Random {{ip|Boss}} item if neither are unlocked<br>{{s|The Void}} Gateway if unlocked (5% Chance, requires +10 [[Damage]] or +20 Items)<br>Gateway to {{r|Boss Rush}} (",
-   " | base hp     = 950\n | pool        = End Chest ([[Endings|Endings 1-11]])<br>Gateway to {{s|The Void}} if unlocked (10% Chance)<br>Gateway to {{s|???}} (Time under 30:00 & Mom's Heart killed 10 times)\n | unlocked by = The Womb\n }}\n\n'''Mom's Heart'''"
+   "наказывается лишением свободы на срок от двух до восьми лет."
   ],
   "doc_ids": [
-   "wiki://Mom",
-   "wiki://Mom's Heart"
+   "wiki://Федеральный закон от 25.06.1998 № 92-ФЗ"
   ]
  },
  {
   "id": 23,
-  "question": "What time limits apply to opening the Boss Run and the path ????",
-  "type": "composite",
+  "question": "Каков срок, в течение которого орган, выдавший разрешение на строительство, обязан обеспечить проверку документов и выдать разрешение на ввод объекта в эксплуатацию?",
+  "type": "factual",
   "answer_contexts": [
-   "becomes available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}}\n\nIn the center of a large room, there will be 4 (",
-   "s 1-11]])<br>Gateway to {{s|The Void}} if unlocked (10% Chance)<br>Gateway to {{s|???}} (Time under 30:00 & Mom's Heart killed 10 times)\n | unlocked by = The Womb\n }}\n\n'''Mom's Heart''' is a [[boss]] that can appear on the second floor of [[Chapter 4"
+   "в течение десяти дней со дня поступления заявления о выдаче разрешения на ввод объекта в эксплуатацию"
   ],
   "doc_ids": [
-   "wiki://Boss Rush",
-   "wiki://Mom's Heart"
+   "wiki://Федеральный закон от 27.07.2006 № 143-ФЗ"
   ]
  },
  {
   "id": 24,
-  "question": "Which is tougher on paper, Mega Satan or Ultra Greed? Compare base HP.",
-  "type": "composite",
+  "question": "Как называется Глава 12 Таможенного кодекса РФ (1993)?",
+  "type": "factual",
   "answer_contexts": [
-   " | base hp     = 5000\n | pool        = Final Boss Chest + Gateway to {{s|The Void}} ({{dlcalt|50% Chance, otherwise cuts directly to [[Endings|Ending 16]]|r+=100% chance, no longer cuts away}})\n | unlocked by = Angels\n}}\n\n'''Mega Satan''' is a [[boss",
-   " | base hp     = 3500\n | pool        = Final Boss Chest ([[Endings|Ending 18]])<br/>{{M|Greed Donation Machine}}\n}}\n\n'''Ultra Greed''' is the final [[boss]] of [[Greed Mode]] and [[Endings|Ending 18]].\n\n== Behavior ==\nUltra Greed is fought in a uniqu"
+   "СВОБОДНАЯ ТАМОЖЕННАЯ ЗОНА. СВОБОДНЫЙ СКЛАД"
   ],
   "doc_ids": [
-   "wiki://Mega Satan",
-   "wiki://Ultra Greed"
+   "wiki://Таможенный кодекс РФ (1993)"
   ]
  },
  {
   "id": 25,
-  "question": "What do the Missing Poster and Mysterious Paper trinkets do?",
+  "question": "Какой год принятия Кодекса РФ об административных правонарушениях Государственной Думой и какой номер Собрания законодательства РФ 2014 года содержит публикацию Конституции РФ?",
   "type": "composite",
   "answer_contexts": [
-   " | description = {{dlc|na}} If Isaac dies to a {{r|Sacrifice Room}}'s spikes, a puzzle piece will appear on his [[Isaac's last will|last will]].<br>{{dlc|a}} Dying in a {{r|Sacrifice Room}} while holding it unlocks {{c|The Lost}}. If The Lost is alre",
-   " | description = Has a chance to replicate the effects of {{t|A Missing Page}}, {{i|The Polaroid}}, {{i|The Negative}}, or {{t|Missing Poster}}.\n | tags        = {{dlc|r+|nochallenge}}\n | unlocked by = Mysterious Paper\n}}\n\n{{cit|ut}}\n\n== Effects ==\n*",
-   "The Lost is unlocked by dying in a {{R|Sacrifice Room}} while holding {{t|Missing Poster}}.\n\n* In order to unlock The Lost, you need to unlock [[Missing Poster]].\n* {{t|Missing Poster}} is unlocked by defeating {{e|The Lamb}} as {{C|Isaac}}.\n\n* Looki"
+   "20 декабря 2001 года",
+   "Собрание законодательства Российской Федерации, 2014, № 31, ст. 4398"
   ],
   "doc_ids": [
-   "wiki://Missing Poster",
-   "wiki://Mysterious Paper",
-   "wiki://The Lost"
+   "wiki://Кодекс РФ об административных правонарушениях",
+   "wiki://Конституция Российской Федерации"
   ]
  },
  {
   "id": 26,
-  "question": "How are Azazel and Lilith each unlocked?",
+  "question": "С какой даты утратил силу пункт 1 статьи 3 Федерального закона от 13.07.2015 № 244-ФЗ и какой подпункт дополняет пункт 5 статьи 27 Земельного кодекса РФ согласно статье 2 Федерального закона от 19.06.2007 № 102-ФЗ?",
   "type": "composite",
   "answer_contexts": [
-   "'''Azazel''' is a [[character]] unlocked by making three {{R|Devil Room}} deals in one run. He starts with 3 {{E|Black Heart}}s, {{p|0 - The Fool}}, [[flight]], and a short-ranged version of {{i|Brimstone}} that deals damage {{dlcalt|13|r=9}} times i",
-   "Lilith is unlocked by completing [[Greed mode]] with {{C|Azazel}}.\n\n== Notes ==\n* Lilith's Incubus cannot be rerolled.\n** The Incubus can be found as a separate item, and picking it up will grant Lilith another Incubus familiar.\n* {{dlc|r}} The Incub"
+   "1 января 2017 года",
+   "14) в первом и втором поясах зон санитарной охраны водных объектов, используемых для целей питьевого и хозяйственно-бытового водоснабжения."
   ],
   "doc_ids": [
-   "wiki://Azazel",
-   "wiki://Lilith"
+   "wiki://Федеральный закон от 13.07.2015 № 244-ФЗ",
+   "wiki://Федеральный закон от 19.06.2007 № 102-ФЗ"
   ]
  },
  {
   "id": 27,
-  "question": "Which card does Azazel start with and what does it do?",
+  "question": "Какие даты принятия Государственной Думой указаны по Федеральному закону от 01.05.2016 № 130-ФЗ и по Федеральному закону от 06.07.2016 № 374-ФЗ?",
   "type": "composite",
   "answer_contexts": [
-   " | pickups      = {{p|0 - The Fool}}\n | collectibles = Short range {{i|Brimstone}}<br>[[Flight]]\n | unlocked by  = Azazel\n}}\n'''Azazel''' is a [[character]] unlocked by making three {{R|Devil Room}} deals in one run. He starts with 3 {{E|Black Heart}",
-   "| description =          Teleports Isaac to the starting room of the current floor.\n}}\n\n{{cit|c}}\n\n== Effects ==\n* Teleports Isaac to the starting room of the current floor.\n\n== Notes ==\n* If the room teleported out of was hostile, it will be reset.\n"
+   "22 апреля 2016 года",
+   "24 июня 2016 года"
   ],
   "doc_ids": [
-   "wiki://Azazel",
-   "wiki://0 - The Fool"
+   "wiki://Федеральный закон от 01.05.2016 № 130-ФЗ",
+   "wiki://Федеральный закон от 06.07.2016 № 374-ФЗ"
   ]
  },
  {
   "id": 28,
-  "question": "What is the final boss of Gread Mode and how much HPit have?",
+  "question": "Какая сумма ущерба признаётся крупным по ст. 217.1 УК РФ (ФЗ от 21.07.2011 № 257-ФЗ) и в какой день Государственная Дума приняла ФЗ от 24.07.1998 № 125-ФЗ?",
   "type": "composite",
   "answer_contexts": [
-   "'''Greed mode''' is a game mode introduced in ''[[The Binding of Isaac: Afterbirth]]''.\n\n== Gameplay ==\n[[file:Greed Mode Layout.png|125px|right]]\nIn Greed mode, each floor has a {{R|Curse Room}}, a {{R|Devil Room}}/{{R|Angel Room}}, a double-wide [[",
-   " | base hp     = 3500\n | pool        = Final Boss Chest ([[Endings|Ending 18]])<br/>{{M|Greed Donation Machine}}\n}}\n\n'''Ultra Greed''' is the final [[boss]] of [[Greed Mode]] and [[Endings|Ending 18]].\n\n== Behavior ==\nUltra Greed is fought in a uniqu"
+   "Крупным ущербом в настоящей статье признается ущерб, сумма которого превышает один миллион рублей.",
+   "2 июля 1998 года"
   ],
   "doc_ids": [
-   "wiki://Greed Mode",
-   "wiki://Ultra Greed"
+   "wiki://Федеральный закон от 21.07.2011 № 257-ФЗ",
+   "wiki://Федеральный закон от 24.07.1998 № 125-ФЗ"
   ]
  },
  {
   "id": 29,
-  "question": "Which timed challenges give secrets for completion marks, and what is the Boss Rush time limit?",
+  "question": "Что установлено по Федеральному закону от 24.07.2009 № 209-ФЗ в части даты его принятия Государственной Думой и по Федеральному закону от 25.06.1998 № 92-ФЗ в части срока лишения свободы, предусмотренного частью первой статьи 111 УК РФ в редакции, внесённой пунктом 4 статьи 1 данного закона?",
   "type": "composite",
   "answer_contexts": [
-   "acter]]s have different requirements for unlocking secrets. One secret each is unlocked for beating timed challenges ([[Boss Rush]] and [[Hush]]) and main path bosses ([[Isaac]], [[??? (Boss)|???]], [[Satan]], and [[The Lamb]]). There are no secrets ",
-   "becomes available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}}\n\nIn the center of a large room, there will be 4 ("
+   "17 июля 2009 года",
+   "наказывается лишением свободы на срок от двух до восьми лет."
   ],
   "doc_ids": [
-   "wiki://Completion Marks",
-   "wiki://Boss Rush"
+   "wiki://Федеральный закон от 24.07.2009 № 209-ФЗ",
+   "wiki://Федеральный закон от 25.06.1998 № 92-ФЗ"
   ]
  },
  {
   "id": 30,
-  "question": "Compare The Lost and Keeper: how does each handle health?",
+  "question": "Как называется статья 36.1 Водного кодекса РФ и глава 43 Гражданского кодекса РФ?",
   "type": "composite",
   "answer_contexts": [
-   "The Lost starts with no health and cannot gain health by any means. It will die from any damage taken.\n\n* The Lost starts with [[flight]].\n** {{plat|3DS}} The Lost also starts with {{i|D4}} (if unlocked).\n** {{plat|iOS}} The Lost also starts with [[s",
-   "* {{dlc|r}} Keeper will start with 3 [[Coin Heart]]s instead of 2 after defeating {{E|Hush}} with Keeper. If Hush has not yet been beaten with him, Keeper can still gain one extra Coin Heart container with a Health Up.\n\n* {{dlc|r}} Instead of using ["
+   "Реестр недобросовестных водопользователей и участников аукциона на право заключения договора водопользования",
+   "Финансирование под уступку денежного требования"
   ],
   "doc_ids": [
-   "wiki://The Lost",
-   "wiki://Keeper"
+   "wiki://Водный кодекс РФ",
+   "wiki://Гражданский кодекс РФ"
   ]
  },
  {
   "id": 31,
-  "question": "What page categories exist for bosses on this wiki?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Какой штраф по ч. 1 ст. 217.1 УК РФ за нарушение требований обеспечения безопасности объектов ТЭК установлен Федеральным законом от 21.07.2011 № 257-ФЗ и в какой день Совет Федерации одобрил Федеральный закон от 24.07.1998 № 125-ФЗ?",
+  "type": "composite",
+  "answer_contexts": [
+   "штрафом в размере до восьмидесяти тысяч рублей или в размере заработной платы или иного дохода осужденного за период до шести месяцев",
+   "9 июля 1998 года"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 21.07.2011 № 257-ФЗ",
+   "wiki://Федеральный закон от 24.07.1998 № 125-ФЗ"
+  ]
  },
  {
   "id": 32,
-  "question": "How are the character pages structured, and which sections does each have?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Что предусмотрено в качестве наказания за деяния, предусмотренные ч. 2 ст. 215.1 УК РФ, и какой срок установлен для проверки документов и выдачи разрешения на ввод объекта в эксплуатацию по Градостроительному кодексу РФ?",
+  "type": "composite",
+  "answer_contexts": [
+   "наказываются лишением свободы на срок до пяти лет с лишением права занимать определенные должности или заниматься определенной деятельностью на срок до трех лет или без такового",
+   "в течение десяти дней со дня поступления заявления о выдаче разрешения на ввод объекта в эксплуатацию"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 27.05.1998 № 77-ФЗ",
+   "wiki://Федеральный закон от 27.07.2006 № 143-ФЗ"
+  ]
  },
  {
   "id": 33,
-  "question": "What sections are typically present on a boss page (HP, phases, rewards), and how does that differ from an item page?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Как именуется статья 69 Семейного кодекса РФ и глава 12 Таможенного кодекса РФ (1993)?",
+  "type": "composite",
+  "answer_contexts": [
+   "Статья 69. Лишение родительских прав",
+   "СВОБОДНАЯ ТАМОЖЕННАЯ ЗОНА. СВОБОДНЫЙ СКЛАД"
+  ],
+  "doc_ids": [
+   "wiki://Семейный кодекс РФ",
+   "wiki://Таможенный кодекс РФ (1993)"
+  ]
  },
  {
   "id": 34,
-  "question": "How do pages link to each other for items and their pools?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "В какой день Государственная Дума приняла Федеральный закон от 13.07.2015 № 244-ФЗ и в какую дату Президент Российской Федерации подписал Федеральный закон от 19.06.2007 № 102-ФЗ?",
+  "type": "composite",
+  "answer_contexts": [
+   "30 июня 2015 года",
+   "19 июня 2007 года"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 13.07.2015 № 244-ФЗ",
+   "wiki://Федеральный закон от 19.06.2007 № 102-ФЗ"
+  ]
  },
  {
   "id": 35,
-  "question": "Which pages in the corpus are disambiguation pages?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Как именуется глава 7 Семейного кодекса РФ и статья 71 Таможенного кодекса РФ 1993 года?",
+  "type": "composite",
+  "answer_contexts": [
+   "Глава 7. ЗАКОННЫЙ РЕЖИМ ИМУЩЕСТВА СУПРУГОВ",
+   "Сроки временного ввоза (вывоза) товаров"
+  ],
+  "doc_ids": [
+   "wiki://Семейный кодекс РФ",
+   "wiki://Таможенный кодекс РФ (1993)"
+  ]
  },
  {
   "id": 36,
-  "question": "How are tarot card pages organized?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Что устанавливает закон № 130-ФЗ в части срока передачи квитанции о приёме документов, полученных в электронной форме, налоговому органу, и какой новый пункт 15 дополняет часть первую статьи 6 закона об оперативно-розыскной деятельности по закону № 374-ФЗ?",
+  "type": "composite",
+  "answer_contexts": [
+   "в течение шести дней со дня их отправки налоговым органом",
+   "15. Получение компьютерной информации."
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 01.05.2016 № 130-ФЗ",
+   "wiki://Федеральный закон от 06.07.2016 № 374-ФЗ"
+  ]
  },
  {
   "id": 37,
-  "question": "What kinds of infobox templates occur most often across pages?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Какой кратный размер МРОТ квалифицирует хищение как совершённое в крупном размере по ст. 89–93 УК РСФСР (закон от 05.12.1991) и какая дата редакции ФЗ от 02.07.2021 № 299-ФЗ приведена в тексте Земельного кодекса РФ?",
+  "type": "composite",
+  "answer_contexts": [
+   "пятидесятикратно превышающую минимальный размер оплаты труда, установленный законодательством РСФСР",
+   "(ред. 06.12.2021)"
+  ],
+  "doc_ids": [
+   "wiki://Закон о внесении изменений и дополнений в УК, УПК и КОАП РСФСР 5.12.1991",
+   "wiki://Земельный кодекс РФ"
+  ]
  },
  {
   "id": 38,
-  "question": "How does the wiki organize different versions of a boss (for example Mom vs Tainted Mom): separate pages, sections of one page, or disambiguation?",
+  "question": "Каковы правовые последствия для собственников земельных участков при размещении на них подземных линейных объектов трубопроводного транспорта?",
   "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
+  "answer_contexts": [
+   "оформление прав собственников объектов трубопроводного транспорта в порядке, установленном настоящим Кодексом, не требуется. У собственников земельных участков возникают ограничения прав в связи с установлением охранных зон таких объектов."
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 21.07.2011 № 257-ФЗ"
+  ]
  },
  {
   "id": 39,
-  "question": "How is version history documented across the pages?",
+  "question": "Каковы условия признания электронных документов, переданных физическим лицом через личный кабинет налогоплательщика, равнозначными документам на бумажном носителе?",
   "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
+  "answer_contexts": [
+   "документы, подписанные усиленной неквалифицированной электронной подписью, сформированной в порядке, установленном федеральным органом исполнительной власти, уполномоченным по контролю и надзору в области налогов и сборов"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 01.05.2016 № 130-ФЗ"
+  ]
  },
  {
   "id": 40,
-  "question": "How do pages reference other game versions (Afterbirth, Repentance) - which notations and links are used?",
+  "question": "Как дифференцируется уголовная ответственность за нарушение требований обеспечения безопасности и антитеррористической защищённости объектов ТЭК в зависимости от тяжести наступивших последствий?",
   "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 51,
-  "question": "What does d6 spindown to?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
+  "answer_contexts": [
+   "Нарушение требований обеспечения безопасности и антитеррористической защищенности объектов топливно-энергетического комплекса, если это деяние повлекло по неосторожности причинение тяжкого вреда здоровью человека или причинение крупного ущерба"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 21.07.2011 № 257-ФЗ"
+  ]
  },
  {
   "id": 41,
-  "question": "What is the soundtrack composer's total revenue from Repentance?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Каков правовой механизм внесения изменений в Налоговый кодекс РФ и какова периодичность таких изменений?",
+  "type": "abstract",
+  "answer_contexts": [
+   "с изм., внесёнными Федеральными"
+  ],
+  "doc_ids": [
+   "wiki://Налоговый кодекс РФ"
+  ]
  },
  {
   "id": 42,
-  "question": "Which Cuphead boss appears in the Isaac crossover DLC?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "В каких случаях муниципальный район осуществляет в области культуры полномочия, обычно отнесённые к городским поселениям, на территориях сельских поселений?",
+  "type": "abstract",
+  "answer_contexts": [
+   "осуществление полномочий, установленных абзацами вторым, четвертым и пятым части второй настоящей статьи, на территориях сельских поселений, если иное не установлено законом субъекта Российской Федерации"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 28.11.2015 № 357-ФЗ"
+  ]
+ },
+ {
+  "id": 43,
+  "question": "В каких случаях права и обязанности по договору водопользования исключаются из общего порядка, установленного частью 1 статьи 19 Водного кодекса РФ?",
+  "type": "abstract",
+  "answer_contexts": [
+   "за исключением прав и обязанностей по договору водопользования в части забора (изъятия) водных ресурсов из поверхностных водных объектов для целей питьевого и хозяйственно-бытового водоснабжения"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 19.06.2007 № 102-ФЗ"
+  ]
  },
  {
   "id": 44,
-  "question": "What did the Dead Cells crossover add to Repentance?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Каковы правовые последствия использования незарегистрированного судна и нарушения правил его государственной регистрации?",
+  "type": "abstract",
+  "answer_contexts": [
+   "Статья 22. Ответственность за использование незарегистрированного судна и нарушение правил государственной регистрации судов"
+  ],
+  "doc_ids": [
+   "wiki://Кодекс внутреннего водного транспорта РФ"
+  ]
  },
  {
   "id": 45,
-  "question": "How much does Repentance cost on the Nintendo Switch eShop in Japan?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Каковы правовые последствия для потребителя, если в государственной информационной системе ЖКХ отсутствует или не соответствует сведениям о размере платы за жилое помещение и коммунальные услуги?",
+  "type": "abstract",
+  "answer_contexts": [
+   "в случае, если в системе не размещена информация о размере платы, подлежащей внесению потребителем за жилое помещение и коммунальные услуги, либо размещена информация, которая не соответствует платежному документу"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 28.12.2016 № 469-ФЗ"
+  ]
  },
  {
   "id": 46,
-  "question": "What did patch 2.4 of Repentance change about Mother's HP?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Как регулируется порядок определения местоположения береговой линии (границы водного объекта) и какие органы наделяются полномочиями в этой сфере?",
+  "type": "abstract",
+  "answer_contexts": [
+   "Порядок определения местоположения береговой линии (границы водного объекта), случаи и периодичность ее определения устанавливаются Правительством Российской Федерации."
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 13.07.2015 № 244-ФЗ"
+  ]
  },
  {
   "id": 47,
-  "question": "What is the Tainted Mom character's starting item?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "Как обеспечивается единство системы государственной власти в условиях федеративного устройства Российской Федерации?",
+  "type": "abstract",
+  "answer_contexts": [
+   "Федеративное устройство Российской Федерации основано на ее государственной целостности, единстве системы государственной власти, разграничении предметов ведения и полномочий"
+  ],
+  "doc_ids": [
+   "wiki://Конституция Российской Федерации"
+  ]
+ },
+ {
+  "id": 48,
+  "question": "Как регулируется обязанность юридических лиц по формированию и утверждению собственных перечней инсайдерской информации?",
+  "type": "abstract",
+  "answer_contexts": [
+   "включают в себя в том числе инсайдерскую информацию, перечень которой утверждается нормативным актом Банка России, и утверждаются лицом, осуществляющим функции единоличного исполнительного органа"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 27.07.2010 № 224-ФЗ"
+  ]
  },
  {
   "id": 49,
-  "question": "Which item was added in the Antibirth 2 expansion?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
+  "question": "В каких случаях полномочия по решению вопросов местного значения на территориях сельских поселений и межселенных территориях осуществляются органами местного самоуправления муниципального района?",
+  "type": "abstract",
+  "answer_contexts": [
+   "на территориях сельских поселений, если иное не установлено законом субъекта Российской Федерации, а также на межселенной территории"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 28.11.2015 № 357-ФЗ"
+  ]
  },
  {
   "id": 50,
-  "question": "Which Stardew Valley villager gives Isaac a trinket?",
+  "question": "Каковы последствия для налогоплательщика-организации при неисполнении обязанности по обеспечению получения документов от налогового органа в электронной форме?",
+  "type": "abstract",
+  "answer_contexts": [
+   "документов в электронной форме по телекоммуникационным каналам связи через оператора электронного документооборота - в течение 10 дней со дня установления налоговым органом факта неисполнения налогоплательщиком-организацией такой обязанности"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 01.05.2016 № 130-ФЗ"
+  ]
+ },
+ {
+  "id": 51,
+  "question": "Какие виды согласия субъекта персональных данных предусмотрены Федеральным законом № 152-ФЗ «О персональных данных» и в каких случаях такое согласие не требуется?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
   "id": 52,
-  "question": "According to the wiki, what is Delirium's boss id and base HP, in which room does he appear, and from what chest does he drop?",
-  "type": "factual",
-  "answer_contexts": [
-   " | id          = 412\n | environment = <u>Boss</u><br>{{floor|The Void}}"
-  ],
-  "doc_ids": [
-   "wiki://Delirium",
-   "wiki://The Void"
-  ]
- },
- {
-  "id": 53,
-  "question": "List every floor and room where Monstro can appear according to the wiki, including the special variants (Double Trouble, Degraded Boss).",
-  "type": "factual",
-  "answer_contexts": [
-   "| environment = <u>Boss</u><br>{{floor|Basement}}{{floor|Burning Basement}}<br>{{room|challenge}}{{room|boss challenge}}{{room|boss rush}}<br><u>Double Trouble</u><br>{{floor|Caves}}{{floor|Catacombs}}{{floor|Flooded Caves}}<br>(With Another Monstro,"
-  ],
-  "doc_ids": [
-   "wiki://Monstro",
-   "wiki://Chapter 2 (Bosses)"
-  ]
- },
- {
-  "id": 54,
-  "question": "According to the wiki, how many waves does the Boss Rush consist of, how many bosses are in each wave, and what are the exact time limits and floors for unlocking it?",
-  "type": "factual",
-  "answer_contexts": [
-   "available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}}",
-   "The Boss Rush consists of 15 waves with 2 [[bosses]] per wave."
-  ],
-  "doc_ids": [
-   "wiki://Boss Rush",
-   "wiki://Mom"
-  ]
- },
- {
-  "id": 55,
-  "question": "Describe the floor layout of Greed Mode per the wiki: which rooms connect to the main arena, and how are the sixth floor and the final seventh floor different?",
-  "type": "factual",
-  "answer_contexts": [
-   "In Greed mode, each floor has a {{R|Curse Room}}, a {{R|Devil Room}}/{{R|Angel Room}}, a double-wide [[#Shop|Shop]], and an exit room all connected to a main double-height arena room with a [[button]] in the center.",
-   "The sixth floor (The Shop) does not have any Treasure Rooms but does have the Shop and Curse Rooms. The final seventh floor has no waves and contains only three rooms, the largest of which contains the game mode's [[Ultra Greed|final boss]].\n\nWhen pl"
-  ],
-  "doc_ids": [
-   "wiki://Greed Mode",
-   "wiki://Rooms"
-  ]
- },
- {
-  "id": 56,
-  "question": "Compare Monstro and Delirium based on their wiki pages: base HP, boss id, where they spawn, and what drops from each of them.",
-  "type": "composite",
-  "answer_contexts": [
-   "| name = Monstro\n | id = 20\n | environment",
-   " | base hp = 250\n | pool = {{ip|Boss}}",
-   " | id          = 412\n | environment = <u>Boss</u><br>{{floor|The Void}}"
-  ],
-  "doc_ids": [
-   "wiki://Monstro",
-   "wiki://Delirium"
-  ]
- },
- {
-  "id": 58,
-  "question": "What is the connection between Delirium and Ending 20: per both pages, what does defeating him unlock and what does he drop as a reward?",
-  "type": "composite",
-  "answer_contexts": [
-   "'''Delirium''' is a [[boss]] added in ''[[The Binding of Isaac: Afterbirth †]]''. It is the main boss of {{s|The Void}} and the final boss of [[Endings#Ending 20/Final Ending|Ending 20]].",
-   "Ending 20 is unlocked by completing {{s|The Void}}, defeating {{e|Delirium}}.{{dlc-}}"
-  ],
-  "doc_ids": [
-   "wiki://Delirium",
-   "wiki://Endings"
-  ]
- },
- {
-  "id": 59,
-  "question": "Which item pool do the Boss Rush items come from according to the two pages, what happens to the remaining items once one is picked up, and what extra reward does completing it give?",
-  "type": "composite",
-  "answer_contexts": [
-   "In the center of a large room, there will be 4 ({{dlc|a}} 2 or 4 / {{dlc|a+}} 2, 4 or 8) random [[items]] to choose from, which are picked from the {{ip|Treasure Room|text=Treasure Room item pool}}.",
-   "or Item Room, is a room that contains items from the {{ip|Treasure Room|text=Treasure Room item pool}}. They appear in [[chapters]] 1, 2, and 3 (and 4 if Isaac holds {{t|Bloody Crown}}, 5 with {{t|Holy Crown}} or {{t|Wicked Crown}}). Two also appear "
-  ],
-  "doc_ids": [
-   "wiki://Boss Rush",
-   "wiki://Treasure Room"
-  ]
- },
- {
-  "id": 60,
-  "question": "Describe the overall structure of this wiki: what are the main categories of pages (characters, items, bosses, modes, meta), how are they organized, and how do pages cross-reference each other?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 61,
-  "question": "How do enemy pages on this wiki differ from boss pages in terms of infobox fields, section structure, and how spawn data is presented?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 62,
-  "question": "According to the wiki, which new items and trinkets did the Booster Pack #6 update add, and in which shop locations do they appear?",
+  "question": "Какие ограничения на размещение рекламы, адресованной несовершеннолетним, установлены Федеральным законом «О рекламе»?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
-  "id": 63,
-  "question": "Which Sonic the Hedgehog character appears in the Womb according to the wiki, and what item does he drop?",
+  "id": 53,
+  "question": "Каков порядок и сроки государственной регистрации юридического лица в соответствии с Федеральным законом № 129-ФЗ «О государственной регистрации юридических лиц и индивидуальных предпринимателей»?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 54,
+  "question": "Какие гарантии и компенсации предусмотрены Федеральным законом «О государственной гражданской службе Российской Федерации» для гражданских служащих при увольнении в связи с сокращением штата?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 55,
+  "question": "Какие виды злоупотребления доминирующим положением на рынке установлены Федеральным законом «О защите конкуренции» и какие меры антимонопольного реагирования за них предусмотрены?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 56,
+  "question": "Каков порядок получения и переоформления лицензии на осуществление медицинской деятельности в соответствии с Федеральным законом «О лицензировании отдельных видов деятельности»?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 57,
+  "question": "Каков порядок регистрации и переоформления оружия в соответствии с Федеральным законом «Об оружии»?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 58,
+  "question": "Какие полномочия предусмотрены для Росреестра Федеральным законом «О государственной регистрации недвижимости»?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 59,
+  "question": "Каков порядок выдачи лицензий на образовательную деятельность в соответствии с Федеральным законом «Об образовании в Российской Федерации»?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 60,
+  "question": "Какие основания прекращения трудового договора предусмотрены Федеральным законом «О занятости населения в Российской Федерации»?",
   "type": "negative",
   "answer_contexts": [],
   "doc_ids": []

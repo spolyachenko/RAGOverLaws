@@ -16,7 +16,7 @@ def client():
     from openai import OpenAI
     env = load_env()
     return OpenAI(base_url=env["LLM_BASE_URL"], api_key=env["LLM_API_KEY"],
-                  max_retries=0), env["LLM_MODEL"]
+                  max_retries=0, timeout=600.0), env["LLM_MODEL"]
 
 
 def load_cache() -> dict:

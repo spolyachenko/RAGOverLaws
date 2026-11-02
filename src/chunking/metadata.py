@@ -3,8 +3,8 @@
 Извлечение (dedup + token512):
   структурные: date (последняя ревизия страницы, MediaWiki API), doc_len_tok,
                chunk_pos, n_chunks_in_doc
-  контентные:  keywords — top-5 TF-IDF (bigram, sublinear, english stop),
-               language — эвристика по доле латиницы (корпус однотипный: en)
+  контентные:  keywords — top-5 TF-IDF (bigram, sublinear, рус. стоп-слова),
+               language — эвристика по доле кириллицы (корпус однотипный: ru)
   качественные: noise — доля неалфавитных токенов
 
 Применение (метрики на gold_val: hit/recall/precision/ndcg + тайминги):
@@ -31,12 +31,27 @@ from utils import DATA, GOLD_VAL  # noqa: E402
 from retrieval.bm25 import bm25_topk  # noqa: E402
 from retrieval.metrics import _dedup_docs, _gold_titles, metrics  # noqa: E402
 
+# sklearn не знает русских стоп-слов — компактный список функциональной лексики
+# + генерических правовых слов (они несут мало дискриминации в keywords)
+RU_STOP = {"и", "в", "во", "не", "что", "он", "она", "они", "это", "как", "по", "но",
+           "а", "то", "так", "же", "из", "для", "о", "об", "при", "от", "к", "у", "на",
+           "был", "была", "было", "были", "есть", "быть", "его", "ее", "её", "их",
+           "государство", "федерация", "российской", "россии", "федеральный",
+           "закона", "законе", "закон", "законов", "статья", "статьи", "пункт",
+           "пункта", "пункте", "части", "раздел", "глава", "кодекс", "федеральных",
+           "принят", "принята", "подписан", "подписана", "вступил", "вступает",
+           "действие", "внесены", "внесение", "изменения", "дополнения", "редакции",
+           "ред", "установлен", "установлена", "предусмотрен", "предусмотрена",
+           "предусмотрено", "предусмотрены", "случае", "случаях", "целях", "порядке",
+           "основание", "основания", "оснований", "гражданин", "граждане", "организация",
+           "организации", "юридическое", "лицо", "лицу", "лиц", "должностное"}
+
 
 def noise_score(text: str) -> float:
     toks = text.split()
     if not toks:
         return 0.0
-    alpha = sum(1 for t in toks if re.search(r"[A-Za-z]", t))
+    alpha = sum(1 for t in toks if re.search(r"[A-Za-zА-Яа-яЁё]", t))
     return 1.0 - alpha / len(toks)
 
 
@@ -44,8 +59,8 @@ def _language(text: str) -> str:
     alpha = [c for c in text if c.isalpha()]
     if not alpha:
         return "other"
-    latin = sum(1 for c in alpha if c.isascii()) / len(alpha)
-    return "en" if latin >= 0.9 else "other"
+    cyr = sum(1 for c in alpha if "\u0400" <= c <= "\u04FF") / len(alpha)
+    return "ru" if cyr >= 0.5 else ("en" if cyr <= 0.1 else "other")
 
 
 def _load_dates() -> dict:
@@ -70,7 +85,7 @@ def fields(stage: str = "dedup", strategy: str = "token"):
     ck["date"] = ck["doc"].map(dates).fillna("")
     ck["language"] = ck["doc"].map(lang)
     ck["content_type"] = "article"  # единая вики: тип контента гомогенен
-    vec = TfidfVectorizer(sublinear_tf=True, stop_words="english",
+    vec = TfidfVectorizer(sublinear_tf=True, stop_words=list(RU_STOP),
                           max_features=20000, ngram_range=(1, 2))
     mat = vec.fit_transform(ck["text"])
     terms = vec.get_feature_names_out()

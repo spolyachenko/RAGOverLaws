@@ -31,7 +31,11 @@ def semantic_chunker(threshold: float = 0.8, model: str = "minishlab/potion-base
     from chonkie.embeddings import SentenceTransformerEmbeddings
     from sentence_transformers import SentenceTransformer
 
-    enc = SentenceTransformer(model)
+    if not hasattr(semantic_chunker, "_models"):
+        semantic_chunker._models = {}
+    if model not in semantic_chunker._models:
+        semantic_chunker._models[model] = SentenceTransformer(model)
+    enc = semantic_chunker._models[model]
     return SemanticChunker(embedding_model=SentenceTransformerEmbeddings(enc),
                            threshold=threshold, chunk_size=1024)
 
@@ -77,7 +81,7 @@ def chunk(stage: str, strategy: str, force=False, **kw) -> pd.DataFrame:
 
 def ablation(stage: str = "dedup",
              thresholds=(0.4, 0.5, 0.6, 0.8),
-             models=("minishlab/potion-base-32M", "sentence-transformers/all-MiniLM-L6-v2")):
+             models=("minishlab/potion-base-32M", "BAAI/bge-m3")):
     """Отдельная работа с SemanticChunker: сетка порог × эмбеддер, BM25-метрики на gold_val."""
     g = _gold_titles(GOLD_VAL)
     queries = list(g["question"])

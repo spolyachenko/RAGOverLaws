@@ -35,16 +35,26 @@ def raw(df: pd.DataFrame) -> pd.DataFrame:
     return _clean(df, lambda t: t)
 
 
+def _tpl_inner(m: re.Match) -> str:
+    """{{имя|а|б|в}} -> «а б в»: имя шаблона — мусор, аргументы (в т.ч. пометки
+    «Статья X. Пункт Y. Подпункт Z» — смысловые перекрёстные ссылки) сохраняем."""
+    inner = m.group(1)
+    if "|" in inner:
+        inner = inner.split("|", 1)[1]
+    return re.sub(r"\s+", " ", inner.replace("|", " ")).strip()
+
+
 def markup(df: pd.DataFrame) -> pd.DataFrame:
-    """Шаблоны и HTML: оставить внутренний текст, выбросить имена шаблонов и ключи infobox'а."""
+    """Шаблоны и HTML: имена шаблонов и ключи — выбросить, внутренний текст сохранить."""
     def fn(text: str) -> str:
         t = re.sub(r"<br\s*/?>", "\n", text, flags=re.I)
         t = re.sub(r"</?(u|b|i|center|div|p|strong|em)\b[^>]*>", "", t, flags=re.I)
         t = re.sub(r"\{\{dlcalt?\|[^}]*\}\}", "", t)
         t = re.sub(r"\{\{dlc-\}\}", "", t)
         t = re.sub(r"\{\{(r|ip|floor|hearts?|heart|dlc|icon|img|flag)\|([^}]*)\}\}", r"\2", t)
-        t = re.sub(r"\{\{[a-zA-Z][^{}]*\}\}", "", t)   # прочие простые {{name|...}}
-        t = re.sub(r"\{\{|\}\}", "", t)                  # вложенные хвосты
+        t = re.sub(r"\{\{([a-zA-ZА-Яа-яЁё][^{}]*)\}\}", _tpl_inner, t)
+        t = re.sub(r"\{\{([a-zA-ZА-Яа-яЁё][^{}]*)\}\}", _tpl_inner, t)  # вложенные
+        t = re.sub(r"\{\{|\}\}", "", t)                              # хвосты
         t = re.sub(r"\n{3,}", "\n\n", t)
         return t
     return _clean(df, fn)
@@ -53,7 +63,7 @@ def markup(df: pd.DataFrame) -> pd.DataFrame:
 def links(df: pd.DataFrame) -> pd.DataFrame:
     """[[A|B]] -> B, [[A]] -> A; Category/File/... удалены."""
     def fn(text: str) -> str:
-        t = re.sub(r"\[\[(?:Category|File|File:|Image|Image:|Portal|Help|Main)[^\]]*\]\]", "", text)
+        t = re.sub(r"\[\[(?:Category|Категория|File|Файл|Image|Image:|Portal|Help|Main|Викитека)[^\]]*\]\]", "", text)
         t = re.sub(r"\[\[[^\|\]]*\|([^\]]+)\]\]", r"\1", t)
         t = re.sub(r"\[\[([^\]]+)\]\]", r"\1", t)
         return t
@@ -63,7 +73,11 @@ def links(df: pd.DataFrame) -> pd.DataFrame:
 def normalize(df: pd.DataFrame) -> pd.DataFrame:
     """NFKC, NBSP/табы/переносы, отступы строк."""
     def fn(text: str) -> str:
-        t = unicodedata.normalize("NFKC", text)
+        # NFKC превращает «№» (U+2116) в «No» — для правового корпуса губительно,
+        # защищаем номерный знак на время нормализации
+        t = text.replace("\u2116", "\ufffc")
+        t = unicodedata.normalize("NFKC", t)
+        t = t.replace("\ufffc", "\u2116")
         t = t.replace("\u00a0", " ")
         t = re.sub(r"[ \t]+", " ", t)
         t = re.sub(r" ?\n ?", "\n", t)

@@ -1,191 +1,196 @@
 [
  {
-  "id": 51,
-  "question": "What does d6 spindown to?",
+  "id": 12,
+  "question": "Какой срок дисквалификации может быть назначен должностным лицам за нарушение требований обеспечения безопасности и антитеррористической защищенности объектов топливно-энергетического комплекса?",
+  "type": "factual",
+  "answer_contexts": [
+   "дисквалификацию на срок от шести месяцев до трех лет"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 21.07.2011 № 257-ФЗ"
+  ]
+ },
+ {
+  "id": 17,
+  "question": "Как называется глава 7 Семейного кодекса РФ?",
+  "type": "factual",
+  "answer_contexts": [
+   "Глава 7. ЗАКОННЫЙ РЕЖИМ ИМУЩЕСТВА СУПРУГОВ"
+  ],
+  "doc_ids": [
+   "wiki://Семейный кодекс РФ"
+  ]
+ },
+ {
+  "id": 27,
+  "question": "Какие даты принятия Государственной Думой указаны по Федеральному закону от 01.05.2016 № 130-ФЗ и по Федеральному закону от 06.07.2016 № 374-ФЗ?",
+  "type": "composite",
+  "answer_contexts": [
+   "22 апреля 2016 года",
+   "24 июня 2016 года"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 01.05.2016 № 130-ФЗ",
+   "wiki://Федеральный закон от 06.07.2016 № 374-ФЗ"
+  ]
+ },
+ {
+  "id": 48,
+  "question": "Как регулируется обязанность юридических лиц по формированию и утверждению собственных перечней инсайдерской информации?",
   "type": "abstract",
+  "answer_contexts": [
+   "включают в себя в том числе инсайдерскую информацию, перечень которой утверждается нормативным актом Банка России, и утверждаются лицом, осуществляющим функции единоличного исполнительного органа"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 27.07.2010 № 224-ФЗ"
+  ]
+ },
+ {
+  "id": 59,
+  "question": "Каков порядок выдачи лицензий на образовательную деятельность в соответствии с Федеральным законом «Об образовании в Российской Федерации»?",
+  "type": "negative",
   "answer_contexts": [],
   "doc_ids": []
  },
  {
-  "id": 17,
-  "question": "What is the difference between Hush the boss and Hushy the item?",
-  "type": "composite",
+  "id": 22,
+  "question": "Какой срок лишения свободы установлен частью первой статьи 111 УК РФ в редакции, внесённой пунктом 4 статьи 1 ФЗ от 25.06.1998 № 92-ФЗ?",
+  "type": "factual",
   "answer_contexts": [
-   "'''Hush''' is the [[boss]] of {{s|???}}, and the final boss of [[Endings|Ending 17]].\n\n== Behavior ==\n=== Phase 1 ===\nHush begins with a fight identical to the first phase of the {{E|???}} fight, having the same attacks and behavior but with a differ",
-   " | description = Spawns a {{E|Hush|n}} [[familiar]] that bounces diagonally around the [[Rooms|room]] and deals contact damage. While firing tears, it stops moving. {{dlc|r+}} When stationary, Hushy will periodically fire out rings of projectiles.\n |"
+   "наказывается лишением свободы на срок от двух до восьми лет."
   ],
   "doc_ids": [
-   "wiki://Hush",
-   "wiki://Hushy"
+   "wiki://Федеральный закон от 25.06.1998 № 92-ФЗ"
   ]
  },
  {
-  "id": 20,
-  "question": "How do Eve and Tainted Eve differ?",
-  "type": "composite",
+  "id": 24,
+  "question": "Как называется Глава 12 Таможенного кодекса РФ (1993)?",
+  "type": "factual",
   "answer_contexts": [
-   " | collectibles = {{i|Whore of Babylon}}<br>{{i|Dead Bird}}<br>{{unlockable}} {{dlc|a}} {{i|Razor Blade}}\n | unlocked by  = Eve\n | image name   = * {{dlc|nr|Rebirth}}\n}}\n'''Eve''' is a [[character]] unlocked by beating two floors in a row without col",
-   " | collectibles = {{i|Sumptorium}}\n | unlocked by = The Curdled\n}}\n'''Tainted Eve''' is a [[Characters|character]] added in [[The Binding of Isaac: Repentance]]. She is the alternate version of {{C|Eve}} with ragged hair, no bird, ruined mascara as i"
+   "СВОБОДНАЯ ТАМОЖЕННАЯ ЗОНА. СВОБОДНЫЙ СКЛАД"
   ],
   "doc_ids": [
-   "wiki://Eve",
-   "wiki://Tainted Eve"
+   "wiki://Таможенный кодекс РФ (1993)"
+  ]
+ },
+ {
+  "id": 44,
+  "question": "Каковы правовые последствия использования незарегистрированного судна и нарушения правил его государственной регистрации?",
+  "type": "abstract",
+  "answer_contexts": [
+   "Статья 22. Ответственность за использование незарегистрированного судна и нарушение правил государственной регистрации судов"
+  ],
+  "doc_ids": [
+   "wiki://Кодекс внутреннего водного транспорта РФ"
+  ]
+ },
+ {
+  "id": 15,
+  "question": "В какой срок пользователи недр представляют расчеты регулярных платежей за пользование недрами?",
+  "type": "factual",
+  "answer_contexts": [
+   "ежеквартально не позднее последнего числа месяца, следующего за истекшим кварталом"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 29.06.2004 № 58-ФЗ"
   ]
  },
  {
   "id": 37,
-  "question": "What kinds of infobox templates occur most often across pages?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 54,
-  "question": "According to the wiki, how many waves does the Boss Rush consist of, how many bosses are in each wave, and what are the exact time limits and floors for unlocking it?",
-  "type": "factual",
-  "answer_contexts": [
-   "available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}}",
-   "The Boss Rush consists of 15 waves with 2 [[bosses]] per wave."
-  ],
-  "doc_ids": [
-   "wiki://Boss Rush",
-   "wiki://Mom"
-  ]
- },
- {
-  "id": 62,
-  "question": "According to the wiki, which new items and trinkets did the Booster Pack #6 update add, and in which shop locations do they appear?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 34,
-  "question": "How do pages link to each other for items and their pools?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 52,
-  "question": "According to the wiki, what is Delirium's boss id and base HP, in which room does he appear, and from what chest does he drop?",
-  "type": "factual",
-  "answer_contexts": [
-   " | id          = 412\n | environment = <u>Boss</u><br>{{floor|The Void}}"
-  ],
-  "doc_ids": [
-   "wiki://Delirium",
-   "wiki://The Void"
-  ]
- },
- {
-  "id": 53,
-  "question": "List every floor and room where Monstro can appear according to the wiki, including the special variants (Double Trouble, Degraded Boss).",
-  "type": "factual",
-  "answer_contexts": [
-   "| environment = <u>Boss</u><br>{{floor|Basement}}{{floor|Burning Basement}}<br>{{room|challenge}}{{room|boss challenge}}{{room|boss rush}}<br><u>Double Trouble</u><br>{{floor|Caves}}{{floor|Catacombs}}{{floor|Flooded Caves}}<br>(With Another Monstro,"
-  ],
-  "doc_ids": [
-   "wiki://Monstro",
-   "wiki://Chapter 2 (Bosses)"
-  ]
- },
- {
-  "id": 14,
-  "question": "What is the item ID of The D6?",
-  "type": "factual",
-  "answer_contexts": [
-   " | id = 105\n | quote = Reroll your destiny\n | description = Re-rolls all items in the current [[room]] into other items, depending on the current room's [[item pool]].\n | quality     = 4\n | tags        = offensive nocantrip\n | recharge = 6\n | unlocke"
-  ],
-  "doc_ids": [
-   "wiki://The D6"
-  ]
- },
- {
-  "id": 63,
-  "question": "Which Sonic the Hedgehog character appears in the Womb according to the wiki, and what item does he drop?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 18,
-  "question": "Which items do Judas and Cain start with and what does each of them do?",
+  "question": "Какой кратный размер МРОТ квалифицирует хищение как совершённое в крупном размере по ст. 89–93 УК РСФСР (закон от 05.12.1991) и какая дата редакции ФЗ от 02.07.2021 № 299-ФЗ приведена в тексте Земельного кодекса РФ?",
   "type": "composite",
   "answer_contexts": [
-   " | collectibles = {{i|The Book of Belial}}\n | unlocked by  = Judas\n}}\n'''Judas''' is a [[character]] unlocked after beating {{E|Satan}} for the first time. He starts with 1 [[Red Heart container]], 3 {{e|Penny|text=coins}}, and {{i|The Book of Belial",
-   " | collectibles = {{i|Lucky Foot}}\n | unlocked by  = Cain\n}}\n'''Cain''' is a [[character]] unlocked by obtaining 55 or more [[coin]]s at once in a run. He starts with two [[Red Heart container]]s, one {{e|Key}}, and {{i|Lucky Foot}}.\n\n{{dlc|a}} Cain ",
-   " | description = {{dlc+|na}} +2 [[damage]] for the current [[Rooms|room]]. Passively guarantees a {{r|Devil Room}} or {{r|Angel Room}} will appear while held.{{dlc-}}<br>{{dlc+|a}} +2 [[damage]] for the current [[Rooms|room]]. Passively increases the",
-   " | description = +1 [[luck]]. Improves Isaac's chances at various random events (independent from the luck stat). {{dlc|r}} Converts all bad [[pill]]s into good pills, without identifying them.\n | quality     = 2\n | tags        = summonable offensive"
+   "пятидесятикратно превышающую минимальный размер оплаты труда, установленный законодательством РСФСР",
+   "(ред. 06.12.2021)"
   ],
   "doc_ids": [
-   "wiki://Judas",
-   "wiki://Cain",
-   "wiki://The Book of Belial",
-   "wiki://Lucky Foot"
+   "wiki://Закон о внесении изменений и дополнений в УК, УПК и КОАП РСФСР 5.12.1991",
+   "wiki://Земельный кодекс РФ"
   ]
  },
  {
-  "id": 45,
-  "question": "How much does Repentance cost on the Nintendo Switch eShop in Japan?",
-  "type": "negative",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 21,
-  "question": "How are Judas and Lilith unlocked?",
-  "type": "composite",
-  "answer_contexts": [
-   "'''Judas''' is a [[character]] unlocked after beating {{E|Satan}} for the first time. He starts with 1 [[Red Heart container]], 3 {{e|Penny|text=coins}}, and {{i|The Book of Belial}}. Judas also has a 1.35x damage multiplier.\n\n__TOC__\n{{clear}}\n\n== B",
-   "Lilith is unlocked by completing [[Greed mode]] with {{C|Azazel}}.\n\n== Notes ==\n* Lilith's Incubus cannot be rerolled.\n** The Incubus can be found as a separate item, and picking it up will grant Lilith another Incubus familiar.\n* {{dlc|r}} The Incub"
-  ],
-  "doc_ids": [
-   "wiki://Judas",
-   "wiki://Lilith"
-  ]
- },
- {
-  "id": 23,
-  "question": "What time limits apply to opening the Boss Run and the path ????",
-  "type": "composite",
-  "answer_contexts": [
-   "becomes available by beating [[Mom]] in {{s|Depths}}, {{s|Necropolis}}, or {{s|Dank Depths}} within 20 minutes, or {{dlc+|r}} beating her in {{s|Mausoleum}} or {{s|Gehenna}} within 25 minutes.{{dlc-}}\n\nIn the center of a large room, there will be 4 (",
-   "s 1-11]])<br>Gateway to {{s|The Void}} if unlocked (10% Chance)<br>Gateway to {{s|???}} (Time under 30:00 & Mom's Heart killed 10 times)\n | unlocked by = The Womb\n }}\n\n'''Mom's Heart''' is a [[boss]] that can appear on the second floor of [[Chapter 4"
-  ],
-  "doc_ids": [
-   "wiki://Boss Rush",
-   "wiki://Mom's Heart"
-  ]
- },
- {
-  "id": 38,
-  "question": "How does the wiki organize different versions of a boss (for example Mom vs Tainted Mom): separate pages, sections of one page, or disambiguation?",
-  "type": "abstract",
-  "answer_contexts": [],
-  "doc_ids": []
- },
- {
-  "id": 15,
-  "question": "How do I unlock Azazel?",
+  "id": 16,
+  "question": "Не позднее какого срока документы, подтверждающие полномочия уполномоченных представителей, должны быть представлены в налоговый орган?",
   "type": "factual",
   "answer_contexts": [
-   "'''Azazel''' is a [[character]] unlocked by making three {{R|Devil Room}} deals in one run. He starts with 3 {{E|Black Heart}}s, {{p|0 - The Fool}}, [[flight]], and a short-ranged version of {{i|Brimstone}} that deals damage {{dlcalt|13|r=9}} times i"
+   "не позднее трех дней со дня предоставления уполномоченному представителю соответствующих полномочий"
   ],
   "doc_ids": [
-   "wiki://Azazel"
+   "wiki://Федеральный закон от 01.05.2016 № 130-ФЗ"
+  ]
+ },
+ {
+  "id": 30,
+  "question": "Как называется статья 36.1 Водного кодекса РФ и глава 43 Гражданского кодекса РФ?",
+  "type": "composite",
+  "answer_contexts": [
+   "Реестр недобросовестных водопользователей и участников аукциона на право заключения договора водопользования",
+   "Финансирование под уступку денежного требования"
+  ],
+  "doc_ids": [
+   "wiki://Водный кодекс РФ",
+   "wiki://Гражданский кодекс РФ"
   ]
  },
  {
   "id": 10,
-  "question": "Which character starts with the Incubus familiar?",
+  "question": "Как называется статья 55.1 Федерального закона от 24.07.2009 № 209-ФЗ?",
   "type": "factual",
   "answer_contexts": [
-   " | collectibles = {{blindfolded}}<br>{{i|Box of Friends}} (unlisted)<br>{{i|Incubus}}<br>{{i|Cambion Conception}}\n | unlocked by  = Lilith\n}}\n'''Lilith''' is a [[character]] added in ''[[The Binding of Isaac: Afterbirth]]''. Lilith starts with one re"
+   "Статья 55.1. Подготовка и дрессировка собак охотничьих пород"
   ],
   "doc_ids": [
-   "wiki://Lilith",
-   "wiki://Incubus"
+   "wiki://Федеральный закон от 24.07.2009 № 209-ФЗ"
   ]
+ },
+ {
+  "id": 45,
+  "question": "Каковы правовые последствия для потребителя, если в государственной информационной системе ЖКХ отсутствует или не соответствует сведениям о размере платы за жилое помещение и коммунальные услуги?",
+  "type": "abstract",
+  "answer_contexts": [
+   "в случае, если в системе не размещена информация о размере платы, подлежащей внесению потребителем за жилое помещение и коммунальные услуги, либо размещена информация, которая не соответствует платежному документу"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 28.12.2016 № 469-ФЗ"
+  ]
+ },
+ {
+  "id": 60,
+  "question": "Какие основания прекращения трудового договора предусмотрены Федеральным законом «О занятости населения в Российской Федерации»?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
+ },
+ {
+  "id": 41,
+  "question": "Каков правовой механизм внесения изменений в Налоговый кодекс РФ и какова периодичность таких изменений?",
+  "type": "abstract",
+  "answer_contexts": [
+   "с изм., внесёнными Федеральными"
+  ],
+  "doc_ids": [
+   "wiki://Налоговый кодекс РФ"
+  ]
+ },
+ {
+  "id": 32,
+  "question": "Что предусмотрено в качестве наказания за деяния, предусмотренные ч. 2 ст. 215.1 УК РФ, и какой срок установлен для проверки документов и выдачи разрешения на ввод объекта в эксплуатацию по Градостроительному кодексу РФ?",
+  "type": "composite",
+  "answer_contexts": [
+   "наказываются лишением свободы на срок до пяти лет с лишением права занимать определенные должности или заниматься определенной деятельностью на срок до трех лет или без такового",
+   "в течение десяти дней со дня поступления заявления о выдаче разрешения на ввод объекта в эксплуатацию"
+  ],
+  "doc_ids": [
+   "wiki://Федеральный закон от 27.05.1998 № 77-ФЗ",
+   "wiki://Федеральный закон от 27.07.2006 № 143-ФЗ"
+  ]
+ },
+ {
+  "id": 52,
+  "question": "Какие ограничения на размещение рекламы, адресованной несовершеннолетним, установлены Федеральным законом «О рекламе»?",
+  "type": "negative",
+  "answer_contexts": [],
+  "doc_ids": []
  }
 ]

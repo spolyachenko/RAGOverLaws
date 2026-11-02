@@ -38,7 +38,7 @@ def run():
                 try:
                     r = client.chat.completions.create(model=model, temperature=0,
                                                        messages=[
-                                                            {"role": "system", "content": "Context: game is The binding of isaac: repentance"},
+                                                            {"role": "system", "content": "Отвечай на русском, опираясь только на собственные знания, без обращения к документам."},
                                                             {"role": "user", "content": PROMPT.format(q=g["question"])}])
                     break
                 except Exception:

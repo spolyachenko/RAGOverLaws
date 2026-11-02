@@ -3,4 +3,5 @@ __pycache__/
 *.pdf*
 .env
 GigaConf*
-notebooks/
+notebooks/data/law_corpus.jsonl
+data/law_corpus.jsonl
