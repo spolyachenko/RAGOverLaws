@@ -85,11 +85,17 @@ def main():
             "республики", "гражданский", "гражданским", "уголовный", "уголовном",
             "нормативный", "правовой", "акты", "документ", "документах", "качестве"}
     neg_ok, neg_bad = [], 0
+    corpus_titles = "\n".join(corpus.keys())
     for it in cand["negative"]:
         q = it["question"]
         words = {w for w in re.findall(r"[А-ЯЁ][а-яё]{5,}", q) if w.lower() not in STOP}
         if any(w.lower() in hay for w in words):
             # объект вопроса упоминается в корпусе — как negative не годится
+            neg_bad += 1
+            continue
+        # номер закона в вопросе не должен существовать в корпусе (иначе negative ложный)
+        lawnums = re.findall(r"(\d{1,4})-ФЗ", q)
+        if any(f"№ {n}-ФЗ" in corpus_titles for n in lawnums):
             neg_bad += 1
             continue
         neg_ok.append(it)
