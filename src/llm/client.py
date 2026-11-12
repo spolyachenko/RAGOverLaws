@@ -33,6 +33,7 @@ def ask(cl, model, prompt: str, key: str, cache: dict) -> tuple[str, float]:
         return cache[key]["out"], 0.0
     t0 = time.time()
     r = cl.chat.completions.create(model=model, temperature=0,
+                                   extra_body={"chat_template_kwargs": {"enable_thinking": False}},
                                    messages=[{"role": "user", "content": prompt}])
     out = (r.choices[0].message.content or "").strip()
     dt = round(time.time() - t0, 2)
