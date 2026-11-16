@@ -82,7 +82,7 @@ def chunk(stage: str, strategy: str, force=False, **kw) -> pd.DataFrame:
 def ablation(stage: str = "dedup",
              thresholds=(0.4, 0.5, 0.6, 0.8),
              models=("minishlab/potion-base-32M", "BAAI/bge-m3")):
-    """Отдельная работа с SemanticChunker: сетка порог × эмбеддер, BM25-метрики на gold_val."""
+    """Отдельная работа с SemanticChunker: сетка порог × эмбеддер, BM25-метрики на gold100."""
     g = _gold_titles(GOLD_VAL)
     queries = list(g["question"])
     df = load_stage(stage)

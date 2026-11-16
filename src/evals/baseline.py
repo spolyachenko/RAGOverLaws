@@ -13,7 +13,8 @@ import time
 
 from utils import BASELINE_OUT, GOLD_TEST, GOLD_VAL, load_env
 
-PROMPT = "Отвечай кратко на русском. Если не знаешь ответа — явно скажи «не знаю».\nВопрос: {q}"
+PROMPT_SYS = ("Отвечай на русском, опираясь только на собственные знания, без обращения к документам. "
+              "Отвечай кратко. Если не знаешь ответа — явно скажи «не знаю».")
 
 
 def _client():
@@ -43,8 +44,8 @@ def run():
                 try:
                     r = client.chat.completions.create(model=model, temperature=0,
                                                        messages=[
-                                                            {"role": "system", "content": "Отвечай на русском, опираясь только на собственные знания, без обращения к документам."},
-                                                            {"role": "user", "content": PROMPT.format(q=g["question"])}])
+                                                            {"role": "system", "content": PROMPT_SYS},
+                                                            {"role": "user", "content": g["question"]}])
                     break
                 except Exception:
                     if a == 2:

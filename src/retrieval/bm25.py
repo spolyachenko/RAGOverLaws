@@ -1,4 +1,4 @@
-"""BM25-ретрив (rank_bm25) + метрики на gold_val.
+"""BM25-ретрив (rank_bm25) + метрики на gold100.
 
 Конвенция: топ-40 чанков -> уникальные документы в порядке ранга.
 Запуск: python src/retrieval/bm25.py eval <стадия> <чанкер>
@@ -30,7 +30,7 @@ def bm25_topk(ck, queries: list[str], pool: int = 40) -> dict[str, list[str]]:
 
 
 def eval_pair(stage: str, strategy: str, k_list=(5, 10), verbose=True, **kw) -> dict:
-    """BM25-ретрив по gold_val + Hit@k/Recall@k + статы чанков."""
+    """BM25-ретрив по gold100 + Hit@k/Recall@k + статы чанков."""
     from chunking.chunkers import chunk  # lazy: chunkers импортирует bm25_topk
     ck = chunk(stage, strategy, **kw)
     g = _gold_titles(GOLD_VAL)

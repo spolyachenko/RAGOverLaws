@@ -3,7 +3,7 @@
 ParentDocumentRetriever: документ -> родители TokenChunker(p) -> в каждом родителе
 дети TokenChunker(c). Индексируются ДЕТИ (dense); топ-k детей мапится на документы
 двумя схемами: plain (документы напрямую) и parent_child (через уникальных родителей).
-Метрики — та же конвенция, что у BM25 (уникальные документы, gold_val).
+Метрики — та же конвенция, что у BM25 (уникальные документы, gold100).
 
 Запуск: python src/retrieval/dense.py eval <стадия> <чанкер> | python src/retrieval/dense.py parent
 """

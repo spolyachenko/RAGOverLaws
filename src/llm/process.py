@@ -1,6 +1,6 @@
 """LLM-обработка чанков: суммаризация (80 слов) + HyDE (2 вопроса) — exploratory.
 
-Область: первые 100 чанков документов из doc_ids gold_val (именно они несут ground truth;
+Область: первые 100 чанков документов из doc_ids gold100 (именно они несут ground truth;
 полный прогон 532 чанка >1.5ч при ~4.6x параллелизме не дал бы качественно иного вывода).
 Остальной корпус индексируется как есть. Кэш по sha1 чанка — повторный прогон ~0 токенов.
 
@@ -28,7 +28,7 @@ CAP = 100  # exploratory-кап: первые N чанков подмножес�
 
 
 def subset_chunks() -> pd.DataFrame:
-    """Первые CAP чанков документов из doc_ids gold_val (те же, что в data/chunks.jsonl)."""
+    """Первые CAP чанков документов из doc_ids gold100 (те же, что в data/chunks.jsonl)."""
     df = load_stage("dedup")
     gold = _gold_titles(GOLD_VAL)
     subset = sorted({d.split("wiki://", 1)[1] for ds in gold.doc_ids for d in ds})
