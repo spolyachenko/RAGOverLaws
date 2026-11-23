@@ -31,7 +31,7 @@ def subset_chunks() -> pd.DataFrame:
     """Первые CAP чанков документов из doc_ids gold100 (те же, что в data/chunks.jsonl)."""
     df = load_stage("dedup")
     gold = _gold_titles(GOLD_VAL)
-    subset = sorted({d.split("wiki://", 1)[1] for ds in gold.doc_ids for d in ds})
+    subset = sorted({d.split("://", 1)[1] if "://" in d else d for ds in gold.doc_ids for d in ds})
     df = df[df["title"].isin(subset)]
     ch = TokenChunker(chunk_size=512)
     items = []

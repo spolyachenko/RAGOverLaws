@@ -52,4 +52,5 @@ def eval_pair(stage: str, strategy: str, k_list=(5, 10), verbose=True, **kw) -> 
 
 if __name__ == "__main__":
     if len(sys.argv) >= 3 and sys.argv[1] == "eval":
-        eval_pair(sys.argv[2], sys.argv[3])
+        max_docs = int(sys.argv[4]) if len(sys.argv) > 4 else None
+        eval_pair(sys.argv[2], sys.argv[3], max_docs=max_docs)

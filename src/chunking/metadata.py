@@ -140,15 +140,20 @@ def eval_metadata(stage: str = "dedup", strategy: str = "token", k_list=(5, 10),
 
     # A1) свежесть: страницы с датой в последних 50% периода
     dated = sorted((d for d in ck["date"].drop_duplicates() if d))
-    cut = dated[len(dated) // 2]
-    fresh = set(ck[ck["date"] >= cut]["doc"].drop_duplicates())
-    lat_f, out_f = [], {}
-    for q in queries:
-        t0 = time.perf_counter()
-        out_f[q] = _rank(bm, qtoks[q], ck_docs, keep=fresh)
-        lat_f.append((time.perf_counter() - t0) * 1e3)
-    fresh_res = {"cutoff_date": cut, "docs_kept": len(fresh),
-                 "before": base, "after": metrics(g, out_f, k_list)}
+    if len(dated) < 10:
+        fresh_res = {"skipped": ("даты ревизий для документов корпуса недоступны "
+                                 "(page_dates из дампа не совпадают с заголовками страниц); "
+                                 "сценарий не применяется")}
+    else:
+        cut = dated[len(dated) // 2]
+        fresh = set(ck[ck["date"] >= cut]["doc"].drop_duplicates())
+        lat_f, out_f = [], {}
+        for q in queries:
+            t0 = time.perf_counter()
+            out_f[q] = _rank(bm, qtoks[q], ck_docs, keep=fresh)
+            lat_f.append((time.perf_counter() - t0) * 1e3)
+        fresh_res = {"cutoff_date": cut, "docs_kept": len(fresh),
+                     "before": base, "after": metrics(g, out_f, k_list)}
 
     # A2) noise
     low = ck["noise"].to_numpy()
@@ -176,10 +181,11 @@ def eval_metadata(stage: str = "dedup", strategy: str = "token", k_list=(5, 10),
         "noise_mean": round(float(ck.noise.mean()), 4),
         "noise_gt05_share": round(float((ck.noise > 0.5).mean()), 4),
         "language_dist": ck.groupby("language")["doc"].nunique().to_dict(),
-        "date_range": [ck.loc[ck["date"] != "", "date"].min(), ck.loc[ck["date"] != "", "date"].max()],
+        "date_range": [ck.loc[ck["date"] != "", "date"].min(), ck.loc[ck["date"] != "", "date"].max()] if (ck["date"] != "").any() else "нет дат",
         "bm25_build_secs": build_b,
         "query_ms": {"baseline": round(float(sorted(lat)[len(lat) // 2]), 2),
-                     "fresh_filter": round(float(sorted(lat_f)[len(lat_f) // 2]), 2),
+                     **({"fresh_filter": round(float(sorted(lat_f)[len(lat_f) // 2]), 2)}
+                        if "cutoff_date" in fresh_res else {}),
                      "noise_filter": round(float(sorted(lat_n)[len(lat_n) // 2]), 2),
                      "prepend": round(float(sorted(lat_p)[len(lat_p) // 2]), 2)},
         "A1_fresh": fresh_res,

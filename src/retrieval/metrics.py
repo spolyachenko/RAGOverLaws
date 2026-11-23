@@ -12,7 +12,7 @@ def _gold_titles(gold_path) -> pd.DataFrame:
     """gold -> DataFrame с question/titles; остаются только вопросы с doc_ids."""
     g = pd.DataFrame(json.load(open(gold_path, encoding="utf-8")))
     g = g[g.doc_ids.map(len) > 0].copy()  # только с ground-truth документами
-    g["titles"] = g.doc_ids.map(lambda ds: [d.split("wiki://", 1)[1] for d in ds])
+    g["titles"] = g.doc_ids.map(lambda ds: [d.split("://", 1)[1] if "://" in d else d for d in ds])
     return g
 
 

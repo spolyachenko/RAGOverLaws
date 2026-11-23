@@ -62,13 +62,16 @@ def _chunk_texts(df: pd.DataFrame, ch) -> pd.DataFrame:
     return ck
 
 
-def chunk(stage: str, strategy: str, force=False, **kw) -> pd.DataFrame:
+def chunk(stage: str, strategy: str, force=False, max_docs=None, **kw) -> pd.DataFrame:
     """Чанки stage-корпуса стратегией. Кэш на диск — только dedup/token: data/chunks.jsonl."""
     out = DATA / "chunks.jsonl"
     to_disk = (stage, strategy) == ("dedup", "token")
     if to_disk and out.exists() and not force:
         return pd.read_json(out, lines=True)
     df = load_stage(stage)
+    if max_docs:
+        # exploratory-подвыборка (ТЗ допускает сокращение для дорогих чанкеров)
+        df = df.sample(n=min(max_docs, len(df)), random_state=42).reset_index(drop=True)
     ch = semantic_chunker(**kw) if strategy == "semantic" else token_chunker(strategy)
     t0 = time.time()
     ck = _chunk_texts(df, ch)
@@ -81,14 +84,20 @@ def chunk(stage: str, strategy: str, force=False, **kw) -> pd.DataFrame:
 
 def ablation(stage: str = "dedup",
              thresholds=(0.4, 0.5, 0.6, 0.8),
-             models=("minishlab/potion-base-32M", "BAAI/bge-m3")):
-    """Отдельная работа с SemanticChunker: сетка порог × эмбеддер, BM25-метрики на gold100."""
+             models=("minishlab/potion-base-32M", "BAAI/bge-m3"),
+             fast=False):
+    """Отдельная работа с SemanticChunker: сетка порог × эмбеддер, BM25-метрики на gold100.
+
+    fast=True: bge-m3 — только пороги 0.4/0.6 (RTX 2060: ~20 мин на порог)."""
+    if fast:
+        models = ("minishlab/potion-base-32M", "BAAI/bge-m3")
     g = _gold_titles(GOLD_VAL)
     queries = list(g["question"])
     df = load_stage(stage)
     rows = []
     for mname in models:
-        for thr in thresholds:
+        ths = (0.4, 0.6) if fast and mname == "BAAI/bge-m3" else thresholds
+        for thr in ths:
             t0 = time.time()
             ck = _chunk_texts(df, semantic_chunker(threshold=thr, model=mname))
             topk = bm25_topk(ck, queries)
@@ -101,4 +110,4 @@ def ablation(stage: str = "dedup",
 
 if __name__ == "__main__":
     if len(sys.argv) >= 2 and sys.argv[1] == "ablation":
-        ablation()
+        ablation(fast="--fast" in sys.argv)
