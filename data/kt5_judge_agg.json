@@ -1,0 +1,40 @@
+{
+ "overall": {
+  "baseline": {
+   "faithfulness": 4.81,
+   "relevance": 4.68,
+   "utilization": 3.12
+  },
+  "best": {
+   "faithfulness": 4.82,
+   "relevance": 4.57,
+   "utilization": 3.11
+  }
+ },
+ "by_type": {
+  "abstract/baseline/faithfulness": 4.95,
+  "abstract/baseline/relevance": 4.95,
+  "abstract/baseline/utilization": 3.0,
+  "abstract/best/faithfulness": 5.0,
+  "abstract/best/relevance": 4.35,
+  "abstract/best/utilization": 3.05,
+  "composite/baseline/faithfulness": 4.6,
+  "composite/baseline/relevance": 4.367,
+  "composite/baseline/utilization": 2.867,
+  "composite/best/faithfulness": 4.6,
+  "composite/best/relevance": 4.5,
+  "composite/best/utilization": 2.8,
+  "factual/baseline/faithfulness": 4.8,
+  "factual/baseline/relevance": 4.6,
+  "factual/baseline/utilization": 3.533,
+  "factual/best/faithfulness": 4.8,
+  "factual/best/relevance": 4.5,
+  "factual/best/utilization": 3.533,
+  "negative/baseline/faithfulness": 5.0,
+  "negative/baseline/relevance": 5.0,
+  "negative/baseline/utilization": 3.0,
+  "negative/best/faithfulness": 5.0,
+  "negative/best/relevance": 5.0,
+  "negative/best/utilization": 3.0
+ }
+}
