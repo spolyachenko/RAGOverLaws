@@ -1,0 +1,54 @@
+{
+ "non-refusal": {
+  "faithfulness": {
+   "n": 8,
+   "kappa": -1.857,
+   "exact": "3/8",
+   "within1": "6/8",
+   "human_mean": 3.88,
+   "judge_mean": 4.25
+  },
+  "relevance": {
+   "n": 8,
+   "kappa": 0.714,
+   "exact": "3/8",
+   "within1": "7/8",
+   "human_mean": 3.75,
+   "judge_mean": 4.5
+  },
+  "utilization": {
+   "n": 8,
+   "kappa": -0.517,
+   "exact": "3/8",
+   "within1": "6/8",
+   "human_mean": 3.25,
+   "judge_mean": 2.88
+  }
+ },
+ "refusal": {
+  "faithfulness": {
+   "n": 12,
+   "kappa": NaN,
+   "exact": "11/12",
+   "within1": "12/12",
+   "human_mean": 4.92,
+   "judge_mean": 5.0
+  },
+  "relevance": {
+   "n": 12,
+   "kappa": 1.0,
+   "exact": "1/12",
+   "within1": "2/12",
+   "human_mean": 2.33,
+   "judge_mean": 4.67
+  },
+  "utilization": {
+   "n": 12,
+   "kappa": 0.0,
+   "exact": "1/12",
+   "within1": "10/12",
+   "human_mean": 1.92,
+   "judge_mean": 3.0
+  }
+ }
+}
